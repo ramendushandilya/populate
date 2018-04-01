@@ -17,7 +17,7 @@ public class BaseInfoExt {
     @JsonProperty("productDescription")
     private String productDescription;
 
-    @JsonProperty("imageUrlsExt")
+    @JsonProperty("imageUrls")
     private ImageUrlsExt imageUrlsExt;
 
     @JsonProperty("productFamily")

@@ -7,6 +7,9 @@ import java.util.Arrays;
 @Embeddable
 public class AcProductBaseInfo {
 
+    public AcProductBaseInfo() {
+    }
+
     private String productId;
     private String title;
     @Embedded

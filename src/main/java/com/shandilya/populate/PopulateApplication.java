@@ -2,11 +2,14 @@ package com.shandilya.populate;
 
 import com.shandilya.populate.flipkart.external.api.CategoryService;
 import com.shandilya.populate.flipkart.external.api.ProductUrlAggregatorService;
+import com.shandilya.populate.flipkart.external.domains.urlcommons.ProductsExt;
 import com.shandilya.populate.flipkart.persistence.services.CategoryPersistenceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import java.util.List;
 
 @SpringBootApplication
 public class PopulateApplication implements CommandLineRunner{
@@ -35,9 +38,11 @@ public class PopulateApplication implements CommandLineRunner{
 		}*/
 
 		//List<ProductsExt> acs = aggregatorService.getAllProducts("AirConditioners");
+		//System.out.println("size = "+acs.size());
+
+		//persistenceService.saveAcs();
 
 		persistenceService.saveAcs();
-
 		System.out.println("Rest of the functionality executed");
 	}
 }

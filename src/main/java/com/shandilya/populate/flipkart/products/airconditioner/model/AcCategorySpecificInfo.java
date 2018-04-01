@@ -6,6 +6,9 @@ import java.util.Arrays;
 @Embeddable
 public class AcCategorySpecificInfo {
 
+    public AcCategorySpecificInfo() {
+    }
+
     private String[] detailedSpecs;
 
     public AcCategorySpecificInfo(String[] detailedSpecs) {

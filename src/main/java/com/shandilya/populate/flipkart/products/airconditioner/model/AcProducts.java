@@ -5,6 +5,9 @@ import javax.persistence.*;
 @Entity
 public class AcProducts {
 
+    public AcProducts() {
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;

@@ -1,0 +1,718 @@
+{
+  "nextUrl": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/ramendu98/category/j9e-abm-c54/5abcb0c6e43a5edee0e6cebe.json?expiresAt=1522635804191&sig=98088dd6362b9ce1d280e8466c24d2e2",
+  "validTill": 1522635804191,
+  "lastProductId": "ACNF3H4KV93M2TRW",
+  "products": [
+    {
+      "productBaseInfoV1": {
+        "productId": "ACNE7TVHYTPNFSPE",
+        "title": "Haier 1.5 Ton 5 Star BEE Rating 2017 Window AC  - Ivory(HW-18CH5CNA)",
+        "productDescription": "",
+        "imageUrls": {
+          "200x200": "https://rukminim1.flixcart.com/image/200/200/air-conditioner-new/s/p/e/1-5-haier-window-hw-18ch5cna-original-imae9a6rqwbadhjf.jpeg?q=90",
+          "400x400": "https://rukminim1.flixcart.com/image/400/400/air-conditioner-new/s/p/e/1-5-haier-window-hw-18ch5cna-original-imae9a6rqwbadhjf.jpeg?q=90",
+          "800x800": "https://rukminim1.flixcart.com/image/800/800/air-conditioner-new/s/p/e/1-5-haier-window-hw-18ch5cna-original-imae9a6rqwbadhjf.jpeg?q=90"
+        },
+        "productFamily": [
+          "ACNE7TVHYTPNFSPE"
+        ],
+        "maximumRetailPrice": {
+          "amount": 32500,
+          "currency": "INR"
+        },
+        "flipkartSellingPrice": {
+          "amount": 26500,
+          "currency": "INR"
+        },
+        "flipkartSpecialPrice": {
+          "amount": 26000,
+          "currency": "INR"
+        },
+        "productUrl": "https://dl.flipkart.com/dl/haier-1-5-ton-5-star-bee-rating-2017-window-ac-ivory/p/itme7tvhhuxvwxrd?pid=ACNE7TVHYTPNFSPE&affid=ramendu98",
+        "productBrand": "Haier",
+        "inStock": true,
+        "codAvailable": true,
+        "discountPercentage": 20,
+        "offers": [
+          "Extra ₹500 Off",
+          "10% Instant Discount* with HDFC Bank Cards",
+          "15% Cashback* on payments through PhonePe",
+          "Extra 5% off* with Axis Bank Buzz Credit Card"
+        ],
+        "categoryPath": "Electronics>Appliances>Home Appliances>Air Conditioners",
+        "attributes": {
+          "size": "",
+          "color": "Ivory",
+          "storage": "",
+          "sizeUnit": "",
+          "displaySize": ""
+        }
+      },
+      "productShippingInfoV1": {
+        "shippingCharges": {
+          "amount": 0,
+          "currency": "INR"
+        },
+        "estimatedDeliveryTime": "Usually Delivered in 8 - 9 days.",
+        "sellerName": "Pankaj arora",
+        "sellerAverageRating": 3,
+        "sellerNoOfRatings": 92,
+        "sellerNoOfReviews": 13
+      },
+      "categorySpecificInfoV1": {
+        "keySpecs": [
+          "Anti Bacteria Filter",
+          "Auto Restart",
+          "Dust Filter",
+          "Dehumidification"
+        ],
+        "detailedSpecs": [
+          "Anti Bacteria Filter",
+          "Auto Restart",
+          "Dust Filter",
+          "Dehumidification"
+        ],
+        "specificationList": [
+          {
+            "key": "General",
+            "values": [
+              {
+                "key": "In The Box",
+                "value": [
+                  "1 AC Unit",
+                  "1 Remote Control",
+                  "User Manual",
+                  "Warranty Card"
+                ]
+              },
+              {
+                "key": "Brand",
+                "value": [
+                  "Haier"
+                ]
+              },
+              {
+                "key": "Model Name",
+                "value": [
+                  "HW-18CH5CNA"
+                ]
+              },
+              {
+                "key": "Type",
+                "value": [
+                  "Window"
+                ]
+              },
+              {
+                "key": "Capacity in Tons",
+                "value": [
+                  "1.5 Ton"
+                ]
+              },
+              {
+                "key": "Star Rating",
+                "value": [
+                  "5 Star BEE Rating"
+                ]
+              },
+              {
+                "key": "Manufacture Year",
+                "value": [
+                  "2017"
+                ]
+              },
+              {
+                "key": "Color",
+                "value": [
+                  "Ivory"
+                ]
+              },
+              {
+                "key": "Cooling and Heating",
+                "value": [
+                  "No"
+                ]
+              },
+              {
+                "key": "Cooling Capacity",
+                "value": [
+                  "6600 W"
+                ]
+              },
+              {
+                "key": "Compressor",
+                "value": [
+                  "Rotary"
+                ]
+              },
+              {
+                "key": "Dehumidification",
+                "value": [
+                  "Yes"
+                ]
+              },
+              {
+                "key": "Remote Control",
+                "value": [
+                  "Yes"
+                ]
+              }
+            ]
+          },
+          {
+            "key": "Dimensions",
+            "values": [
+              {
+                "key": "Indoor W x H x D",
+                "value": [
+                  "80.5 cm x 43 cm x 66 cm"
+                ]
+              },
+              {
+                "key": "Indoor Unit Weight",
+                "value": [
+                  "56 kg"
+                ]
+              }
+            ]
+          },
+          {
+            "key": "Air Flow & Filter Features",
+            "values": [
+              {
+                "key": "Anti-bacteria Filter",
+                "value": [
+                  "Yes"
+                ]
+              },
+              {
+                "key": "Dust Filter",
+                "value": [
+                  "Yes"
+                ]
+              }
+            ]
+          },
+          {
+            "key": "Convenience Features",
+            "values": [
+              {
+                "key": "Auto Restart",
+                "value": [
+                  "Yes"
+                ]
+              },
+              {
+                "key": "Additional Features",
+                "value": [
+                  "Noise Level: 52 dB"
+                ]
+              }
+            ]
+          },
+          {
+            "key": "Power Features",
+            "values": [
+              {
+                "key": "Power Requirement",
+                "value": [
+                  "AC 230 V, 50 Hz"
+                ]
+              },
+              {
+                "key": "Power Consumption",
+                "value": [
+                  "1480 W"
+                ]
+              }
+            ]
+          },
+          {
+            "key": "Services",
+            "values": [
+              {
+                "key": "Installation Details",
+                "value": [
+                  "Flipkart will facilitate Installation & Demo at time of your convenience from an brand authorized service engineer",
+                  "Flipkart will communicate the day and time slot of the scheduled Installation & Demo through a SMS and the same information will also be available in your order details page",
+                  "The Installation of Air-conditioner is charged extra to customer at the time of installation and needs to be paid directly to the service engineer. Standard installation charges for Window AC will be approx Rs. 500-600. Please check the offer details to find out whether free installation offer or any other special offer price is available at the time of purchase or not",
+                  "Standard Installation of Air-conditioners covers only",
+                  "a. Drilling of hole in Brick wall for taking out the pipes, b. Fixing hole sleeve & Cap, c. Fixing the Indoor and Outdoor Unit, d. Connecting Indoor and Outdoor units using Standard Kit provided by Manufacturer (at an additional cost, unless specified otherwise), e. Wrapping the pipe with seasoning tape",
+                  "Not covered as part of standard Installation charges are",
+                  "a. Out Door Unit Stand, b. Extra copper wire, c.Drain Pipe extension if any, d. Wiring extension from Meter to site, e. Stabilizer required for the installation if available with the technician will be chargeable extra, f. Plumbing and Masonry Work, g. Power-point/MCB fitting and any other electrical work, h. Carpentry work, i. Dismantling/Shifting of Old AC's masonry, j. Core cutting fabrication and electrical",
+                  "The authorized service engineer will be providing detailed demo that includes",
+                  "a. Usage of the product, b. Explain all the functionality of the product, c. Preventive maintenance action to be taken"
+                ]
+              },
+              {
+                "key": "Technician Visit Details",
+                "value": [
+                  "Authorized Service Engineer will do the following",
+                  "Repair / change the defective part",
+                  "Provide replacement to the customer in case part/product not repairable (only after replacement request approved)",
+                  "Repair Services"
+                ]
+              },
+              {
+                "key": "Uninstallation Details",
+                "value": [
+                  "In case of Returns Flipkart's team will visit the customers location",
+                  "Uninstall",
+                  "Pack",
+                  "Pick-up the product"
+                ]
+              },
+              {
+                "key": "Other Included Services",
+                "value": [
+                  "Two Free Services of AC within Warranty Period on Demand"
+                ]
+              }
+            ]
+          },
+          {
+            "key": "Warranty",
+            "values": [
+              {
+                "key": "Warranty Summary",
+                "value": [
+                  "1 Year on product and 4 Years on compressor"
+                ]
+              },
+              {
+                "key": "Covered in Warranty",
+                "value": [
+                  "Internal Damages"
+                ]
+              },
+              {
+                "key": "Not Covered in Warranty",
+                "value": [
+                  "Plastic Parts, Gas Filling"
+                ]
+              }
+            ]
+          }
+        ],
+        "booksInfo": {
+          "language": null,
+          "binding": null,
+          "pages": null,
+          "publisher": null,
+          "year": 0,
+          "authors": []
+        },
+        "lifeStyleInfo": {
+          "sleeve": null,
+          "neck": null,
+          "idealFor": null
+        }
+      }
+    },
+    {
+      "productBaseInfoV1": {
+        "productId": "ACNE6FS4GDJDNGBA",
+        "title": "Voltas 1.5 Ton 3 Star BEE Rating 2017 Split AC  - Red(183 EYR)",
+        "productDescription": "",
+        "imageUrls": {
+          "200x200": "https://rukminim1.flixcart.com/image/200/200/air-conditioner-new/g/b/a/1-5-voltas-split-183-eyr-original-imae6gyfbdagky6u.jpeg?q=90",
+          "400x400": "https://rukminim1.flixcart.com/image/400/400/air-conditioner-new/g/b/a/1-5-voltas-split-183-eyr-original-imae6gyfbdagky6u.jpeg?q=90",
+          "800x800": "https://rukminim1.flixcart.com/image/800/800/air-conditioner-new/g/b/a/1-5-voltas-split-183-eyr-original-imae6gyfbdagky6u.jpeg?q=90"
+        },
+        "productFamily": [
+          "ACNE6FS4GDJDNGBA"
+        ],
+        "maximumRetailPrice": {
+          "amount": 40990,
+          "currency": "INR"
+        },
+        "flipkartSellingPrice": {
+          "amount": 33510,
+          "currency": "INR"
+        },
+        "flipkartSpecialPrice": {
+          "amount": 33510,
+          "currency": "INR"
+        },
+        "productUrl": "https://dl.flipkart.com/dl/voltas-1-5-ton-3-star-bee-rating-2017-split-ac-red/p/itme6fs5rhqxgzdy?pid=ACNE6FS4GDJDNGBA&affid=ramendu98",
+        "productBrand": "Voltas",
+        "inStock": false,
+        "codAvailable": true,
+        "discountPercentage": 18,
+        "offers": [
+          "10% Instant Discount* with HDFC Bank Cards",
+          "15% Cashback* on payments through PhonePe",
+          "Extra 5% off* with Axis Bank Buzz Credit Card"
+        ],
+        "categoryPath": "Electronics>Appliances>Home Appliances>Air Conditioners",
+        "attributes": {
+          "size": "",
+          "color": "Red",
+          "storage": "",
+          "sizeUnit": "",
+          "displaySize": ""
+        }
+      },
+      "productShippingInfoV1": {
+        "shippingCharges": {
+          "amount": 0,
+          "currency": "INR"
+        },
+        "estimatedDeliveryTime": "",
+        "sellerName": "VIVEKS LIMITED",
+        "sellerAverageRating": 3.8,
+        "sellerNoOfRatings": 253,
+        "sellerNoOfReviews": 23
+      },
+      "categorySpecificInfoV1": {
+        "keySpecs": [
+          "Anti Bacteria Filter",
+          "Auto Restart",
+          "Dust Filter",
+          "Dehumidification",
+          "Sleep Mode"
+        ],
+        "detailedSpecs": [
+          "Anti Bacteria Filter",
+          "Auto Restart",
+          "Dust Filter",
+          "Dehumidification",
+          "Sleep Mode"
+        ],
+        "specificationList": [
+          {
+            "key": "General",
+            "values": [
+              {
+                "key": "In The Box",
+                "value": [
+                  "1 Indoor Unit",
+                  "1 Outdoor Unit",
+                  "1 Remote Control",
+                  "User Manual",
+                  "Warranty Card"
+                ]
+              },
+              {
+                "key": "Brand",
+                "value": [
+                  "Voltas"
+                ]
+              },
+              {
+                "key": "Model Name",
+                "value": [
+                  "183 EYR"
+                ]
+              },
+              {
+                "key": "Type",
+                "value": [
+                  "Split"
+                ]
+              },
+              {
+                "key": "Capacity in Tons",
+                "value": [
+                  "1.5 Ton"
+                ]
+              },
+              {
+                "key": "Star Rating",
+                "value": [
+                  "3 Star BEE Rating"
+                ]
+              },
+              {
+                "key": "Manufacture Year",
+                "value": [
+                  "2017"
+                ]
+              },
+              {
+                "key": "Color",
+                "value": [
+                  "Red"
+                ]
+              },
+              {
+                "key": "Series",
+                "value": [
+                  "Yr Series"
+                ]
+              },
+              {
+                "key": "Cooling and Heating",
+                "value": [
+                  "No"
+                ]
+              },
+              {
+                "key": "Cooling Capacity",
+                "value": [
+                  "4850 W"
+                ]
+              },
+              {
+                "key": "Compressor",
+                "value": [
+                  "High EER Rotary"
+                ]
+              },
+              {
+                "key": "Dehumidification",
+                "value": [
+                  "Yes"
+                ]
+              },
+              {
+                "key": "Remote Control",
+                "value": [
+                  "Yes"
+                ]
+              },
+              {
+                "key": "Refrigerant",
+                "value": [
+                  "R-22"
+                ]
+              }
+            ]
+          },
+          {
+            "key": "Dimensions",
+            "values": [
+              {
+                "key": "Indoor W x H x D",
+                "value": [
+                  "86 cm x 29.2 cm x 20.5 cm"
+                ]
+              },
+              {
+                "key": "Indoor Unit Weight",
+                "value": [
+                  "10 kg"
+                ]
+              },
+              {
+                "key": "Outdoor W x H x D",
+                "value": [
+                  "84 cm x 54 cm x 30 cm"
+                ]
+              },
+              {
+                "key": "Outdoor Unit Weight",
+                "value": [
+                  "34.5 kg"
+                ]
+              }
+            ]
+          },
+          {
+            "key": "Performance Features",
+            "values": [
+              {
+                "key": "Indoor Noise Level",
+                "value": [
+                  "High - 43 dB, Low - 37 dB"
+                ]
+              },
+              {
+                "key": "Panel Display",
+                "value": [
+                  "LED"
+                ]
+              },
+              {
+                "key": "Turbo Mode",
+                "value": [
+                  "Yes"
+                ]
+              },
+              {
+                "key": "EER",
+                "value": [
+                  "3 W/W"
+                ]
+              }
+            ]
+          },
+          {
+            "key": "Body and Design Features",
+            "values": [
+              {
+                "key": "Other Body and Design Features",
+                "value": [
+                  "Blue Hydrophilic Aluminium Fin"
+                ]
+              }
+            ]
+          },
+          {
+            "key": "Air Flow & Filter Features",
+            "values": [
+              {
+                "key": "Auto Air Swing",
+                "value": [
+                  "Yes"
+                ]
+              },
+              {
+                "key": "Other Air Flow Features",
+                "value": [
+                  "Air Flow Volume (Indoor): 850 CMH, Air Vent Cross Flow"
+                ]
+              },
+              {
+                "key": "Anti-bacteria Filter",
+                "value": [
+                  "Yes"
+                ]
+              },
+              {
+                "key": "Dust Filter",
+                "value": [
+                  "Yes"
+                ]
+              },
+              {
+                "key": "Other Filter Features",
+                "value": [
+                  "Silver Nano Filter"
+                ]
+              }
+            ]
+          },
+          {
+            "key": "Convenience Features",
+            "values": [
+              {
+                "key": "Auto Restart",
+                "value": [
+                  "Yes"
+                ]
+              },
+              {
+                "key": "Sleep Mode",
+                "value": [
+                  "Yes"
+                ]
+              },
+              {
+                "key": "Self Diagnosis",
+                "value": [
+                  "Yes"
+                ]
+              },
+              {
+                "key": "Additional Features",
+                "value": [
+                  "Indoor Noise Level (Medium): 40 dB",
+                  "Connecting Pipe Type: Cu-Cu (1/2 inch and 1/4 inch)",
+                  "Connecting Pipe Length: 3.5 m",
+                  "Connecting Cable: 3.5 m",
+                  "Inner Grooved Copper Tubes"
+                ]
+              }
+            ]
+          },
+          {
+            "key": "Power Features",
+            "values": [
+              {
+                "key": "Power Requirement",
+                "value": [
+                  "AC 230 V, 50 Hz"
+                ]
+              },
+              {
+                "key": "Power Consumption",
+                "value": [
+                  "1539 W"
+                ]
+              },
+              {
+                "key": "Operating Current",
+                "value": [
+                  "6.8 A"
+                ]
+              }
+            ]
+          },
+          {
+            "key": "Remote Control Features",
+            "values": [
+              {
+                "key": "Other Remote Control Features",
+                "value": [
+                  "LCD Remote"
+                ]
+              }
+            ]
+          },
+          {
+            "key": "Services",
+            "values": [
+              {
+                "key": "Installation Details",
+                "value": [
+                  "Flipkart will facilitate Installation & Demo at time of your convenience from an brand authorized service engineer",
+                  "Flipkart will communicate the day and time slot of the scheduled Installation & Demo through a SMS and the same information will also be available in your order details page",
+                  "The Installation of Air-conditioner is charged extra to customer at the time of installation and needs to be paid directly to the service engineer. Standard installation charges for split AC will be Rs. 1599 (inclusive of taxes). Please check the offer details to find out whether free installation offer or any other special offer price is available at the time of purchase or not",
+                  "Standard Installation of Air-conditioners covers only",
+                  "a. Copper Pipe with Sleeve - 3Mtr, b. POWER CABLE 3 Core - 3Mtr, c. ODU Stand Bush s - 4Nos (Excluding Stand), d. Remote - 1Nos, e. Remote Batteries and Holding Cap, f. VINYL TAPE-ROLL - 50MM 10Mtr",
+                  "Not covered as part of standard Installation charges are",
+                  "a. Out Door Unit Stand - Rs. 750, b. Extra copper pipes Rs 750 per meter without sleeves & power cable, c. Drain Pipe extension if any. (per meter cost) - Rs. 125, d. Wiring extension from Meter to site, (per meter cost) Rs. 86, e. Stabilizer required for the installation if available with the technician will be chargeable extra, f. Plumbing and Masonry Work, g. Power-point/MCB fitting and any other electrical work, h. Carpentry work, i. Dismantling/Shifting of Old AC's Masonry, j. Core Cutting Fabrication and Electrical",
+                  "The authorized service engineer will be providing detailed demo that includes",
+                  "a. Usage of the product, b. Explain all the functionality of the product, c. Preventive maintenance action to be taken"
+                ]
+              },
+              {
+                "key": "Technician Visit Details",
+                "value": [
+                  "Authorized Service Engineer will do the following",
+                  "Repair / change the defective part",
+                  "Provide replacement to the customer in case part/product not repairable (only after replacement request approved)",
+                  "Repair Services"
+                ]
+              },
+              {
+                "key": "Uninstallation Details",
+                "value": [
+                  "In case of Returns Flipkart's team will visit the customers location",
+                  "Uninstall",
+                  "Pack",
+                  "Pick-up the product"
+                ]
+              }
+            ]
+          },
+          {
+            "key": "Warranty",
+            "values": [
+              {
+                "key": "Warranty Summary",
+                "value": [
+                  "1 Year on product and 4 Years on compressor"
+                ]
+              }
+            ]
+          }
+        ],
+        "booksInfo": {
+          "language": null,
+          "binding": null,
+          "pages": null,
+          "publisher": null,
+          "year": 0,
+          "authors": []
+        },
+        "lifeStyleInfo": {
+          "sleeve": null,
+          "neck": null,
+          "idealFor": null
+        }
+      }
+    }
+  ]
+}

@@ -39,6 +39,7 @@ public class ProductUrlAggregatorServiceImpl implements ProductUrlAggregatorServ
     public List<String> getItemSetUrls(String seed) {
         List<String> nextUrls = new ArrayList<>();
         nextUrls.add(seed);
+        //call helper to fetch all next urls excluding the seed
         helper(seed, nextUrls);
         return nextUrls;
     }
@@ -62,6 +63,7 @@ public class ProductUrlAggregatorServiceImpl implements ProductUrlAggregatorServ
                 System.out.println("printing in exception");
                 e.printStackTrace();
             }
+            System.out.println("response code = "+response.getStatusCode());
             if (response.getStatusCodeValue() != 200) {
                 System.out.println("Error");
             } else {
@@ -88,15 +90,12 @@ public class ProductUrlAggregatorServiceImpl implements ProductUrlAggregatorServ
         String seed = null;
         Map<String, String> seedMap = categoryService.getProductCategoryUrls();
         List<ProductsExt> allProducts = new LinkedList<>();
+
+        //If the category type exists, extract seed url from the map
         if (seedMap.containsKey(categoryType)) {
             seed = seedMap.get(categoryType);
         }
-        System.out.println("Seed url ="+seed);
         List<String> urls = getItemSetUrls(seed.toString());
-        System.out.println("URLS = ");
-        for(String u : urls) {
-            System.out.println(u);
-        }
         RestTemplate template = new RestTemplate();
         ResponseEntity<MasterExt> masterResponseEntity;
 
@@ -106,10 +105,6 @@ public class ProductUrlAggregatorServiceImpl implements ProductUrlAggregatorServ
             if (masterResponseEntity.getBody().getNextUrl() != null) {
                 allProducts.addAll(masterResponseEntity.getBody().getProducts());
             }
-        }
-
-        for(ProductsExt pro : allProducts) {
-            System.out.println(pro);
         }
         return allProducts;
     }
