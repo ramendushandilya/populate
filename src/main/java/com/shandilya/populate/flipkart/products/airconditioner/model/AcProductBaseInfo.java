@@ -1,5 +1,6 @@
 package com.shandilya.populate.flipkart.products.airconditioner.model;
 
+import javax.persistence.Column;
 import javax.persistence.Embeddable;
 import javax.persistence.Embedded;
 import java.util.Arrays;
@@ -18,6 +19,7 @@ public class AcProductBaseInfo {
     private String productUrl;
     private String brand;
     private String inStock;
+    @Column(length=1000)
     private String[] offers;
 
     public AcProductBaseInfo(String productId, String title, AcImageUrls imageUrls,

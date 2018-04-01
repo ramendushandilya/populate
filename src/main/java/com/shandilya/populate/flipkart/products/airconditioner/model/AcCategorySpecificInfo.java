@@ -1,5 +1,6 @@
 package com.shandilya.populate.flipkart.products.airconditioner.model;
 
+import javax.persistence.Column;
 import javax.persistence.Embeddable;
 import java.util.Arrays;
 
@@ -9,6 +10,7 @@ public class AcCategorySpecificInfo {
     public AcCategorySpecificInfo() {
     }
 
+    @Column(length=1000)
     private String[] detailedSpecs;
 
     public AcCategorySpecificInfo(String[] detailedSpecs) {

@@ -29,7 +29,9 @@ public class CategoryPersistenceServiceImpl implements CategoryPersistenceServic
     @Override
     public void saveAcs() {
 
-        List<AcProducts> prods = conversionService.convert(stubDataGen(), AcProducts.class);
+        List<ProductsExt> extProds = aggregatorService.getAllProducts("AirConditioners");
+
+        List<AcProducts> prods = conversionService.convert(extProds, AcProducts.class);
 
         acRepository.saveAll(prods);
     }

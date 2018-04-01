@@ -63,7 +63,6 @@ public class ProductUrlAggregatorServiceImpl implements ProductUrlAggregatorServ
                 System.out.println("printing in exception");
                 e.printStackTrace();
             }
-            System.out.println("response code = "+response.getStatusCode());
             if (response.getStatusCodeValue() != 200) {
                 System.out.println("Error");
             } else {
