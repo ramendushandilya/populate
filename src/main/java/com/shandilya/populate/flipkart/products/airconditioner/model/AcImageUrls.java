@@ -1,19 +1,19 @@
-package com.shandilya.populate.flipkart.external.domains.airconditioner;
+package com.shandilya.populate.flipkart.products.airconditioner.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonProperty;
+import javax.persistence.Embeddable;
 
-@JsonIgnoreProperties(ignoreUnknown = true)
-public class ImageUrls {
+@Embeddable
+public class AcImageUrls {
 
-    @JsonProperty("200x200")
     private String small;
-
-    @JsonProperty("400x400")
     private String medium;
-
-    @JsonProperty("800x800")
     private String large;
+
+    public AcImageUrls(String small, String medium, String large) {
+        this.small = small;
+        this.medium = medium;
+        this.large = large;
+    }
 
     public String getSmall() {
         return small;
@@ -41,7 +41,7 @@ public class ImageUrls {
 
     @Override
     public String toString() {
-        return "ImageUrls{" +
+        return "AcImageUrls{" +
                 "small='" + small + '\'' +
                 ", medium='" + medium + '\'' +
                 ", large='" + large + '\'' +

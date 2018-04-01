@@ -1,4 +1,4 @@
-package com.shandilya.populate.flipkart.external.domains.airconditioner;
+package com.shandilya.populate.flipkart.external.domains.urlcommons;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -6,7 +6,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.Arrays;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class BaseInfo {
+public class BaseInfoExt {
 
     @JsonProperty("productId")
     private String productId;
@@ -17,20 +17,20 @@ public class BaseInfo {
     @JsonProperty("productDescription")
     private String productDescription;
 
-    @JsonProperty("imageUrls")
-    private ImageUrls imageUrls;
+    @JsonProperty("imageUrlsExt")
+    private ImageUrlsExt imageUrlsExt;
 
     @JsonProperty("productFamily")
     private String[] productFamily;
 
     @JsonProperty("maximumRetailPrice")
-    private MaximumRetailPrice mrp;
+    private MaximumRetailPriceExt mrp;
 
     @JsonProperty("flipkartSellingPrice")
-    private FlipkartSellingPrice fsp;
+    private FlipkartSellingPriceExt fsp;
 
     @JsonProperty("flipkartSpecialPrice")
-    private FlipkartSpecialPrice fspDash;
+    private FlipkartSpecialPriceExt fspDash;
 
     @JsonProperty("productUrl")
     private String productUrl;
@@ -54,7 +54,7 @@ public class BaseInfo {
     private String categoryPath;
 
     @JsonProperty("attributes")
-    private Attributes attributes;
+    private AttributesExt attributes;
 
     public String getProductId() {
         return productId;
@@ -80,12 +80,12 @@ public class BaseInfo {
         this.productDescription = productDescription;
     }
 
-    public ImageUrls getImageUrls() {
-        return imageUrls;
+    public ImageUrlsExt getImageUrlsExt() {
+        return imageUrlsExt;
     }
 
-    public void setImageUrls(ImageUrls imageUrls) {
-        this.imageUrls = imageUrls;
+    public void setImageUrlsExt(ImageUrlsExt imageUrlsExt) {
+        this.imageUrlsExt = imageUrlsExt;
     }
 
     public String[] getProductFamily() {
@@ -96,27 +96,27 @@ public class BaseInfo {
         this.productFamily = productFamily;
     }
 
-    public MaximumRetailPrice getMrp() {
+    public MaximumRetailPriceExt getMrp() {
         return mrp;
     }
 
-    public void setMrp(MaximumRetailPrice mrp) {
+    public void setMrp(MaximumRetailPriceExt mrp) {
         this.mrp = mrp;
     }
 
-    public FlipkartSellingPrice getFsp() {
+    public FlipkartSellingPriceExt getFsp() {
         return fsp;
     }
 
-    public void setFsp(FlipkartSellingPrice fsp) {
+    public void setFsp(FlipkartSellingPriceExt fsp) {
         this.fsp = fsp;
     }
 
-    public FlipkartSpecialPrice getFspDash() {
+    public FlipkartSpecialPriceExt getFspDash() {
         return fspDash;
     }
 
-    public void setFspDash(FlipkartSpecialPrice fspDash) {
+    public void setFspDash(FlipkartSpecialPriceExt fspDash) {
         this.fspDash = fspDash;
     }
 
@@ -176,21 +176,21 @@ public class BaseInfo {
         this.categoryPath = categoryPath;
     }
 
-    public Attributes getAttributes() {
+    public AttributesExt getAttributes() {
         return attributes;
     }
 
-    public void setAttributes(Attributes attributes) {
+    public void setAttributes(AttributesExt attributes) {
         this.attributes = attributes;
     }
 
     @Override
     public String toString() {
-        return "BaseInfo{" +
+        return "BaseInfoExt{" +
                 "productId='" + productId + '\'' +
                 ", title='" + title + '\'' +
                 ", productDescription='" + productDescription + '\'' +
-                ", imageUrls=" + imageUrls +
+                ", imageUrlsExt=" + imageUrlsExt +
                 ", productFamily=" + Arrays.toString(productFamily) +
                 ", mrp=" + mrp +
                 ", fsp=" + fsp +

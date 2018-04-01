@@ -1,4 +1,4 @@
-package com.shandilya.populate.flipkart.external.domains.airconditioner;
+package com.shandilya.populate.flipkart.external.domains.urlcommons;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -6,7 +6,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.List;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Master {
+public class MasterExt {
 
     @JsonProperty("nextUrl")
     private String nextUrl;
@@ -18,7 +18,7 @@ public class Master {
     private String lastProductId;
 
     @JsonProperty("products")
-    private List<Products> products;
+    private List<ProductsExt> products;
 
     public String getNextUrl() {
         return nextUrl;
@@ -44,11 +44,11 @@ public class Master {
         this.lastProductId = lastProductId;
     }
 
-    public List<Products> getProducts() {
+    public List<ProductsExt> getProducts() {
         return products;
     }
 
-    public void setProducts(List<Products> products) {
+    public void setProducts(List<ProductsExt> products) {
         this.products = products;
     }
 

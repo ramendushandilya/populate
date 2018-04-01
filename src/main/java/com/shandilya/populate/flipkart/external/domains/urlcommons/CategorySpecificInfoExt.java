@@ -1,4 +1,4 @@
-package com.shandilya.populate.flipkart.external.domains.airconditioner;
+package com.shandilya.populate.flipkart.external.domains.urlcommons;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -6,7 +6,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.Arrays;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class CategorySpecificInfo {
+public class CategorySpecificInfoExt {
 
     @JsonProperty("keySpecs")
     private String[] keySpecs;
@@ -43,7 +43,7 @@ public class CategorySpecificInfo {
 
     @Override
     public String toString() {
-        return "CategorySpecificInfo{" +
+        return "CategorySpecificInfoExt{" +
                 "keySpecs=" + Arrays.toString(keySpecs) +
                 ", detailedSpecs=" + Arrays.toString(detailedSpecs) +
                 ", specificationList=" + Arrays.toString(specificationList) +

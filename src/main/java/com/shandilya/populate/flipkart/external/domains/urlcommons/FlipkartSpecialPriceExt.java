@@ -1,10 +1,10 @@
-package com.shandilya.populate.flipkart.external.domains.airconditioner;
+package com.shandilya.populate.flipkart.external.domains.urlcommons;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class FlipkartSellingPrice {
+public class FlipkartSpecialPriceExt {
 
     @JsonProperty("amount")
     private String amount;
@@ -30,7 +30,7 @@ public class FlipkartSellingPrice {
 
     @Override
     public String toString() {
-        return "FlipkartSellingPrice{" +
+        return "FlipkartSpecialPriceExt{" +
                 "amount='" + amount + '\'' +
                 ", currency='" + currency + '\'' +
                 '}';

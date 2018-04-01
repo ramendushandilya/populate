@@ -1,4 +1,4 @@
-package com.shandilya.populate.flipkart.external.domains.airconditioner;
+package com.shandilya.populate.flipkart.external.domains.urlcommons;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -6,7 +6,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.Arrays;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Values {
+public class ValuesExt {
 
     @JsonProperty("value")
     private String[] value;
@@ -32,7 +32,7 @@ public class Values {
 
     @Override
     public String toString() {
-        return "Values{" +
+        return "ValuesExt{" +
                 "value=" + Arrays.toString(value) +
                 ", key='" + key + '\'' +
                 '}';

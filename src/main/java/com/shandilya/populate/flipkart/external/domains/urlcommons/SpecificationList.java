@@ -1,4 +1,4 @@
-package com.shandilya.populate.flipkart.external.domains.airconditioner;
+package com.shandilya.populate.flipkart.external.domains.urlcommons;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -9,16 +9,16 @@ import java.util.Arrays;
 public class SpecificationList {
 
     @JsonProperty("values")
-    private Values[] values;
+    private ValuesExt[] values;
 
     @JsonProperty("key")
     private String key;
 
-    public Values[] getValues() {
+    public ValuesExt[] getValues() {
         return values;
     }
 
-    public void setValues(Values[] values) {
+    public void setValues(ValuesExt[] values) {
         this.values = values;
     }
 

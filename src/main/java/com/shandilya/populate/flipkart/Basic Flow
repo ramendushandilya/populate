@@ -1,0 +1,6 @@
+
+** CategoryServiceImpl.getProductCategoryUrls => map of Category name and Category Seed URL
+
+** ProductUrlAggregatorServiceImpl.getAllProducts => list of all Products of a particular category
+
+**

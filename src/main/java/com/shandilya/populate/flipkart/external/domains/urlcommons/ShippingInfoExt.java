@@ -1,13 +1,13 @@
-package com.shandilya.populate.flipkart.external.domains.airconditioner;
+package com.shandilya.populate.flipkart.external.domains.urlcommons;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class ShippingInfo {
+public class ShippingInfoExt {
 
-    @JsonProperty("shippingCharges")
-    private ShippingCharges shippingCharges;
+    @JsonProperty("shippingChargesExt")
+    private ShippingChargesExt shippingChargesExt;
 
     @JsonProperty("estimatedDeliveryTime")
     private String estimatedDeliveryTime;
@@ -24,12 +24,12 @@ public class ShippingInfo {
     @JsonProperty("sellerNoOfReviews")
     private String sellerNoOfReviews;
 
-    public ShippingCharges getShippingCharges() {
-        return shippingCharges;
+    public ShippingChargesExt getShippingChargesExt() {
+        return shippingChargesExt;
     }
 
-    public void setShippingCharges(ShippingCharges shippingCharges) {
-        this.shippingCharges = shippingCharges;
+    public void setShippingChargesExt(ShippingChargesExt shippingChargesExt) {
+        this.shippingChargesExt = shippingChargesExt;
     }
 
     public String getEstimatedDeliveryTime() {
@@ -74,8 +74,8 @@ public class ShippingInfo {
 
     @Override
     public String toString() {
-        return "ShippingInfo{" +
-                "shippingCharges=" + shippingCharges +
+        return "ShippingInfoExt{" +
+                "shippingChargesExt=" + shippingChargesExt +
                 ", estimatedDeliveryTime='" + estimatedDeliveryTime + '\'' +
                 ", sellerName='" + sellerName + '\'' +
                 ", sellerAverageRating='" + sellerAverageRating + '\'' +
