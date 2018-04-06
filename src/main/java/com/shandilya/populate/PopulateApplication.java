@@ -29,18 +29,6 @@ public class PopulateApplication implements CommandLineRunner{
 
 	@Override
 	public void run(String... args) throws Exception {
-		//String acSeed = categoryService.getProductCategoryUrls().get("AirConditioners");
-		//String acSeed = categoryService.getProductCategoryUrls().get("AirConditioners");
-		/*List<String> acs = aggregatorService.getItemSetUrls(acSeed);
-
-		for(String st : acs) {
-			System.out.println(st);
-		}*/
-
-		//List<ProductsExt> acs = aggregatorService.getAllProducts("AirConditioners");
-		//System.out.println("size = "+acs.size());
-
-		//persistenceService.saveAcs();
 
 		persistenceService.saveAcs();
 		System.out.println("Rest of the functionality executed");
