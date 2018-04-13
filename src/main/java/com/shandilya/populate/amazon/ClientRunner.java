@@ -38,10 +38,9 @@ public class ClientRunner {
         params.put("Operation", "ItemSearch");
         params.put("AWSAccessKeyId", ACCESS_KEY_ID);
         params.put("AssociateTag", "viraltea-21");
-        params.put("SearchIndex", "Books");
-        params.put("Keywords", "Harry potter");
-        params.put("ResponseGroup", "Images, ItemAttributes, Offers");
-        params.put("ItemPage", "4");
+        params.put("SearchIndex", "Electronics");
+        params.put("Keywords", "mobile");
+        //params.put("ItemPage", "1");
 
         requestUrl = requestsHelper.sign(params);
 

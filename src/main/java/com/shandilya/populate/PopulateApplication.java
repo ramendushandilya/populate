@@ -31,6 +31,7 @@ public class PopulateApplication implements CommandLineRunner{
 	public void run(String... args) throws Exception {
 
 		persistenceService.saveAcs();
+		persistenceService.saveAudioPlayers();
 		System.out.println("Rest of the functionality executed");
 	}
 }

@@ -1,0 +1,3017 @@
+<?xml version="1.0" ?>
+<ItemSearchResponse xmlns="http://webservices.amazon.com/AWSECommerceService/2011-08-01">
+    <OperationRequest>
+        <HTTPHeaders>
+            <Header Name="UserAgent" Value="Java/1.8.0_111"></Header>
+        </HTTPHeaders>
+        <RequestId>e6b7fd58-b7f8-4144-b7e4-b5b970d04f26</RequestId>
+        <Arguments>
+            <Argument Name="AWSAccessKeyId" Value="AKIAJU3XGZ3JCC5XJ4XQ"></Argument>
+            <Argument Name="AssociateTag" Value="viraltea-21"></Argument>
+            <Argument Name="ItemPage" Value="1"></Argument>
+            <Argument Name="Keywords" Value="Harry potter"></Argument>
+            <Argument Name="Operation" Value="ItemSearch"></Argument>
+            <Argument Name="ResponseGroup" Value="Images, ItemAttributes, Offers"></Argument>
+            <Argument Name="SearchIndex" Value="Books"></Argument>
+            <Argument Name="Service" Value="AWSECommerceService"></Argument>
+            <Argument Name="Timestamp" Value="2018-04-06T08:58:39Z"></Argument>
+            <Argument Name="Signature" Value="lSJc3IBrNptYgSbcuQNCj469WJ/HjKSYBVgFgZrDKfY="></Argument>
+        </Arguments>
+        <RequestProcessingTime>0.5501622260000000</RequestProcessingTime>
+    </OperationRequest>
+    <Items>
+        <Request>
+            <IsValid>True</IsValid>
+            <ItemSearchRequest>
+                <ItemPage>1</ItemPage>
+                <Keywords>Harry potter</Keywords>
+                <ResponseGroup>Images</ResponseGroup>
+                <ResponseGroup>ItemAttributes</ResponseGroup>
+                <ResponseGroup>Offers</ResponseGroup>
+                <SearchIndex>Books</SearchIndex>
+            </ItemSearchRequest>
+        </Request>
+        <TotalResults>5060</TotalResults>
+        <TotalPages>506</TotalPages>
+        <MoreSearchResultsUrl>https://www.amazon.in/gp/search?linkCode=xm2&amp;SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;keywords=Harry%20potter&amp;tag=viraltea-21&amp;creative=165953&amp;url=search-alias%3Dstripbooks&amp;camp=2025</MoreSearchResultsUrl>
+        <Item>
+            <ASIN>1408855658</ASIN>
+            <DetailPageURL>
+                https://www.amazon.in/Harry-Potter-Philosophers-Stone-Rowling/dp/1408855658?SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1408855658
+            </DetailPageURL>
+            <ItemLinks>
+                <ItemLink>
+                    <Description>Add To Wishlist</Description>
+                    <URL>https://www.amazon.in/gp/registry/wishlist/add-item.html?asin.0=1408855658&amp;SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1408855658</URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>Tell A Friend</Description>
+                    <URL>https://www.amazon.in/gp/pdp/taf/1408855658?SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1408855658</URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Customer Reviews</Description>
+                    <URL>https://www.amazon.in/review/product/1408855658?SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1408855658</URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Offers</Description>
+                    <URL>https://www.amazon.in/gp/offer-listing/1408855658?SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1408855658</URL>
+                </ItemLink>
+            </ItemLinks>
+            <SmallImage>
+                <URL>https://images-eu.ssl-images-amazon.com/images/I/51Jo86j4XmL._SL75_.jpg</URL>
+                <Height Units="pixels">75</Height>
+                <Width Units="pixels">50</Width>
+            </SmallImage>
+            <MediumImage>
+                <URL>https://images-eu.ssl-images-amazon.com/images/I/51Jo86j4XmL._SL160_.jpg</URL>
+                <Height Units="pixels">160</Height>
+                <Width Units="pixels">107</Width>
+            </MediumImage>
+            <LargeImage>
+                <URL>https://images-eu.ssl-images-amazon.com/images/I/51Jo86j4XmL.jpg</URL>
+                <Height Units="pixels">500</Height>
+                <Width Units="pixels">334</Width>
+            </LargeImage>
+            <ImageSets>
+                <ImageSet Category="swatch">
+                    <SwatchImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51M9AZSXS4L._SL30_.jpg</URL>
+                        <Height Units="pixels">30</Height>
+                        <Width Units="pixels">20</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51M9AZSXS4L._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">49</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51M9AZSXS4L._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">49</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51M9AZSXS4L._SL110_.jpg</URL>
+                        <Height Units="pixels">110</Height>
+                        <Width Units="pixels">72</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51M9AZSXS4L._SL160_.jpg</URL>
+                        <Height Units="pixels">160</Height>
+                        <Width Units="pixels">104</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51M9AZSXS4L.jpg</URL>
+                        <Height Units="pixels">500</Height>
+                        <Width Units="pixels">326</Width>
+                    </LargeImage>
+                </ImageSet>
+                <ImageSet Category="variant">
+                    <SwatchImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51kdIBI0MlL._SL30_.jpg</URL>
+                        <Height Units="pixels">30</Height>
+                        <Width Units="pixels">19</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51kdIBI0MlL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">48</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51kdIBI0MlL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">48</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51kdIBI0MlL._SL110_.jpg</URL>
+                        <Height Units="pixels">110</Height>
+                        <Width Units="pixels">71</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51kdIBI0MlL._SL160_.jpg</URL>
+                        <Height Units="pixels">160</Height>
+                        <Width Units="pixels">103</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51kdIBI0MlL.jpg</URL>
+                        <Height Units="pixels">500</Height>
+                        <Width Units="pixels">323</Width>
+                    </LargeImage>
+                </ImageSet>
+                <ImageSet Category="variant">
+                    <SwatchImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/41k1W1q9pNL._SL30_.jpg</URL>
+                        <Height Units="pixels">30</Height>
+                        <Width Units="pixels">22</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/41k1W1q9pNL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">56</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/41k1W1q9pNL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">56</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/41k1W1q9pNL._SL110_.jpg</URL>
+                        <Height Units="pixels">110</Height>
+                        <Width Units="pixels">82</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/41k1W1q9pNL._SL160_.jpg</URL>
+                        <Height Units="pixels">160</Height>
+                        <Width Units="pixels">120</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/41k1W1q9pNL.jpg</URL>
+                        <Height Units="pixels">500</Height>
+                        <Width Units="pixels">375</Width>
+                    </LargeImage>
+                </ImageSet>
+                <ImageSet Category="primary">
+                    <SwatchImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51Jo86j4XmL._SL30_.jpg</URL>
+                        <Height Units="pixels">30</Height>
+                        <Width Units="pixels">20</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51Jo86j4XmL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">50</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51Jo86j4XmL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">50</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51Jo86j4XmL._SL110_.jpg</URL>
+                        <Height Units="pixels">110</Height>
+                        <Width Units="pixels">73</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51Jo86j4XmL._SL160_.jpg</URL>
+                        <Height Units="pixels">160</Height>
+                        <Width Units="pixels">107</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51Jo86j4XmL.jpg</URL>
+                        <Height Units="pixels">500</Height>
+                        <Width Units="pixels">334</Width>
+                    </LargeImage>
+                </ImageSet>
+            </ImageSets>
+            <ItemAttributes>
+                <AudienceRating>Suitable for 18 years and over</AudienceRating>
+                <Author>J.K. Rowling</Author>
+                <Binding>Paperback</Binding>
+                <Brand>imusti</Brand>
+                <EAN>9781408855652</EAN>
+                <EANList>
+                    <EANListElement>9781408855652</EANListElement>
+                    <EANListElement>0689724602419</EANListElement>
+                    <EANListElement>8601418346807</EANListElement>
+                </EANList>
+                <Feature>Bloomsbury Childrens Books</Feature>
+                <IsAdultProduct>0</IsAdultProduct>
+                <ISBN>1408855658</ISBN>
+                <ItemDimensions>
+                    <Height Units="hundredths-inches">780</Height>
+                    <Length Units="hundredths-inches">504</Length>
+                    <Weight Units="hundredths-pounds">66</Weight>
+                    <Width Units="hundredths-inches">91</Width>
+                </ItemDimensions>
+                <Label>Bloomsbury Press</Label>
+                <Languages>
+                    <Language>
+                        <Name>English</Name>
+                        <Type>Published</Type>
+                    </Language>
+                    <Language>
+                        <Name>Old English</Name>
+                        <Type>Translation</Type>
+                    </Language>
+                    <Language>
+                        <Name>Buryat</Name>
+                        <Type>Dictionary</Type>
+                    </Language>
+                    <Language>
+                        <Name>Afrihili</Name>
+                        <Type>Parallel</Type>
+                    </Language>
+                    <Language>
+                        <Name>English</Name>
+                        <Type>Original Language</Type>
+                    </Language>
+                    <Language>
+                        <Name>English</Name>
+                        <Type>Unknown</Type>
+                    </Language>
+                </Languages>
+                <LegalDisclaimer>Good quality</LegalDisclaimer>
+                <ListPrice>
+                    <Amount>39900</Amount>
+                    <CurrencyCode>INR</CurrencyCode>
+                    <FormattedPrice>INR 399.00</FormattedPrice>
+                </ListPrice>
+                <Manufacturer>Bloomsbury Press</Manufacturer>
+                <MPN>22257913</MPN>
+                <NumberOfPages>352</NumberOfPages>
+                <PackageDimensions>
+                    <Height Units="hundredths-inches">83</Height>
+                    <Length Units="hundredths-inches">787</Length>
+                    <Weight Units="hundredths-pounds">62</Weight>
+                    <Width Units="hundredths-inches">512</Width>
+                </PackageDimensions>
+                <PackageQuantity>83</PackageQuantity>
+                <PartNumber>22257913</PartNumber>
+                <ProductGroup>Book</ProductGroup>
+                <ProductTypeName>ABIS_BOOK</ProductTypeName>
+                <PublicationDate>2014-09-03</PublicationDate>
+                <Publisher>Bloomsbury Press</Publisher>
+                <Studio>Bloomsbury Press</Studio>
+                <Title>Harry Potter and the Philosopher's Stone</Title>
+                <UPC>689724602419</UPC>
+                <UPCList>
+                    <UPCListElement>689724602419</UPCListElement>
+                </UPCList>
+            </ItemAttributes>
+            <OfferSummary>
+                <LowestNewPrice>
+                    <Amount>23180</Amount>
+                    <CurrencyCode>INR</CurrencyCode>
+                    <FormattedPrice>INR 231.80</FormattedPrice>
+                </LowestNewPrice>
+                <TotalNew>117</TotalNew>
+                <TotalUsed>0</TotalUsed>
+                <TotalCollectible>0</TotalCollectible>
+                <TotalRefurbished>0</TotalRefurbished>
+            </OfferSummary>
+            <Offers>
+                <TotalOffers>1</TotalOffers>
+                <TotalOfferPages>1</TotalOfferPages>
+                <MoreOffersUrl>https://www.amazon.in/gp/offer-listing/1408855658?SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1408855658</MoreOffersUrl>
+                <Offer>
+                    <OfferAttributes>
+                        <Condition>New</Condition>
+                    </OfferAttributes>
+                    <OfferListing>
+                        <OfferListingId>
+                            wOAM3KYsndO8pJUcXOQSqSfjBrEnRVm1pK7OyvxquGWwq4cZUltmkKDSUvPUFDaJEDWry9J4LsEYwREa3Hup0oG3PoAsnCKsa%2BXkZrhenIbQ0%2BJJCLXJiHkLv2kXSoLMB49xuW3gG3KdprBGGRsDZMbGJGC3%2FbSV
+                        </OfferListingId>
+                        <Price>
+                            <Amount>24800</Amount>
+                            <CurrencyCode>INR</CurrencyCode>
+                            <FormattedPrice>INR 248.00</FormattedPrice>
+                        </Price>
+                        <AmountSaved>
+                            <Amount>15100</Amount>
+                            <CurrencyCode>INR</CurrencyCode>
+                            <FormattedPrice>INR 151.00</FormattedPrice>
+                        </AmountSaved>
+                        <PercentageSaved>38</PercentageSaved>
+                        <Availability>Usually dispatched within 24 hours</Availability>
+                        <AvailabilityAttributes>
+                            <AvailabilityType>now</AvailabilityType>
+                            <MinimumHours>0</MinimumHours>
+                            <MaximumHours>0</MaximumHours>
+                        </AvailabilityAttributes>
+                        <IsEligibleForSuperSaverShipping>1</IsEligibleForSuperSaverShipping>
+                        <IsEligibleForPrime>1</IsEligibleForPrime>
+                    </OfferListing>
+                </Offer>
+            </Offers>
+        </Item>
+        <Item>
+            <ASIN>1408855666</ASIN>
+            <DetailPageURL>
+                https://www.amazon.in/Harry-Potter-Chamber-Secrets/dp/1408855666?SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1408855666
+            </DetailPageURL>
+            <ItemLinks>
+                <ItemLink>
+                    <Description>Add To Wishlist</Description>
+                    <URL>https://www.amazon.in/gp/registry/wishlist/add-item.html?asin.0=1408855666&amp;SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1408855666</URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>Tell A Friend</Description>
+                    <URL>https://www.amazon.in/gp/pdp/taf/1408855666?SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1408855666</URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Customer Reviews</Description>
+                    <URL>https://www.amazon.in/review/product/1408855666?SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1408855666</URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Offers</Description>
+                    <URL>https://www.amazon.in/gp/offer-listing/1408855666?SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1408855666</URL>
+                </ItemLink>
+            </ItemLinks>
+            <SmallImage>
+                <URL>https://images-eu.ssl-images-amazon.com/images/I/51rTKcTy-AL._SL75_.jpg</URL>
+                <Height Units="pixels">75</Height>
+                <Width Units="pixels">49</Width>
+            </SmallImage>
+            <MediumImage>
+                <URL>https://images-eu.ssl-images-amazon.com/images/I/51rTKcTy-AL._SL160_.jpg</URL>
+                <Height Units="pixels">160</Height>
+                <Width Units="pixels">104</Width>
+            </MediumImage>
+            <LargeImage>
+                <URL>https://images-eu.ssl-images-amazon.com/images/I/51rTKcTy-AL.jpg</URL>
+                <Height Units="pixels">500</Height>
+                <Width Units="pixels">326</Width>
+            </LargeImage>
+            <ImageSets>
+                <ImageSet Category="variant">
+                    <SwatchImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/5191isFAtRL._SL30_.jpg</URL>
+                        <Height Units="pixels">30</Height>
+                        <Width Units="pixels">20</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/5191isFAtRL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">49</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/5191isFAtRL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">49</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/5191isFAtRL._SL110_.jpg</URL>
+                        <Height Units="pixels">110</Height>
+                        <Width Units="pixels">72</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/5191isFAtRL._SL160_.jpg</URL>
+                        <Height Units="pixels">160</Height>
+                        <Width Units="pixels">104</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/5191isFAtRL.jpg</URL>
+                        <Height Units="pixels">500</Height>
+                        <Width Units="pixels">325</Width>
+                    </LargeImage>
+                </ImageSet>
+                <ImageSet Category="variant">
+                    <SwatchImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/41CvugDkDnL._SL30_.jpg</URL>
+                        <Height Units="pixels">30</Height>
+                        <Width Units="pixels">22</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/41CvugDkDnL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">56</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/41CvugDkDnL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">56</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/41CvugDkDnL._SL110_.jpg</URL>
+                        <Height Units="pixels">110</Height>
+                        <Width Units="pixels">82</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/41CvugDkDnL._SL160_.jpg</URL>
+                        <Height Units="pixels">160</Height>
+                        <Width Units="pixels">120</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/41CvugDkDnL.jpg</URL>
+                        <Height Units="pixels">500</Height>
+                        <Width Units="pixels">375</Width>
+                    </LargeImage>
+                </ImageSet>
+                <ImageSet Category="primary">
+                    <SwatchImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51rTKcTy-AL._SL30_.jpg</URL>
+                        <Height Units="pixels">30</Height>
+                        <Width Units="pixels">20</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51rTKcTy-AL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">49</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51rTKcTy-AL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">49</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51rTKcTy-AL._SL110_.jpg</URL>
+                        <Height Units="pixels">110</Height>
+                        <Width Units="pixels">72</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51rTKcTy-AL._SL160_.jpg</URL>
+                        <Height Units="pixels">160</Height>
+                        <Width Units="pixels">104</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51rTKcTy-AL.jpg</URL>
+                        <Height Units="pixels">500</Height>
+                        <Width Units="pixels">326</Width>
+                    </LargeImage>
+                </ImageSet>
+            </ImageSets>
+            <ItemAttributes>
+                <Author>J.K. Rowling</Author>
+                <Binding>Paperback</Binding>
+                <Brand>imusti</Brand>
+                <EAN>9781408855669</EAN>
+                <EANList>
+                    <EANListElement>8601404379192</EANListElement>
+                    <EANListElement>9781408855669</EANListElement>
+                </EANList>
+                <Edition>Latest</Edition>
+                <Feature>Bloomsbury Childrens Books</Feature>
+                <IsAdultProduct>0</IsAdultProduct>
+                <ISBN>1408855666</ISBN>
+                <ItemDimensions>
+                    <Height Units="hundredths-inches">508</Height>
+                    <Length Units="hundredths-inches">776</Length>
+                    <Weight Units="hundredths-pounds">77</Weight>
+                    <Width Units="hundredths-inches">138</Width>
+                </ItemDimensions>
+                <Label>Bloomsbury Press</Label>
+                <Languages>
+                    <Language>
+                        <Name>English</Name>
+                        <Type>Published</Type>
+                    </Language>
+                    <Language>
+                        <Name>English</Name>
+                        <Type>Original Language</Type>
+                    </Language>
+                    <Language>
+                        <Name>English</Name>
+                        <Type>Unknown</Type>
+                    </Language>
+                </Languages>
+                <ListPrice>
+                    <Amount>49900</Amount>
+                    <CurrencyCode>INR</CurrencyCode>
+                    <FormattedPrice>INR 499.00</FormattedPrice>
+                </ListPrice>
+                <Manufacturer>Bloomsbury Press</Manufacturer>
+                <MPN>22256805</MPN>
+                <NumberOfPages>256</NumberOfPages>
+                <PackageDimensions>
+                    <Height Units="hundredths-inches">110</Height>
+                    <Length Units="hundredths-inches">772</Length>
+                    <Weight Units="hundredths-pounds">66</Weight>
+                    <Width Units="hundredths-inches">504</Width>
+                </PackageDimensions>
+                <PackageQuantity>23</PackageQuantity>
+                <PartNumber>22256805</PartNumber>
+                <ProductGroup>Book</ProductGroup>
+                <ProductTypeName>ABIS_BOOK</ProductTypeName>
+                <PublicationDate>2014-09-03</PublicationDate>
+                <Publisher>Bloomsbury Press</Publisher>
+                <Studio>Bloomsbury Press</Studio>
+                <Title>Harry Potter and the Chamber of Secrets (Harry Potter 2)</Title>
+            </ItemAttributes>
+            <OfferSummary>
+                <LowestNewPrice>
+                    <Amount>22900</Amount>
+                    <CurrencyCode>INR</CurrencyCode>
+                    <FormattedPrice>INR 229.00</FormattedPrice>
+                </LowestNewPrice>
+                <TotalNew>108</TotalNew>
+                <TotalUsed>0</TotalUsed>
+                <TotalCollectible>0</TotalCollectible>
+                <TotalRefurbished>0</TotalRefurbished>
+            </OfferSummary>
+            <Offers>
+                <TotalOffers>1</TotalOffers>
+                <TotalOfferPages>1</TotalOfferPages>
+                <MoreOffersUrl>https://www.amazon.in/gp/offer-listing/1408855666?SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1408855666</MoreOffersUrl>
+                <Offer>
+                    <OfferAttributes>
+                        <Condition>New</Condition>
+                    </OfferAttributes>
+                    <OfferListing>
+                        <OfferListingId>
+                            wOAM3KYsndO8pJUcXOQSqdmQ853jLJPgfeED7e1OLLA34aB4hweCNsIxgtcIbmaDR4f5Daa8cCZXEiXO6vCb7BQsr6OMfsGEQS1y7YOu5BT%2BFATLVJKo2eqj%2FsZaCnhp%2FicruV6Nxy2yGN09q261g6J70rKanr9u
+                        </OfferListingId>
+                        <Price>
+                            <Amount>28900</Amount>
+                            <CurrencyCode>INR</CurrencyCode>
+                            <FormattedPrice>INR 289.00</FormattedPrice>
+                        </Price>
+                        <AmountSaved>
+                            <Amount>21000</Amount>
+                            <CurrencyCode>INR</CurrencyCode>
+                            <FormattedPrice>INR 210.00</FormattedPrice>
+                        </AmountSaved>
+                        <PercentageSaved>42</PercentageSaved>
+                        <Availability>Usually dispatched within 24 hours</Availability>
+                        <AvailabilityAttributes>
+                            <AvailabilityType>now</AvailabilityType>
+                            <MinimumHours>0</MinimumHours>
+                            <MaximumHours>0</MaximumHours>
+                        </AvailabilityAttributes>
+                        <IsEligibleForSuperSaverShipping>1</IsEligibleForSuperSaverShipping>
+                        <IsEligibleForPrime>1</IsEligibleForPrime>
+                    </OfferListing>
+                </Offer>
+            </Offers>
+        </Item>
+        <Item>
+            <ASIN>1408856778</ASIN>
+            <DetailPageURL>
+                https://www.amazon.in/Harry-Potter-ChildrenS-Paperback-Rowling/dp/1408856778?SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1408856778
+            </DetailPageURL>
+            <ItemLinks>
+                <ItemLink>
+                    <Description>Add To Wishlist</Description>
+                    <URL>https://www.amazon.in/gp/registry/wishlist/add-item.html?asin.0=1408856778&amp;SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1408856778</URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>Tell A Friend</Description>
+                    <URL>https://www.amazon.in/gp/pdp/taf/1408856778?SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1408856778</URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Customer Reviews</Description>
+                    <URL>https://www.amazon.in/review/product/1408856778?SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1408856778</URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Offers</Description>
+                    <URL>https://www.amazon.in/gp/offer-listing/1408856778?SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1408856778</URL>
+                </ItemLink>
+            </ItemLinks>
+            <SmallImage>
+                <URL>https://images-eu.ssl-images-amazon.com/images/I/51sY%2B4-v9EL._SL75_.jpg</URL>
+                <Height Units="pixels">61</Height>
+                <Width Units="pixels">75</Width>
+            </SmallImage>
+            <MediumImage>
+                <URL>https://images-eu.ssl-images-amazon.com/images/I/51sY%2B4-v9EL._SL160_.jpg</URL>
+                <Height Units="pixels">131</Height>
+                <Width Units="pixels">160</Width>
+            </MediumImage>
+            <LargeImage>
+                <URL>https://images-eu.ssl-images-amazon.com/images/I/51sY%2B4-v9EL.jpg</URL>
+                <Height Units="pixels">409</Height>
+                <Width Units="pixels">500</Width>
+            </LargeImage>
+            <ImageSets>
+                <ImageSet Category="variant">
+                    <SwatchImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51dleZa49gL._SL30_.jpg</URL>
+                        <Height Units="pixels">24</Height>
+                        <Width Units="pixels">30</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51dleZa49gL._SL75_.jpg</URL>
+                        <Height Units="pixels">60</Height>
+                        <Width Units="pixels">75</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51dleZa49gL._SL75_.jpg</URL>
+                        <Height Units="pixels">60</Height>
+                        <Width Units="pixels">75</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51dleZa49gL._SL110_.jpg</URL>
+                        <Height Units="pixels">88</Height>
+                        <Width Units="pixels">110</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51dleZa49gL._SL160_.jpg</URL>
+                        <Height Units="pixels">128</Height>
+                        <Width Units="pixels">160</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51dleZa49gL.jpg</URL>
+                        <Height Units="pixels">399</Height>
+                        <Width Units="pixels">500</Width>
+                    </LargeImage>
+                </ImageSet>
+                <ImageSet Category="variant">
+                    <SwatchImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/518UaanaWIL._SL30_.jpg</URL>
+                        <Height Units="pixels">20</Height>
+                        <Width Units="pixels">30</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/518UaanaWIL._SL75_.jpg</URL>
+                        <Height Units="pixels">51</Height>
+                        <Width Units="pixels">75</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/518UaanaWIL._SL75_.jpg</URL>
+                        <Height Units="pixels">51</Height>
+                        <Width Units="pixels">75</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/518UaanaWIL._SL110_.jpg</URL>
+                        <Height Units="pixels">74</Height>
+                        <Width Units="pixels">110</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/518UaanaWIL._SL160_.jpg</URL>
+                        <Height Units="pixels">108</Height>
+                        <Width Units="pixels">160</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/518UaanaWIL.jpg</URL>
+                        <Height Units="pixels">338</Height>
+                        <Width Units="pixels">500</Width>
+                    </LargeImage>
+                </ImageSet>
+                <ImageSet Category="variant">
+                    <SwatchImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51ikTBucs%2BL._SL30_.jpg</URL>
+                        <Height Units="pixels">17</Height>
+                        <Width Units="pixels">30</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51ikTBucs%2BL._SL75_.jpg</URL>
+                        <Height Units="pixels">44</Height>
+                        <Width Units="pixels">75</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51ikTBucs%2BL._SL75_.jpg</URL>
+                        <Height Units="pixels">44</Height>
+                        <Width Units="pixels">75</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51ikTBucs%2BL._SL110_.jpg</URL>
+                        <Height Units="pixels">64</Height>
+                        <Width Units="pixels">110</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51ikTBucs%2BL._SL160_.jpg</URL>
+                        <Height Units="pixels">93</Height>
+                        <Width Units="pixels">160</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51ikTBucs%2BL.jpg</URL>
+                        <Height Units="pixels">291</Height>
+                        <Width Units="pixels">500</Width>
+                    </LargeImage>
+                </ImageSet>
+                <ImageSet Category="variant">
+                    <SwatchImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51kOgDiT4gL._SL30_.jpg</URL>
+                        <Height Units="pixels">30</Height>
+                        <Width Units="pixels">28</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51kOgDiT4gL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">70</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51kOgDiT4gL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">70</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51kOgDiT4gL._SL110_.jpg</URL>
+                        <Height Units="pixels">110</Height>
+                        <Width Units="pixels">103</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51kOgDiT4gL._SL160_.jpg</URL>
+                        <Height Units="pixels">160</Height>
+                        <Width Units="pixels">150</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51kOgDiT4gL.jpg</URL>
+                        <Height Units="pixels">500</Height>
+                        <Width Units="pixels">470</Width>
+                    </LargeImage>
+                </ImageSet>
+                <ImageSet Category="variant">
+                    <SwatchImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51SIomTD83L._SL30_.jpg</URL>
+                        <Height Units="pixels">23</Height>
+                        <Width Units="pixels">30</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51SIomTD83L._SL75_.jpg</URL>
+                        <Height Units="pixels">57</Height>
+                        <Width Units="pixels">75</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51SIomTD83L._SL75_.jpg</URL>
+                        <Height Units="pixels">57</Height>
+                        <Width Units="pixels">75</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51SIomTD83L._SL110_.jpg</URL>
+                        <Height Units="pixels">84</Height>
+                        <Width Units="pixels">110</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51SIomTD83L._SL160_.jpg</URL>
+                        <Height Units="pixels">122</Height>
+                        <Width Units="pixels">160</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51SIomTD83L.jpg</URL>
+                        <Height Units="pixels">382</Height>
+                        <Width Units="pixels">500</Width>
+                    </LargeImage>
+                </ImageSet>
+                <ImageSet Category="variant">
+                    <SwatchImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/31SqzHwI6RL._SL30_.jpg</URL>
+                        <Height Units="pixels">15</Height>
+                        <Width Units="pixels">30</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/31SqzHwI6RL._SL75_.jpg</URL>
+                        <Height Units="pixels">38</Height>
+                        <Width Units="pixels">75</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/31SqzHwI6RL._SL75_.jpg</URL>
+                        <Height Units="pixels">38</Height>
+                        <Width Units="pixels">75</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/31SqzHwI6RL._SL110_.jpg</URL>
+                        <Height Units="pixels">56</Height>
+                        <Width Units="pixels">110</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/31SqzHwI6RL._SL160_.jpg</URL>
+                        <Height Units="pixels">81</Height>
+                        <Width Units="pixels">160</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/31SqzHwI6RL.jpg</URL>
+                        <Height Units="pixels">254</Height>
+                        <Width Units="pixels">500</Width>
+                    </LargeImage>
+                </ImageSet>
+                <ImageSet Category="variant">
+                    <SwatchImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51WTDu2LwBL._SL30_.jpg</URL>
+                        <Height Units="pixels">22</Height>
+                        <Width Units="pixels">30</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51WTDu2LwBL._SL75_.jpg</URL>
+                        <Height Units="pixels">54</Height>
+                        <Width Units="pixels">75</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51WTDu2LwBL._SL75_.jpg</URL>
+                        <Height Units="pixels">54</Height>
+                        <Width Units="pixels">75</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51WTDu2LwBL._SL110_.jpg</URL>
+                        <Height Units="pixels">80</Height>
+                        <Width Units="pixels">110</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51WTDu2LwBL._SL160_.jpg</URL>
+                        <Height Units="pixels">116</Height>
+                        <Width Units="pixels">160</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51WTDu2LwBL.jpg</URL>
+                        <Height Units="pixels">363</Height>
+                        <Width Units="pixels">500</Width>
+                    </LargeImage>
+                </ImageSet>
+                <ImageSet Category="variant">
+                    <SwatchImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/516ijdZ09FL._SL30_.jpg</URL>
+                        <Height Units="pixels">22</Height>
+                        <Width Units="pixels">30</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/516ijdZ09FL._SL75_.jpg</URL>
+                        <Height Units="pixels">54</Height>
+                        <Width Units="pixels">75</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/516ijdZ09FL._SL75_.jpg</URL>
+                        <Height Units="pixels">54</Height>
+                        <Width Units="pixels">75</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/516ijdZ09FL._SL110_.jpg</URL>
+                        <Height Units="pixels">80</Height>
+                        <Width Units="pixels">110</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/516ijdZ09FL._SL160_.jpg</URL>
+                        <Height Units="pixels">116</Height>
+                        <Width Units="pixels">160</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/516ijdZ09FL.jpg</URL>
+                        <Height Units="pixels">363</Height>
+                        <Width Units="pixels">500</Width>
+                    </LargeImage>
+                </ImageSet>
+                <ImageSet Category="variant">
+                    <SwatchImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51NcwglC%2BAL._SL30_.jpg</URL>
+                        <Height Units="pixels">21</Height>
+                        <Width Units="pixels">30</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51NcwglC%2BAL._SL75_.jpg</URL>
+                        <Height Units="pixels">54</Height>
+                        <Width Units="pixels">75</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51NcwglC%2BAL._SL75_.jpg</URL>
+                        <Height Units="pixels">54</Height>
+                        <Width Units="pixels">75</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51NcwglC%2BAL._SL110_.jpg</URL>
+                        <Height Units="pixels">79</Height>
+                        <Width Units="pixels">110</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51NcwglC%2BAL._SL160_.jpg</URL>
+                        <Height Units="pixels">114</Height>
+                        <Width Units="pixels">160</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51NcwglC%2BAL.jpg</URL>
+                        <Height Units="pixels">357</Height>
+                        <Width Units="pixels">500</Width>
+                    </LargeImage>
+                </ImageSet>
+                <ImageSet Category="variant">
+                    <SwatchImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/515N-LSlVvL._SL30_.jpg</URL>
+                        <Height Units="pixels">24</Height>
+                        <Width Units="pixels">30</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/515N-LSlVvL._SL75_.jpg</URL>
+                        <Height Units="pixels">59</Height>
+                        <Width Units="pixels">75</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/515N-LSlVvL._SL75_.jpg</URL>
+                        <Height Units="pixels">59</Height>
+                        <Width Units="pixels">75</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/515N-LSlVvL._SL110_.jpg</URL>
+                        <Height Units="pixels">86</Height>
+                        <Width Units="pixels">110</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/515N-LSlVvL._SL160_.jpg</URL>
+                        <Height Units="pixels">125</Height>
+                        <Width Units="pixels">160</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/515N-LSlVvL.jpg</URL>
+                        <Height Units="pixels">392</Height>
+                        <Width Units="pixels">500</Width>
+                    </LargeImage>
+                </ImageSet>
+                <ImageSet Category="variant">
+                    <SwatchImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51P30zhn6kL._SL30_.jpg</URL>
+                        <Height Units="pixels">21</Height>
+                        <Width Units="pixels">30</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51P30zhn6kL._SL75_.jpg</URL>
+                        <Height Units="pixels">52</Height>
+                        <Width Units="pixels">75</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51P30zhn6kL._SL75_.jpg</URL>
+                        <Height Units="pixels">52</Height>
+                        <Width Units="pixels">75</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51P30zhn6kL._SL110_.jpg</URL>
+                        <Height Units="pixels">77</Height>
+                        <Width Units="pixels">110</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51P30zhn6kL._SL160_.jpg</URL>
+                        <Height Units="pixels">111</Height>
+                        <Width Units="pixels">160</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51P30zhn6kL.jpg</URL>
+                        <Height Units="pixels">348</Height>
+                        <Width Units="pixels">500</Width>
+                    </LargeImage>
+                </ImageSet>
+                <ImageSet Category="variant">
+                    <SwatchImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51VVY-LGHJL._SL30_.jpg</URL>
+                        <Height Units="pixels">20</Height>
+                        <Width Units="pixels">30</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51VVY-LGHJL._SL75_.jpg</URL>
+                        <Height Units="pixels">50</Height>
+                        <Width Units="pixels">75</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51VVY-LGHJL._SL75_.jpg</URL>
+                        <Height Units="pixels">50</Height>
+                        <Width Units="pixels">75</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51VVY-LGHJL._SL110_.jpg</URL>
+                        <Height Units="pixels">74</Height>
+                        <Width Units="pixels">110</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51VVY-LGHJL._SL160_.jpg</URL>
+                        <Height Units="pixels">108</Height>
+                        <Width Units="pixels">160</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51VVY-LGHJL.jpg</URL>
+                        <Height Units="pixels">336</Height>
+                        <Width Units="pixels">500</Width>
+                    </LargeImage>
+                </ImageSet>
+                <ImageSet Category="variant">
+                    <SwatchImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51hmr83%2BJaL._SL30_.jpg</URL>
+                        <Height Units="pixels">30</Height>
+                        <Width Units="pixels">19</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51hmr83%2BJaL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">48</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51hmr83%2BJaL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">48</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51hmr83%2BJaL._SL110_.jpg</URL>
+                        <Height Units="pixels">110</Height>
+                        <Width Units="pixels">71</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51hmr83%2BJaL._SL160_.jpg</URL>
+                        <Height Units="pixels">160</Height>
+                        <Width Units="pixels">103</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51hmr83%2BJaL.jpg</URL>
+                        <Height Units="pixels">500</Height>
+                        <Width Units="pixels">321</Width>
+                    </LargeImage>
+                </ImageSet>
+                <ImageSet Category="primary">
+                    <SwatchImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51sY%2B4-v9EL._SL30_.jpg</URL>
+                        <Height Units="pixels">25</Height>
+                        <Width Units="pixels">30</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51sY%2B4-v9EL._SL75_.jpg</URL>
+                        <Height Units="pixels">61</Height>
+                        <Width Units="pixels">75</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51sY%2B4-v9EL._SL75_.jpg</URL>
+                        <Height Units="pixels">61</Height>
+                        <Width Units="pixels">75</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51sY%2B4-v9EL._SL110_.jpg</URL>
+                        <Height Units="pixels">90</Height>
+                        <Width Units="pixels">110</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51sY%2B4-v9EL._SL160_.jpg</URL>
+                        <Height Units="pixels">131</Height>
+                        <Width Units="pixels">160</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51sY%2B4-v9EL.jpg</URL>
+                        <Height Units="pixels">409</Height>
+                        <Width Units="pixels">500</Width>
+                    </LargeImage>
+                </ImageSet>
+            </ImageSets>
+            <ItemAttributes>
+                <Author>J.K. Rowling</Author>
+                <Binding>Paperback</Binding>
+                <Brand>imusti</Brand>
+                <CatalogNumberList>
+                    <CatalogNumberListElement>9781408856772</CatalogNumberListElement>
+                </CatalogNumberList>
+                <EAN>9781408856772</EAN>
+                <EANList>
+                    <EANListElement>9781408856772</EANListElement>
+                    <EANListElement>8601410696429</EANListElement>
+                </EANList>
+                <Feature>Bloomsbury Childrens Books</Feature>
+                <Format>Box set</Format>
+                <IsAdultProduct>0</IsAdultProduct>
+                <IsAutographed>0</IsAutographed>
+                <ISBN>1408856778</ISBN>
+                <IsMemorabilia>0</IsMemorabilia>
+                <ItemDimensions>
+                    <Height Units="hundredths-inches">819</Height>
+                    <Length Units="hundredths-inches">1039</Length>
+                    <Weight Units="hundredths-pounds">743</Weight>
+                    <Width Units="hundredths-inches">516</Width>
+                </ItemDimensions>
+                <Label>Bloomsbury Press</Label>
+                <Languages>
+                    <Language>
+                        <Name>English</Name>
+                        <Type>Published</Type>
+                    </Language>
+                    <Language>
+                        <Name>English</Name>
+                        <Type>Original Language</Type>
+                    </Language>
+                    <Language>
+                        <Name>English</Name>
+                        <Type>Unknown</Type>
+                    </Language>
+                </Languages>
+                <LegalDisclaimer>NEW BRAND AND GOOD QULITY</LegalDisclaimer>
+                <ListPrice>
+                    <Amount>425000</Amount>
+                    <CurrencyCode>INR</CurrencyCode>
+                    <FormattedPrice>INR 4,250.00</FormattedPrice>
+                </ListPrice>
+                <Manufacturer>Bloomsbury Press</Manufacturer>
+                <MPN>9781408856772</MPN>
+                <NumberOfItems>7</NumberOfItems>
+                <NumberOfPages>3422</NumberOfPages>
+                <PackageDimensions>
+                    <Height Units="hundredths-inches">520</Height>
+                    <Length Units="hundredths-inches">984</Length>
+                    <Weight Units="hundredths-pounds">741</Weight>
+                    <Width Units="hundredths-inches">803</Width>
+                </PackageDimensions>
+                <PackageQuantity>9</PackageQuantity>
+                <PartNumber>9781408856772</PartNumber>
+                <ProductGroup>Book</ProductGroup>
+                <ProductTypeName>ABIS_BOOK</ProductTypeName>
+                <PublicationDate>2014-12-01</PublicationDate>
+                <Publisher>Bloomsbury Press</Publisher>
+                <Studio>Bloomsbury Press</Studio>
+                <Title>Harry Potter 7 Volume Children'S Paperback Boxed Set by J.K. Rowling</Title>
+            </ItemAttributes>
+            <OfferSummary>
+                <LowestNewPrice>
+                    <Amount>299000</Amount>
+                    <CurrencyCode>INR</CurrencyCode>
+                    <FormattedPrice>INR 2,990.00</FormattedPrice>
+                </LowestNewPrice>
+                <TotalNew>64</TotalNew>
+                <TotalUsed>0</TotalUsed>
+                <TotalCollectible>0</TotalCollectible>
+                <TotalRefurbished>0</TotalRefurbished>
+            </OfferSummary>
+            <Offers>
+                <TotalOffers>1</TotalOffers>
+                <TotalOfferPages>1</TotalOfferPages>
+                <MoreOffersUrl>https://www.amazon.in/gp/offer-listing/1408856778?SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1408856778</MoreOffersUrl>
+                <Offer>
+                    <OfferAttributes>
+                        <Condition>New</Condition>
+                    </OfferAttributes>
+                    <OfferListing>
+                        <OfferListingId>
+                            wOAM3KYsndO8pJUcXOQSqUVSOTMO7qtKWwwFadLAhYlE3LlT%2BjhAcTYOiABqQTjYh93OqTbH6bfMQLNOgm%2FgIJDQqOzpbV66qnUmp8aJl9eJxT8ImiYMhojPdd1aUaiX9yuxZWM0lHBrczYd89zSDrhCnhrvgANp
+                        </OfferListingId>
+                        <Price>
+                            <Amount>299000</Amount>
+                            <CurrencyCode>INR</CurrencyCode>
+                            <FormattedPrice>INR 2,990.00</FormattedPrice>
+                        </Price>
+                        <AmountSaved>
+                            <Amount>126000</Amount>
+                            <CurrencyCode>INR</CurrencyCode>
+                            <FormattedPrice>INR 1,260.00</FormattedPrice>
+                        </AmountSaved>
+                        <PercentageSaved>30</PercentageSaved>
+                        <Availability>Usually dispatched within 24 hours</Availability>
+                        <AvailabilityAttributes>
+                            <AvailabilityType>now</AvailabilityType>
+                            <MinimumHours>0</MinimumHours>
+                            <MaximumHours>0</MaximumHours>
+                        </AvailabilityAttributes>
+                        <IsEligibleForSuperSaverShipping>1</IsEligibleForSuperSaverShipping>
+                        <IsEligibleForPrime>1</IsEligibleForPrime>
+                    </OfferListing>
+                </Offer>
+            </Offers>
+        </Item>
+        <Item>
+            <ASIN>1408855682</ASIN>
+            <DetailPageURL>
+                https://www.amazon.in/Harry-Potter-Goblet-Fire/dp/1408855682?SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1408855682
+            </DetailPageURL>
+            <ItemLinks>
+                <ItemLink>
+                    <Description>Add To Wishlist</Description>
+                    <URL>https://www.amazon.in/gp/registry/wishlist/add-item.html?asin.0=1408855682&amp;SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1408855682</URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>Tell A Friend</Description>
+                    <URL>https://www.amazon.in/gp/pdp/taf/1408855682?SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1408855682</URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Customer Reviews</Description>
+                    <URL>https://www.amazon.in/review/product/1408855682?SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1408855682</URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Offers</Description>
+                    <URL>https://www.amazon.in/gp/offer-listing/1408855682?SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1408855682</URL>
+                </ItemLink>
+            </ItemLinks>
+            <SmallImage>
+                <URL>https://images-eu.ssl-images-amazon.com/images/I/51sXaBnN62L._SL75_.jpg</URL>
+                <Height Units="pixels">75</Height>
+                <Width Units="pixels">50</Width>
+            </SmallImage>
+            <MediumImage>
+                <URL>https://images-eu.ssl-images-amazon.com/images/I/51sXaBnN62L._SL160_.jpg</URL>
+                <Height Units="pixels">160</Height>
+                <Width Units="pixels">107</Width>
+            </MediumImage>
+            <LargeImage>
+                <URL>https://images-eu.ssl-images-amazon.com/images/I/51sXaBnN62L.jpg</URL>
+                <Height Units="pixels">500</Height>
+                <Width Units="pixels">334</Width>
+            </LargeImage>
+            <ImageSets>
+                <ImageSet Category="swatch">
+                    <SwatchImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/517Sn5GJr6L._SL30_.jpg</URL>
+                        <Height Units="pixels">30</Height>
+                        <Width Units="pixels">20</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/517Sn5GJr6L._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">49</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/517Sn5GJr6L._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">49</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/517Sn5GJr6L._SL110_.jpg</URL>
+                        <Height Units="pixels">110</Height>
+                        <Width Units="pixels">72</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/517Sn5GJr6L._SL160_.jpg</URL>
+                        <Height Units="pixels">160</Height>
+                        <Width Units="pixels">104</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/517Sn5GJr6L.jpg</URL>
+                        <Height Units="pixels">500</Height>
+                        <Width Units="pixels">326</Width>
+                    </LargeImage>
+                </ImageSet>
+                <ImageSet Category="variant">
+                    <SwatchImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/519o4XzV0EL._SL30_.jpg</URL>
+                        <Height Units="pixels">30</Height>
+                        <Width Units="pixels">20</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/519o4XzV0EL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">49</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/519o4XzV0EL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">49</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/519o4XzV0EL._SL110_.jpg</URL>
+                        <Height Units="pixels">110</Height>
+                        <Width Units="pixels">72</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/519o4XzV0EL._SL160_.jpg</URL>
+                        <Height Units="pixels">160</Height>
+                        <Width Units="pixels">104</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/519o4XzV0EL.jpg</URL>
+                        <Height Units="pixels">500</Height>
+                        <Width Units="pixels">325</Width>
+                    </LargeImage>
+                </ImageSet>
+                <ImageSet Category="variant">
+                    <SwatchImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/41MwY4faklL._SL30_.jpg</URL>
+                        <Height Units="pixels">30</Height>
+                        <Width Units="pixels">22</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/41MwY4faklL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">56</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/41MwY4faklL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">56</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/41MwY4faklL._SL110_.jpg</URL>
+                        <Height Units="pixels">110</Height>
+                        <Width Units="pixels">82</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/41MwY4faklL._SL160_.jpg</URL>
+                        <Height Units="pixels">160</Height>
+                        <Width Units="pixels">120</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/41MwY4faklL.jpg</URL>
+                        <Height Units="pixels">500</Height>
+                        <Width Units="pixels">375</Width>
+                    </LargeImage>
+                </ImageSet>
+                <ImageSet Category="primary">
+                    <SwatchImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51sXaBnN62L._SL30_.jpg</URL>
+                        <Height Units="pixels">30</Height>
+                        <Width Units="pixels">20</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51sXaBnN62L._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">50</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51sXaBnN62L._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">50</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51sXaBnN62L._SL110_.jpg</URL>
+                        <Height Units="pixels">110</Height>
+                        <Width Units="pixels">73</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51sXaBnN62L._SL160_.jpg</URL>
+                        <Height Units="pixels">160</Height>
+                        <Width Units="pixels">107</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51sXaBnN62L.jpg</URL>
+                        <Height Units="pixels">500</Height>
+                        <Width Units="pixels">334</Width>
+                    </LargeImage>
+                </ImageSet>
+            </ImageSets>
+            <ItemAttributes>
+                <Author>J.K. Rowling</Author>
+                <Binding>Paperback</Binding>
+                <Brand>imusti</Brand>
+                <EAN>9781408855683</EAN>
+                <EANList>
+                    <EANListElement>8601418346777</EANListElement>
+                    <EANListElement>9781408855683</EANListElement>
+                    <EANListElement>8601404257445</EANListElement>
+                </EANList>
+                <Feature>Bloomsbury Childrens Books</Feature>
+                <IsAdultProduct>0</IsAdultProduct>
+                <ISBN>1408855682</ISBN>
+                <ItemDimensions>
+                    <Height Units="hundredths-inches">516</Height>
+                    <Length Units="hundredths-inches">776</Length>
+                    <Weight Units="hundredths-pounds">115</Weight>
+                    <Width Units="hundredths-inches">161</Width>
+                </ItemDimensions>
+                <Label>Bloomsbury Press</Label>
+                <Languages>
+                    <Language>
+                        <Name>English</Name>
+                        <Type>Published</Type>
+                    </Language>
+                    <Language>
+                        <Name>English</Name>
+                        <Type>Original Language</Type>
+                    </Language>
+                    <Language>
+                        <Name>English</Name>
+                        <Type>Unknown</Type>
+                    </Language>
+                </Languages>
+                <ListPrice>
+                    <Amount>69900</Amount>
+                    <CurrencyCode>INR</CurrencyCode>
+                    <FormattedPrice>INR 699.00</FormattedPrice>
+                </ListPrice>
+                <Manufacturer>Bloomsbury Press</Manufacturer>
+                <MPN>22256803</MPN>
+                <NumberOfPages>638</NumberOfPages>
+                <PackageDimensions>
+                    <Height Units="hundredths-inches">173</Height>
+                    <Length Units="hundredths-inches">780</Length>
+                    <Weight Units="hundredths-pounds">106</Weight>
+                    <Width Units="hundredths-inches">512</Width>
+                </PackageDimensions>
+                <PackageQuantity>101</PackageQuantity>
+                <PartNumber>22256803</PartNumber>
+                <ProductGroup>Book</ProductGroup>
+                <ProductTypeName>ABIS_BOOK</ProductTypeName>
+                <PublicationDate>2014-09-03</PublicationDate>
+                <Publisher>Bloomsbury Press</Publisher>
+                <Studio>Bloomsbury Press</Studio>
+                <Title>Harry Potter and the Goblet of Fire (Harry Potter 4)</Title>
+            </ItemAttributes>
+            <OfferSummary>
+                <LowestNewPrice>
+                    <Amount>45300</Amount>
+                    <CurrencyCode>INR</CurrencyCode>
+                    <FormattedPrice>INR 453.00</FormattedPrice>
+                </LowestNewPrice>
+                <LowestUsedPrice>
+                    <Amount>62400</Amount>
+                    <CurrencyCode>INR</CurrencyCode>
+                    <FormattedPrice>INR 624.00</FormattedPrice>
+                </LowestUsedPrice>
+                <TotalNew>100</TotalNew>
+                <TotalUsed>1</TotalUsed>
+                <TotalCollectible>0</TotalCollectible>
+                <TotalRefurbished>0</TotalRefurbished>
+            </OfferSummary>
+            <Offers>
+                <TotalOffers>1</TotalOffers>
+                <TotalOfferPages>1</TotalOfferPages>
+                <MoreOffersUrl>https://www.amazon.in/gp/offer-listing/1408855682?SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1408855682</MoreOffersUrl>
+                <Offer>
+                    <OfferAttributes>
+                        <Condition>New</Condition>
+                    </OfferAttributes>
+                    <OfferListing>
+                        <OfferListingId>
+                            wOAM3KYsndO8pJUcXOQSqTmSrBGEqVnbYV4UjhkMSn93q%2B4A2V7re65Wc35veA8OeJ7MMmQ56bPETG1UmlvGbZycK5ff1A%2FwsJnzvkr2BCdd%2FRY1LGvyuXnTHEB8WoRe87ng5luQDonR81vlM4H3Gb8KcQwsTVJs
+                        </OfferListingId>
+                        <Price>
+                            <Amount>51700</Amount>
+                            <CurrencyCode>INR</CurrencyCode>
+                            <FormattedPrice>INR 517.00</FormattedPrice>
+                        </Price>
+                        <AmountSaved>
+                            <Amount>18200</Amount>
+                            <CurrencyCode>INR</CurrencyCode>
+                            <FormattedPrice>INR 182.00</FormattedPrice>
+                        </AmountSaved>
+                        <PercentageSaved>26</PercentageSaved>
+                        <Availability>Usually dispatched within 24 hours</Availability>
+                        <AvailabilityAttributes>
+                            <AvailabilityType>now</AvailabilityType>
+                            <MinimumHours>0</MinimumHours>
+                            <MaximumHours>0</MaximumHours>
+                        </AvailabilityAttributes>
+                        <IsEligibleForSuperSaverShipping>1</IsEligibleForSuperSaverShipping>
+                        <IsEligibleForPrime>1</IsEligibleForPrime>
+                    </OfferListing>
+                </Offer>
+            </Offers>
+        </Item>
+        <Item>
+            <ASIN>1408855712</ASIN>
+            <DetailPageURL>
+                https://www.amazon.in/Harry-Potter-Deathly-Hallows/dp/1408855712?SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1408855712
+            </DetailPageURL>
+            <ItemLinks>
+                <ItemLink>
+                    <Description>Add To Wishlist</Description>
+                    <URL>https://www.amazon.in/gp/registry/wishlist/add-item.html?asin.0=1408855712&amp;SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1408855712</URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>Tell A Friend</Description>
+                    <URL>https://www.amazon.in/gp/pdp/taf/1408855712?SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1408855712</URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Customer Reviews</Description>
+                    <URL>https://www.amazon.in/review/product/1408855712?SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1408855712</URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Offers</Description>
+                    <URL>https://www.amazon.in/gp/offer-listing/1408855712?SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1408855712</URL>
+                </ItemLink>
+            </ItemLinks>
+            <SmallImage>
+                <URL>https://images-eu.ssl-images-amazon.com/images/I/51ALWqnWjkL._SL75_.jpg</URL>
+                <Height Units="pixels">75</Height>
+                <Width Units="pixels">52</Width>
+            </SmallImage>
+            <MediumImage>
+                <URL>https://images-eu.ssl-images-amazon.com/images/I/51ALWqnWjkL._SL160_.jpg</URL>
+                <Height Units="pixels">160</Height>
+                <Width Units="pixels">111</Width>
+            </MediumImage>
+            <LargeImage>
+                <URL>https://images-eu.ssl-images-amazon.com/images/I/51ALWqnWjkL.jpg</URL>
+                <Height Units="pixels">500</Height>
+                <Width Units="pixels">346</Width>
+            </LargeImage>
+            <ImageSets>
+                <ImageSet Category="swatch">
+                    <SwatchImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51Y9I2WNGgL._SL30_.jpg</URL>
+                        <Height Units="pixels">30</Height>
+                        <Width Units="pixels">20</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51Y9I2WNGgL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">49</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51Y9I2WNGgL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">49</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51Y9I2WNGgL._SL110_.jpg</URL>
+                        <Height Units="pixels">110</Height>
+                        <Width Units="pixels">72</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51Y9I2WNGgL._SL160_.jpg</URL>
+                        <Height Units="pixels">160</Height>
+                        <Width Units="pixels">104</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51Y9I2WNGgL.jpg</URL>
+                        <Height Units="pixels">500</Height>
+                        <Width Units="pixels">326</Width>
+                    </LargeImage>
+                </ImageSet>
+                <ImageSet Category="variant">
+                    <SwatchImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51Kgt93-eXL._SL30_.jpg</URL>
+                        <Height Units="pixels">30</Height>
+                        <Width Units="pixels">20</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51Kgt93-eXL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">49</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51Kgt93-eXL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">49</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51Kgt93-eXL._SL110_.jpg</URL>
+                        <Height Units="pixels">110</Height>
+                        <Width Units="pixels">72</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51Kgt93-eXL._SL160_.jpg</URL>
+                        <Height Units="pixels">160</Height>
+                        <Width Units="pixels">104</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51Kgt93-eXL.jpg</URL>
+                        <Height Units="pixels">500</Height>
+                        <Width Units="pixels">325</Width>
+                    </LargeImage>
+                </ImageSet>
+                <ImageSet Category="variant">
+                    <SwatchImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/41BEfCMdSxL._SL30_.jpg</URL>
+                        <Height Units="pixels">30</Height>
+                        <Width Units="pixels">22</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/41BEfCMdSxL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">56</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/41BEfCMdSxL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">56</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/41BEfCMdSxL._SL110_.jpg</URL>
+                        <Height Units="pixels">110</Height>
+                        <Width Units="pixels">82</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/41BEfCMdSxL._SL160_.jpg</URL>
+                        <Height Units="pixels">160</Height>
+                        <Width Units="pixels">120</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/41BEfCMdSxL.jpg</URL>
+                        <Height Units="pixels">500</Height>
+                        <Width Units="pixels">375</Width>
+                    </LargeImage>
+                </ImageSet>
+                <ImageSet Category="primary">
+                    <SwatchImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51ALWqnWjkL._SL30_.jpg</URL>
+                        <Height Units="pixels">30</Height>
+                        <Width Units="pixels">21</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51ALWqnWjkL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">52</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51ALWqnWjkL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">52</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51ALWqnWjkL._SL110_.jpg</URL>
+                        <Height Units="pixels">110</Height>
+                        <Width Units="pixels">76</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51ALWqnWjkL._SL160_.jpg</URL>
+                        <Height Units="pixels">160</Height>
+                        <Width Units="pixels">111</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51ALWqnWjkL.jpg</URL>
+                        <Height Units="pixels">500</Height>
+                        <Width Units="pixels">346</Width>
+                    </LargeImage>
+                </ImageSet>
+            </ImageSets>
+            <ItemAttributes>
+                <Author>J K ROWLING</Author>
+                <Binding>Paperback</Binding>
+                <Brand>imusti</Brand>
+                <EAN>9781408855713</EAN>
+                <EANList>
+                    <EANListElement>8601410651909</EANListElement>
+                    <EANListElement>9781408855713</EANListElement>
+                </EANList>
+                <Edition>Latest</Edition>
+                <Feature>Bloomsbury Childrens Books</Feature>
+                <IsAdultProduct>0</IsAdultProduct>
+                <ISBN>1408855712</ISBN>
+                <ItemDimensions>
+                    <Height Units="hundredths-inches">508</Height>
+                    <Length Units="hundredths-inches">780</Length>
+                    <Weight Units="hundredths-pounds">110</Weight>
+                    <Width Units="hundredths-inches">157</Width>
+                </ItemDimensions>
+                <Label>Bloomsbury Press</Label>
+                <Languages>
+                    <Language>
+                        <Name>English</Name>
+                        <Type>Published</Type>
+                    </Language>
+                    <Language>
+                        <Name>English</Name>
+                        <Type>Original Language</Type>
+                    </Language>
+                    <Language>
+                        <Name>English</Name>
+                        <Type>Unknown</Type>
+                    </Language>
+                </Languages>
+                <LegalDisclaimer>Our amazon account is all set to deliver high standard uk edition books please start
+                    buying our books under amazon seller name will be The Rubixion and share your feed back.
+                </LegalDisclaimer>
+                <ListPrice>
+                    <Amount>69900</Amount>
+                    <CurrencyCode>INR</CurrencyCode>
+                    <FormattedPrice>INR 699.00</FormattedPrice>
+                </ListPrice>
+                <Manufacturer>Bloomsbury Press</Manufacturer>
+                <MPN>22256800</MPN>
+                <NumberOfPages>608</NumberOfPages>
+                <PackageDimensions>
+                    <Height Units="hundredths-inches">165</Height>
+                    <Length Units="hundredths-inches">780</Length>
+                    <Weight Units="hundredths-pounds">101</Weight>
+                    <Width Units="hundredths-inches">520</Width>
+                </PackageDimensions>
+                <PackageQuantity>73</PackageQuantity>
+                <PartNumber>22256800</PartNumber>
+                <ProductGroup>Book</ProductGroup>
+                <ProductTypeName>ABIS_BOOK</ProductTypeName>
+                <PublicationDate>2014-09-01</PublicationDate>
+                <Publisher>Bloomsbury Press</Publisher>
+                <Studio>Bloomsbury Press</Studio>
+                <Title>Harry Potter and the Deathly Hallows (Harry Potter 7)</Title>
+            </ItemAttributes>
+            <OfferSummary>
+                <LowestNewPrice>
+                    <Amount>26900</Amount>
+                    <CurrencyCode>INR</CurrencyCode>
+                    <FormattedPrice>INR 269.00</FormattedPrice>
+                </LowestNewPrice>
+                <TotalNew>120</TotalNew>
+                <TotalUsed>0</TotalUsed>
+                <TotalCollectible>0</TotalCollectible>
+                <TotalRefurbished>0</TotalRefurbished>
+            </OfferSummary>
+            <Offers>
+                <TotalOffers>1</TotalOffers>
+                <TotalOfferPages>1</TotalOfferPages>
+                <MoreOffersUrl>https://www.amazon.in/gp/offer-listing/1408855712?SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1408855712</MoreOffersUrl>
+                <Offer>
+                    <OfferAttributes>
+                        <Condition>New</Condition>
+                    </OfferAttributes>
+                    <OfferListing>
+                        <OfferListingId>
+                            wOAM3KYsndO8pJUcXOQSqZ8c5IsYKeL4ExQTY5edLCYFTso4Kh8FABdP2%2BQ1eh8XdDyzuAU%2BoCRlfqwpm3xkYDm7qm2jz2MQN%2B9Hf9syhPe8SJMraj2F61SUnGh%2B3%2FO35%2FEvy3Rld3mDfIZj%2F%2F%2FbhMV88WOYfpBO
+                        </OfferListingId>
+                        <Price>
+                            <Amount>32900</Amount>
+                            <CurrencyCode>INR</CurrencyCode>
+                            <FormattedPrice>INR 329.00</FormattedPrice>
+                        </Price>
+                        <AmountSaved>
+                            <Amount>37000</Amount>
+                            <CurrencyCode>INR</CurrencyCode>
+                            <FormattedPrice>INR 370.00</FormattedPrice>
+                        </AmountSaved>
+                        <PercentageSaved>53</PercentageSaved>
+                        <Availability>Usually dispatched within 24 hours</Availability>
+                        <AvailabilityAttributes>
+                            <AvailabilityType>now</AvailabilityType>
+                            <MinimumHours>0</MinimumHours>
+                            <MaximumHours>0</MaximumHours>
+                        </AvailabilityAttributes>
+                        <IsEligibleForSuperSaverShipping>1</IsEligibleForSuperSaverShipping>
+                        <IsEligibleForPrime>1</IsEligibleForPrime>
+                    </OfferListing>
+                </Offer>
+            </Offers>
+        </Item>
+        <Item>
+            <ASIN>1408855674</ASIN>
+            <DetailPageURL>
+                https://www.amazon.in/Harry-Potter-Prisoner-Azkaban/dp/1408855674?SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1408855674
+            </DetailPageURL>
+            <ItemLinks>
+                <ItemLink>
+                    <Description>Add To Wishlist</Description>
+                    <URL>https://www.amazon.in/gp/registry/wishlist/add-item.html?asin.0=1408855674&amp;SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1408855674</URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>Tell A Friend</Description>
+                    <URL>https://www.amazon.in/gp/pdp/taf/1408855674?SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1408855674</URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Customer Reviews</Description>
+                    <URL>https://www.amazon.in/review/product/1408855674?SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1408855674</URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Offers</Description>
+                    <URL>https://www.amazon.in/gp/offer-listing/1408855674?SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1408855674</URL>
+                </ItemLink>
+            </ItemLinks>
+            <SmallImage>
+                <URL>https://images-eu.ssl-images-amazon.com/images/I/51B5cQLjgML._SL75_.jpg</URL>
+                <Height Units="pixels">75</Height>
+                <Width Units="pixels">50</Width>
+            </SmallImage>
+            <MediumImage>
+                <URL>https://images-eu.ssl-images-amazon.com/images/I/51B5cQLjgML._SL160_.jpg</URL>
+                <Height Units="pixels">160</Height>
+                <Width Units="pixels">107</Width>
+            </MediumImage>
+            <LargeImage>
+                <URL>https://images-eu.ssl-images-amazon.com/images/I/51B5cQLjgML.jpg</URL>
+                <Height Units="pixels">500</Height>
+                <Width Units="pixels">334</Width>
+            </LargeImage>
+            <ImageSets>
+                <ImageSet Category="swatch">
+                    <SwatchImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51Xw2NTVZTL._SL30_.jpg</URL>
+                        <Height Units="pixels">30</Height>
+                        <Width Units="pixels">20</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51Xw2NTVZTL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">49</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51Xw2NTVZTL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">49</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51Xw2NTVZTL._SL110_.jpg</URL>
+                        <Height Units="pixels">110</Height>
+                        <Width Units="pixels">72</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51Xw2NTVZTL._SL160_.jpg</URL>
+                        <Height Units="pixels">160</Height>
+                        <Width Units="pixels">104</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51Xw2NTVZTL.jpg</URL>
+                        <Height Units="pixels">500</Height>
+                        <Width Units="pixels">326</Width>
+                    </LargeImage>
+                </ImageSet>
+                <ImageSet Category="variant">
+                    <SwatchImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/510nx8FwhbL._SL30_.jpg</URL>
+                        <Height Units="pixels">30</Height>
+                        <Width Units="pixels">20</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/510nx8FwhbL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">49</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/510nx8FwhbL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">49</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/510nx8FwhbL._SL110_.jpg</URL>
+                        <Height Units="pixels">110</Height>
+                        <Width Units="pixels">72</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/510nx8FwhbL._SL160_.jpg</URL>
+                        <Height Units="pixels">160</Height>
+                        <Width Units="pixels">104</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/510nx8FwhbL.jpg</URL>
+                        <Height Units="pixels">500</Height>
+                        <Width Units="pixels">325</Width>
+                    </LargeImage>
+                </ImageSet>
+                <ImageSet Category="variant">
+                    <SwatchImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/41DND1HMzpL._SL30_.jpg</URL>
+                        <Height Units="pixels">30</Height>
+                        <Width Units="pixels">22</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/41DND1HMzpL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">56</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/41DND1HMzpL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">56</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/41DND1HMzpL._SL110_.jpg</URL>
+                        <Height Units="pixels">110</Height>
+                        <Width Units="pixels">82</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/41DND1HMzpL._SL160_.jpg</URL>
+                        <Height Units="pixels">160</Height>
+                        <Width Units="pixels">120</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/41DND1HMzpL.jpg</URL>
+                        <Height Units="pixels">500</Height>
+                        <Width Units="pixels">375</Width>
+                    </LargeImage>
+                </ImageSet>
+                <ImageSet Category="primary">
+                    <SwatchImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51B5cQLjgML._SL30_.jpg</URL>
+                        <Height Units="pixels">30</Height>
+                        <Width Units="pixels">20</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51B5cQLjgML._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">50</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51B5cQLjgML._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">50</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51B5cQLjgML._SL110_.jpg</URL>
+                        <Height Units="pixels">110</Height>
+                        <Width Units="pixels">73</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51B5cQLjgML._SL160_.jpg</URL>
+                        <Height Units="pixels">160</Height>
+                        <Width Units="pixels">107</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51B5cQLjgML.jpg</URL>
+                        <Height Units="pixels">500</Height>
+                        <Width Units="pixels">334</Width>
+                    </LargeImage>
+                </ImageSet>
+            </ImageSets>
+            <ItemAttributes>
+                <Author>J.K. Rowling</Author>
+                <Binding>Paperback</Binding>
+                <Brand>imusti</Brand>
+                <EAN>9781408855676</EAN>
+                <EANList>
+                    <EANListElement>8601404281891</EANListElement>
+                    <EANListElement>8601418346814</EANListElement>
+                    <EANListElement>9781408855676</EANListElement>
+                    <EANListElement>8601420394797</EANListElement>
+                    <EANListElement>0001408855674</EANListElement>
+                </EANList>
+                <Edition>Latest</Edition>
+                <Feature>Bloomsbury Childrens Books</Feature>
+                <IsAdultProduct>0</IsAdultProduct>
+                <ISBN>1408855674</ISBN>
+                <ItemDimensions>
+                    <Height Units="hundredths-inches">520</Height>
+                    <Length Units="hundredths-inches">776</Length>
+                    <Weight Units="hundredths-pounds">49</Weight>
+                    <Width Units="hundredths-inches">130</Width>
+                </ItemDimensions>
+                <Label>Bloomsbury Press</Label>
+                <Languages>
+                    <Language>
+                        <Name>English</Name>
+                        <Type>Published</Type>
+                    </Language>
+                    <Language>
+                        <Name>English</Name>
+                        <Type>Original Language</Type>
+                    </Language>
+                    <Language>
+                        <Name>English</Name>
+                        <Type>Unknown</Type>
+                    </Language>
+                </Languages>
+                <ListPrice>
+                    <Amount>49900</Amount>
+                    <CurrencyCode>INR</CurrencyCode>
+                    <FormattedPrice>INR 499.00</FormattedPrice>
+                </ListPrice>
+                <Manufacturer>Bloomsbury Press</Manufacturer>
+                <MPN>22256804</MPN>
+                <NumberOfPages>320</NumberOfPages>
+                <PackageDimensions>
+                    <Height Units="hundredths-inches">130</Height>
+                    <Length Units="hundredths-inches">770</Length>
+                    <Weight Units="hundredths-pounds">79</Weight>
+                    <Width Units="hundredths-inches">510</Width>
+                </PackageDimensions>
+                <PackageQuantity>1</PackageQuantity>
+                <PartNumber>22256804</PartNumber>
+                <ProductGroup>Book</ProductGroup>
+                <ProductTypeName>ABIS_BOOK</ProductTypeName>
+                <PublicationDate>2014-09-03</PublicationDate>
+                <Publisher>Bloomsbury Press</Publisher>
+                <Studio>Bloomsbury Press</Studio>
+                <Title>Harry Potter and the Prisoner of Azkaban (Harry Potter 3)</Title>
+                <UPC>001408855674</UPC>
+                <UPCList>
+                    <UPCListElement>001408855674</UPCListElement>
+                </UPCList>
+            </ItemAttributes>
+            <OfferSummary>
+                <LowestNewPrice>
+                    <Amount>21200</Amount>
+                    <CurrencyCode>INR</CurrencyCode>
+                    <FormattedPrice>INR 212.00</FormattedPrice>
+                </LowestNewPrice>
+                <LowestUsedPrice>
+                    <Amount>49500</Amount>
+                    <CurrencyCode>INR</CurrencyCode>
+                    <FormattedPrice>INR 495.00</FormattedPrice>
+                </LowestUsedPrice>
+                <TotalNew>129</TotalNew>
+                <TotalUsed>2</TotalUsed>
+                <TotalCollectible>0</TotalCollectible>
+                <TotalRefurbished>0</TotalRefurbished>
+            </OfferSummary>
+            <Offers>
+                <TotalOffers>1</TotalOffers>
+                <TotalOfferPages>1</TotalOfferPages>
+                <MoreOffersUrl>https://www.amazon.in/gp/offer-listing/1408855674?SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1408855674</MoreOffersUrl>
+                <Offer>
+                    <OfferAttributes>
+                        <Condition>New</Condition>
+                    </OfferAttributes>
+                    <OfferListing>
+                        <OfferListingId>
+                            wOAM3KYsndO8pJUcXOQSqaenZvj0sRMoUOeXr8xQcQt5iezVFl%2Fw0NZEgZwHVszjcGosysP1UdnZ8bvuF4OvcmfXx1qXAO5XpnqDPsQIrN%2FmN9Vj5o5dBQcrrQlbSEHiyjxpgZV7nqhpa6M058DHKg%3D%3D
+                        </OfferListingId>
+                        <Price>
+                            <Amount>27200</Amount>
+                            <CurrencyCode>INR</CurrencyCode>
+                            <FormattedPrice>INR 272.00</FormattedPrice>
+                        </Price>
+                        <AmountSaved>
+                            <Amount>22700</Amount>
+                            <CurrencyCode>INR</CurrencyCode>
+                            <FormattedPrice>INR 227.00</FormattedPrice>
+                        </AmountSaved>
+                        <PercentageSaved>45</PercentageSaved>
+                        <Availability>Usually dispatched within 24 hours</Availability>
+                        <AvailabilityAttributes>
+                            <AvailabilityType>now</AvailabilityType>
+                            <MinimumHours>0</MinimumHours>
+                            <MaximumHours>0</MaximumHours>
+                        </AvailabilityAttributes>
+                        <IsEligibleForSuperSaverShipping>1</IsEligibleForSuperSaverShipping>
+                        <IsEligibleForPrime>1</IsEligibleForPrime>
+                    </OfferListing>
+                </Offer>
+            </Offers>
+        </Item>
+        <Item>
+            <ASIN>0751565350</ASIN>
+            <DetailPageURL>
+                https://www.amazon.in/Harry-Potter-Cursed-Child-Parts/dp/0751565350?SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=0751565350
+            </DetailPageURL>
+            <ItemLinks>
+                <ItemLink>
+                    <Description>Add To Wishlist</Description>
+                    <URL>https://www.amazon.in/gp/registry/wishlist/add-item.html?asin.0=0751565350&amp;SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=0751565350</URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>Tell A Friend</Description>
+                    <URL>https://www.amazon.in/gp/pdp/taf/0751565350?SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=0751565350</URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Customer Reviews</Description>
+                    <URL>https://www.amazon.in/review/product/0751565350?SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=0751565350</URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Offers</Description>
+                    <URL>https://www.amazon.in/gp/offer-listing/0751565350?SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=0751565350</URL>
+                </ItemLink>
+            </ItemLinks>
+            <SmallImage>
+                <URL>https://images-eu.ssl-images-amazon.com/images/I/51RAFIQROfL._SL75_.jpg</URL>
+                <Height Units="pixels">75</Height>
+                <Width Units="pixels">50</Width>
+            </SmallImage>
+            <MediumImage>
+                <URL>https://images-eu.ssl-images-amazon.com/images/I/51RAFIQROfL._SL160_.jpg</URL>
+                <Height Units="pixels">160</Height>
+                <Width Units="pixels">106</Width>
+            </MediumImage>
+            <LargeImage>
+                <URL>https://images-eu.ssl-images-amazon.com/images/I/51RAFIQROfL.jpg</URL>
+                <Height Units="pixels">500</Height>
+                <Width Units="pixels">331</Width>
+            </LargeImage>
+            <ImageSets>
+                <ImageSet Category="swatch">
+                    <SwatchImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/61%2BNT0zxLdL._SL30_.jpg</URL>
+                        <Height Units="pixels">30</Height>
+                        <Width Units="pixels">20</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/61%2BNT0zxLdL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">49</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/61%2BNT0zxLdL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">49</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/61%2BNT0zxLdL._SL110_.jpg</URL>
+                        <Height Units="pixels">110</Height>
+                        <Width Units="pixels">72</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/61%2BNT0zxLdL._SL160_.jpg</URL>
+                        <Height Units="pixels">160</Height>
+                        <Width Units="pixels">104</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/61%2BNT0zxLdL.jpg</URL>
+                        <Height Units="pixels">500</Height>
+                        <Width Units="pixels">325</Width>
+                    </LargeImage>
+                </ImageSet>
+                <ImageSet Category="variant">
+                    <SwatchImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51KYkwfLnEL._SL30_.jpg</URL>
+                        <Height Units="pixels">30</Height>
+                        <Width Units="pixels">20</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51KYkwfLnEL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">49</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51KYkwfLnEL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">49</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51KYkwfLnEL._SL110_.jpg</URL>
+                        <Height Units="pixels">110</Height>
+                        <Width Units="pixels">72</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51KYkwfLnEL._SL160_.jpg</URL>
+                        <Height Units="pixels">160</Height>
+                        <Width Units="pixels">105</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51KYkwfLnEL.jpg</URL>
+                        <Height Units="pixels">500</Height>
+                        <Width Units="pixels">328</Width>
+                    </LargeImage>
+                </ImageSet>
+                <ImageSet Category="variant">
+                    <SwatchImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51BIvDVJKxL._SL30_.jpg</URL>
+                        <Height Units="pixels">30</Height>
+                        <Width Units="pixels">24</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51BIvDVJKxL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">60</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51BIvDVJKxL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">60</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51BIvDVJKxL._SL110_.jpg</URL>
+                        <Height Units="pixels">110</Height>
+                        <Width Units="pixels">88</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51BIvDVJKxL._SL160_.jpg</URL>
+                        <Height Units="pixels">160</Height>
+                        <Width Units="pixels">128</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51BIvDVJKxL.jpg</URL>
+                        <Height Units="pixels">500</Height>
+                        <Width Units="pixels">400</Width>
+                    </LargeImage>
+                </ImageSet>
+                <ImageSet Category="primary">
+                    <SwatchImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51RAFIQROfL._SL30_.jpg</URL>
+                        <Height Units="pixels">30</Height>
+                        <Width Units="pixels">20</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51RAFIQROfL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">50</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51RAFIQROfL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">50</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51RAFIQROfL._SL110_.jpg</URL>
+                        <Height Units="pixels">110</Height>
+                        <Width Units="pixels">73</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51RAFIQROfL._SL160_.jpg</URL>
+                        <Height Units="pixels">160</Height>
+                        <Width Units="pixels">106</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51RAFIQROfL.jpg</URL>
+                        <Height Units="pixels">500</Height>
+                        <Width Units="pixels">331</Width>
+                    </LargeImage>
+                </ImageSet>
+            </ImageSets>
+            <ItemAttributes>
+                <Author>J.K. Rowling</Author>
+                <Author>Jack Thorne</Author>
+                <Author>John Tiffany</Author>
+                <Binding>Hardcover</Binding>
+                <Brand>imusti</Brand>
+                <CatalogNumberList>
+                    <CatalogNumberListElement>9780751565355</CatalogNumberListElement>
+                </CatalogNumberList>
+                <EAN>9780751565355</EAN>
+                <EANList>
+                    <EANListElement>0732058137505</EANListElement>
+                    <EANListElement>0761591115374</EANListElement>
+                    <EANListElement>9780751565355</EANListElement>
+                </EANList>
+                <Edition>new</Edition>
+                <Feature>LITTLE BROWN BOOKS GROUP</Feature>
+                <IsAdultProduct>0</IsAdultProduct>
+                <ISBN>0751565350</ISBN>
+                <ItemDimensions>
+                    <Height Units="hundredths-inches">941</Height>
+                    <Length Units="hundredths-inches">646</Length>
+                    <Weight Units="hundredths-pounds">66</Weight>
+                    <Width Units="hundredths-inches">126</Width>
+                </ItemDimensions>
+                <Label>Little Brown</Label>
+                <Languages>
+                    <Language>
+                        <Name>English</Name>
+                        <Type>Published</Type>
+                    </Language>
+                    <Language>
+                        <Name>English</Name>
+                        <Type>Original Language</Type>
+                    </Language>
+                    <Language>
+                        <Name>French</Name>
+                        <Type>Unknown</Type>
+                    </Language>
+                </Languages>
+                <LegalDisclaimer>IN ENGLISH LANGUAGE</LegalDisclaimer>
+                <ListPrice>
+                    <Amount>89900</Amount>
+                    <CurrencyCode>INR</CurrencyCode>
+                    <FormattedPrice>INR 899.00</FormattedPrice>
+                </ListPrice>
+                <Manufacturer>Little Brown</Manufacturer>
+                <MPN>9780751565355</MPN>
+                <NumberOfPages>352</NumberOfPages>
+                <PackageDimensions>
+                    <Height Units="hundredths-inches">118</Height>
+                    <Length Units="hundredths-inches">953</Length>
+                    <Weight Units="hundredths-pounds">110</Weight>
+                    <Width Units="hundredths-inches">638</Width>
+                </PackageDimensions>
+                <PackageQuantity>1</PackageQuantity>
+                <PartNumber>9780751565355</PartNumber>
+                <ProductGroup>Book</ProductGroup>
+                <ProductTypeName>ABIS_BOOK</ProductTypeName>
+                <PublicationDate>2016-08-01</PublicationDate>
+                <Publisher>Little Brown</Publisher>
+                <ReleaseDate>2016-08-01</ReleaseDate>
+                <Studio>Little Brown</Studio>
+                <Title>Harry Potter and the Cursed Child: Parts I &amp; II</Title>
+                <UPC>761591115374</UPC>
+                <UPCList>
+                    <UPCListElement>761591115374</UPCListElement>
+                    <UPCListElement>732058137505</UPCListElement>
+                </UPCList>
+            </ItemAttributes>
+            <OfferSummary>
+                <LowestNewPrice>
+                    <Amount>19900</Amount>
+                    <CurrencyCode>INR</CurrencyCode>
+                    <FormattedPrice>INR 199.00</FormattedPrice>
+                </LowestNewPrice>
+                <LowestUsedPrice>
+                    <Amount>53100</Amount>
+                    <CurrencyCode>INR</CurrencyCode>
+                    <FormattedPrice>INR 531.00</FormattedPrice>
+                </LowestUsedPrice>
+                <TotalNew>124</TotalNew>
+                <TotalUsed>1</TotalUsed>
+                <TotalCollectible>0</TotalCollectible>
+                <TotalRefurbished>0</TotalRefurbished>
+            </OfferSummary>
+            <Offers>
+                <TotalOffers>1</TotalOffers>
+                <TotalOfferPages>1</TotalOfferPages>
+                <MoreOffersUrl>https://www.amazon.in/gp/offer-listing/0751565350?SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=0751565350</MoreOffersUrl>
+                <Offer>
+                    <OfferAttributes>
+                        <Condition>New</Condition>
+                    </OfferAttributes>
+                    <OfferListing>
+                        <OfferListingId>
+                            wOAM3KYsndNEQpq4b1b4oW9KxeTUpDL1MuRsu8L4nXvdBZ2N1I5dl%2FtHMAErdx1ap%2F36mLzRxzYeuLCYk8nqdfgSmFbuYt2kPoRfhqf9BIRHqnxt37R%2FcIDSpcIIlW2C4%2F3tsXUQMKTB4TTYalVikLOGoSI8GJd1
+                        </OfferListingId>
+                        <Price>
+                            <Amount>76400</Amount>
+                            <CurrencyCode>INR</CurrencyCode>
+                            <FormattedPrice>INR 764.00</FormattedPrice>
+                        </Price>
+                        <AmountSaved>
+                            <Amount>13500</Amount>
+                            <CurrencyCode>INR</CurrencyCode>
+                            <FormattedPrice>INR 135.00</FormattedPrice>
+                        </AmountSaved>
+                        <PercentageSaved>15</PercentageSaved>
+                        <Availability>Usually dispatched within 24 hours</Availability>
+                        <AvailabilityAttributes>
+                            <AvailabilityType>now</AvailabilityType>
+                            <MinimumHours>0</MinimumHours>
+                            <MaximumHours>0</MaximumHours>
+                        </AvailabilityAttributes>
+                        <IsEligibleForSuperSaverShipping>1</IsEligibleForSuperSaverShipping>
+                        <IsEligibleForPrime>1</IsEligibleForPrime>
+                    </OfferListing>
+                </Offer>
+            </Offers>
+        </Item>
+        <Item>
+            <ASIN>1408855704</ASIN>
+            <DetailPageURL>
+                https://www.amazon.in/Harry-Potter-Half-Blood-Prince/dp/1408855704?SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1408855704
+            </DetailPageURL>
+            <ItemLinks>
+                <ItemLink>
+                    <Description>Add To Wishlist</Description>
+                    <URL>https://www.amazon.in/gp/registry/wishlist/add-item.html?asin.0=1408855704&amp;SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1408855704</URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>Tell A Friend</Description>
+                    <URL>https://www.amazon.in/gp/pdp/taf/1408855704?SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1408855704</URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Customer Reviews</Description>
+                    <URL>https://www.amazon.in/review/product/1408855704?SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1408855704</URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Offers</Description>
+                    <URL>https://www.amazon.in/gp/offer-listing/1408855704?SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1408855704</URL>
+                </ItemLink>
+            </ItemLinks>
+            <SmallImage>
+                <URL>https://images-eu.ssl-images-amazon.com/images/I/51eohinXjpL._SL75_.jpg</URL>
+                <Height Units="pixels">75</Height>
+                <Width Units="pixels">50</Width>
+            </SmallImage>
+            <MediumImage>
+                <URL>https://images-eu.ssl-images-amazon.com/images/I/51eohinXjpL._SL160_.jpg</URL>
+                <Height Units="pixels">160</Height>
+                <Width Units="pixels">107</Width>
+            </MediumImage>
+            <LargeImage>
+                <URL>https://images-eu.ssl-images-amazon.com/images/I/51eohinXjpL.jpg</URL>
+                <Height Units="pixels">500</Height>
+                <Width Units="pixels">334</Width>
+            </LargeImage>
+            <ImageSets>
+                <ImageSet Category="swatch">
+                    <SwatchImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51oXKuSDnQL._SL30_.jpg</URL>
+                        <Height Units="pixels">30</Height>
+                        <Width Units="pixels">20</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51oXKuSDnQL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">49</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51oXKuSDnQL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">49</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51oXKuSDnQL._SL110_.jpg</URL>
+                        <Height Units="pixels">110</Height>
+                        <Width Units="pixels">72</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51oXKuSDnQL._SL160_.jpg</URL>
+                        <Height Units="pixels">160</Height>
+                        <Width Units="pixels">104</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51oXKuSDnQL.jpg</URL>
+                        <Height Units="pixels">500</Height>
+                        <Width Units="pixels">326</Width>
+                    </LargeImage>
+                </ImageSet>
+                <ImageSet Category="variant">
+                    <SwatchImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/5102l6E1xCL._SL30_.jpg</URL>
+                        <Height Units="pixels">30</Height>
+                        <Width Units="pixels">20</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/5102l6E1xCL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">49</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/5102l6E1xCL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">49</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/5102l6E1xCL._SL110_.jpg</URL>
+                        <Height Units="pixels">110</Height>
+                        <Width Units="pixels">72</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/5102l6E1xCL._SL160_.jpg</URL>
+                        <Height Units="pixels">160</Height>
+                        <Width Units="pixels">104</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/5102l6E1xCL.jpg</URL>
+                        <Height Units="pixels">500</Height>
+                        <Width Units="pixels">325</Width>
+                    </LargeImage>
+                </ImageSet>
+                <ImageSet Category="primary">
+                    <SwatchImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51eohinXjpL._SL30_.jpg</URL>
+                        <Height Units="pixels">30</Height>
+                        <Width Units="pixels">20</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51eohinXjpL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">50</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51eohinXjpL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">50</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51eohinXjpL._SL110_.jpg</URL>
+                        <Height Units="pixels">110</Height>
+                        <Width Units="pixels">73</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51eohinXjpL._SL160_.jpg</URL>
+                        <Height Units="pixels">160</Height>
+                        <Width Units="pixels">107</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51eohinXjpL.jpg</URL>
+                        <Height Units="pixels">500</Height>
+                        <Width Units="pixels">334</Width>
+                    </LargeImage>
+                </ImageSet>
+            </ImageSets>
+            <ItemAttributes>
+                <Author>J.K. Rowling</Author>
+                <Binding>Paperback</Binding>
+                <Brand>imusti</Brand>
+                <EAN>9781408855706</EAN>
+                <EANList>
+                    <EANListElement>8601418346784</EANListElement>
+                    <EANListElement>9781408855706</EANListElement>
+                    <EANListElement>0787721856122</EANListElement>
+                    <EANListElement>0001408855704</EANListElement>
+                    <EANListElement>8601405053664</EANListElement>
+                </EANList>
+                <Feature>Bloomsbury Childrens Books</Feature>
+                <IsAdultProduct>0</IsAdultProduct>
+                <ISBN>1408855704</ISBN>
+                <ItemDimensions>
+                    <Height Units="hundredths-inches">508</Height>
+                    <Length Units="hundredths-inches">780</Length>
+                    <Weight Units="hundredths-pounds">110</Weight>
+                    <Width Units="hundredths-inches">138</Width>
+                </ItemDimensions>
+                <Label>Bloomsbury Press</Label>
+                <Languages>
+                    <Language>
+                        <Name>English</Name>
+                        <Type>Published</Type>
+                    </Language>
+                    <Language>
+                        <Name>English</Name>
+                        <Type>Original Language</Type>
+                    </Language>
+                    <Language>
+                        <Name>English</Name>
+                        <Type>Unknown</Type>
+                    </Language>
+                </Languages>
+                <ListPrice>
+                    <Amount>69900</Amount>
+                    <CurrencyCode>INR</CurrencyCode>
+                    <FormattedPrice>INR 699.00</FormattedPrice>
+                </ListPrice>
+                <Manufacturer>Bloomsbury Press</Manufacturer>
+                <MPN>22256801</MPN>
+                <NumberOfPages>608</NumberOfPages>
+                <PackageDimensions>
+                    <Height Units="hundredths-inches">150</Height>
+                    <Length Units="hundredths-inches">811</Length>
+                    <Weight Units="hundredths-pounds">97</Weight>
+                    <Width Units="hundredths-inches">512</Width>
+                </PackageDimensions>
+                <PackageQuantity>1</PackageQuantity>
+                <PartNumber>22256801</PartNumber>
+                <ProductGroup>Book</ProductGroup>
+                <ProductTypeName>ABIS_BOOK</ProductTypeName>
+                <PublicationDate>2014-09-01</PublicationDate>
+                <Publisher>Bloomsbury Press</Publisher>
+                <Studio>Bloomsbury Press</Studio>
+                <Title>Harry Potter and the Half Blood Prince</Title>
+                <UPC>787721856122</UPC>
+                <UPCList>
+                    <UPCListElement>787721856122</UPCListElement>
+                    <UPCListElement>001408855704</UPCListElement>
+                </UPCList>
+            </ItemAttributes>
+            <OfferSummary>
+                <LowestNewPrice>
+                    <Amount>21900</Amount>
+                    <CurrencyCode>INR</CurrencyCode>
+                    <FormattedPrice>INR 219.00</FormattedPrice>
+                </LowestNewPrice>
+                <LowestUsedPrice>
+                    <Amount>60000</Amount>
+                    <CurrencyCode>INR</CurrencyCode>
+                    <FormattedPrice>INR 600.00</FormattedPrice>
+                </LowestUsedPrice>
+                <TotalNew>135</TotalNew>
+                <TotalUsed>2</TotalUsed>
+                <TotalCollectible>0</TotalCollectible>
+                <TotalRefurbished>0</TotalRefurbished>
+            </OfferSummary>
+            <Offers>
+                <TotalOffers>1</TotalOffers>
+                <TotalOfferPages>1</TotalOfferPages>
+                <MoreOffersUrl>https://www.amazon.in/gp/offer-listing/1408855704?SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1408855704</MoreOffersUrl>
+                <Offer>
+                    <OfferAttributes>
+                        <Condition>New</Condition>
+                    </OfferAttributes>
+                    <OfferListing>
+                        <OfferListingId>
+                            wOAM3KYsndO8pJUcXOQSqV%2BdY7%2Fr8y3ssC%2FvQS7B1xA6gWFn1%2BngbczRXJ90WRB48Lc0qGxShfcaHtCrCi%2BOxOGOIFfsj4NrhL4rwyuzEy2FEhwMBAgk1TR9WAI1N3EIjVR0n9erh0xSJ%2BIdufTVEzsr2WC87jCr
+                        </OfferListingId>
+                        <Price>
+                            <Amount>21900</Amount>
+                            <CurrencyCode>INR</CurrencyCode>
+                            <FormattedPrice>INR 219.00</FormattedPrice>
+                        </Price>
+                        <AmountSaved>
+                            <Amount>48000</Amount>
+                            <CurrencyCode>INR</CurrencyCode>
+                            <FormattedPrice>INR 480.00</FormattedPrice>
+                        </AmountSaved>
+                        <PercentageSaved>69</PercentageSaved>
+                        <Availability>Usually dispatched within 1-2 business days</Availability>
+                        <AvailabilityAttributes>
+                            <AvailabilityType>now</AvailabilityType>
+                            <MinimumHours>24</MinimumHours>
+                            <MaximumHours>48</MaximumHours>
+                        </AvailabilityAttributes>
+                        <IsEligibleForSuperSaverShipping>0</IsEligibleForSuperSaverShipping>
+                        <IsEligibleForPrime>0</IsEligibleForPrime>
+                    </OfferListing>
+                </Offer>
+            </Offers>
+        </Item>
+        <Item>
+            <ASIN>1408855690</ASIN>
+            <DetailPageURL>
+                https://www.amazon.in/Harry-Potter-Order-Phoenix/dp/1408855690?SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1408855690
+            </DetailPageURL>
+            <ItemLinks>
+                <ItemLink>
+                    <Description>Add To Wishlist</Description>
+                    <URL>https://www.amazon.in/gp/registry/wishlist/add-item.html?asin.0=1408855690&amp;SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1408855690</URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>Tell A Friend</Description>
+                    <URL>https://www.amazon.in/gp/pdp/taf/1408855690?SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1408855690</URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Customer Reviews</Description>
+                    <URL>https://www.amazon.in/review/product/1408855690?SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1408855690</URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Offers</Description>
+                    <URL>https://www.amazon.in/gp/offer-listing/1408855690?SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1408855690</URL>
+                </ItemLink>
+            </ItemLinks>
+            <SmallImage>
+                <URL>https://images-eu.ssl-images-amazon.com/images/I/51zWaXvwFpL._SL75_.jpg</URL>
+                <Height Units="pixels">75</Height>
+                <Width Units="pixels">50</Width>
+            </SmallImage>
+            <MediumImage>
+                <URL>https://images-eu.ssl-images-amazon.com/images/I/51zWaXvwFpL._SL160_.jpg</URL>
+                <Height Units="pixels">160</Height>
+                <Width Units="pixels">107</Width>
+            </MediumImage>
+            <LargeImage>
+                <URL>https://images-eu.ssl-images-amazon.com/images/I/51zWaXvwFpL.jpg</URL>
+                <Height Units="pixels">500</Height>
+                <Width Units="pixels">334</Width>
+            </LargeImage>
+            <ImageSets>
+                <ImageSet Category="swatch">
+                    <SwatchImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51q1qV1d2NL._SL30_.jpg</URL>
+                        <Height Units="pixels">30</Height>
+                        <Width Units="pixels">20</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51q1qV1d2NL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">49</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51q1qV1d2NL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">49</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51q1qV1d2NL._SL110_.jpg</URL>
+                        <Height Units="pixels">110</Height>
+                        <Width Units="pixels">72</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51q1qV1d2NL._SL160_.jpg</URL>
+                        <Height Units="pixels">160</Height>
+                        <Width Units="pixels">104</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51q1qV1d2NL.jpg</URL>
+                        <Height Units="pixels">500</Height>
+                        <Width Units="pixels">326</Width>
+                    </LargeImage>
+                </ImageSet>
+                <ImageSet Category="variant">
+                    <SwatchImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/514YKzftWpL._SL30_.jpg</URL>
+                        <Height Units="pixels">30</Height>
+                        <Width Units="pixels">20</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/514YKzftWpL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">49</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/514YKzftWpL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">49</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/514YKzftWpL._SL110_.jpg</URL>
+                        <Height Units="pixels">110</Height>
+                        <Width Units="pixels">72</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/514YKzftWpL._SL160_.jpg</URL>
+                        <Height Units="pixels">160</Height>
+                        <Width Units="pixels">104</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/514YKzftWpL.jpg</URL>
+                        <Height Units="pixels">500</Height>
+                        <Width Units="pixels">325</Width>
+                    </LargeImage>
+                </ImageSet>
+                <ImageSet Category="primary">
+                    <SwatchImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51zWaXvwFpL._SL30_.jpg</URL>
+                        <Height Units="pixels">30</Height>
+                        <Width Units="pixels">20</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51zWaXvwFpL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">50</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51zWaXvwFpL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">50</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51zWaXvwFpL._SL110_.jpg</URL>
+                        <Height Units="pixels">110</Height>
+                        <Width Units="pixels">73</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51zWaXvwFpL._SL160_.jpg</URL>
+                        <Height Units="pixels">160</Height>
+                        <Width Units="pixels">107</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/51zWaXvwFpL.jpg</URL>
+                        <Height Units="pixels">500</Height>
+                        <Width Units="pixels">334</Width>
+                    </LargeImage>
+                </ImageSet>
+            </ImageSets>
+            <ItemAttributes>
+                <Author>J.K. Rowling</Author>
+                <Binding>Paperback</Binding>
+                <Brand>imusti</Brand>
+                <EAN>9781408855690</EAN>
+                <EANList>
+                    <EANListElement>9781408855690</EANListElement>
+                    <EANListElement>8601418346791</EANListElement>
+                </EANList>
+                <Edition>September 2014</Edition>
+                <Feature>Bloomsbury Childrens Books</Feature>
+                <IsAdultProduct>0</IsAdultProduct>
+                <ISBN>1408855690</ISBN>
+                <ItemDimensions>
+                    <Height Units="hundredths-inches">520</Height>
+                    <Length Units="hundredths-inches">783</Length>
+                    <Weight Units="hundredths-pounds">143</Weight>
+                    <Width Units="hundredths-inches">213</Width>
+                </ItemDimensions>
+                <Label>Bloomsbury Press</Label>
+                <Languages>
+                    <Language>
+                        <Name>English</Name>
+                        <Type>Published</Type>
+                    </Language>
+                    <Language>
+                        <Name>English</Name>
+                        <Type>Original Language</Type>
+                    </Language>
+                    <Language>
+                        <Name>English</Name>
+                        <Type>Unknown</Type>
+                    </Language>
+                </Languages>
+                <ListPrice>
+                    <Amount>79900</Amount>
+                    <CurrencyCode>INR</CurrencyCode>
+                    <FormattedPrice>INR 799.00</FormattedPrice>
+                </ListPrice>
+                <Manufacturer>Bloomsbury Press</Manufacturer>
+                <MPN>22256802</MPN>
+                <NumberOfPages>768</NumberOfPages>
+                <PackageDimensions>
+                    <Height Units="hundredths-inches">205</Height>
+                    <Length Units="hundredths-inches">780</Length>
+                    <Weight Units="hundredths-pounds">146</Weight>
+                    <Width Units="hundredths-inches">520</Width>
+                </PackageDimensions>
+                <PackageQuantity>33</PackageQuantity>
+                <PartNumber>22256802</PartNumber>
+                <ProductGroup>Book</ProductGroup>
+                <ProductTypeName>ABIS_BOOK</ProductTypeName>
+                <PublicationDate>2014-09-01</PublicationDate>
+                <Publisher>Bloomsbury Press</Publisher>
+                <Studio>Bloomsbury Press</Studio>
+                <Title>Harry Potter and the Order of the Phoenix (Harry Potter 5)</Title>
+            </ItemAttributes>
+            <OfferSummary>
+                <LowestNewPrice>
+                    <Amount>32900</Amount>
+                    <CurrencyCode>INR</CurrencyCode>
+                    <FormattedPrice>INR 329.00</FormattedPrice>
+                </LowestNewPrice>
+                <LowestUsedPrice>
+                    <Amount>71432</Amount>
+                    <CurrencyCode>INR</CurrencyCode>
+                    <FormattedPrice>INR 714.32</FormattedPrice>
+                </LowestUsedPrice>
+                <TotalNew>91</TotalNew>
+                <TotalUsed>1</TotalUsed>
+                <TotalCollectible>0</TotalCollectible>
+                <TotalRefurbished>0</TotalRefurbished>
+            </OfferSummary>
+            <Offers>
+                <TotalOffers>1</TotalOffers>
+                <TotalOfferPages>1</TotalOfferPages>
+                <MoreOffersUrl>https://www.amazon.in/gp/offer-listing/1408855690?SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1408855690</MoreOffersUrl>
+                <Offer>
+                    <OfferAttributes>
+                        <Condition>New</Condition>
+                    </OfferAttributes>
+                    <OfferListing>
+                        <OfferListingId>
+                            wOAM3KYsndO8pJUcXOQSqYX%2F%2BHwZGjSbCk8NRmrlMl9FXQKM5KfjHhku289lirKUvz6V7McsZMQoyyhEO%2FZu227A%2BfpRUyCrmjU7hTSG5h3akn3okmicLcC4JXpA%2FEiEsRgMeEfrNME7%2F3naH8KejUiADfK9baP4
+                        </OfferListingId>
+                        <Price>
+                            <Amount>38900</Amount>
+                            <CurrencyCode>INR</CurrencyCode>
+                            <FormattedPrice>INR 389.00</FormattedPrice>
+                        </Price>
+                        <AmountSaved>
+                            <Amount>41000</Amount>
+                            <CurrencyCode>INR</CurrencyCode>
+                            <FormattedPrice>INR 410.00</FormattedPrice>
+                        </AmountSaved>
+                        <PercentageSaved>51</PercentageSaved>
+                        <Availability>Usually dispatched within 24 hours</Availability>
+                        <AvailabilityAttributes>
+                            <AvailabilityType>now</AvailabilityType>
+                            <MinimumHours>0</MinimumHours>
+                            <MaximumHours>0</MaximumHours>
+                        </AvailabilityAttributes>
+                        <IsEligibleForSuperSaverShipping>1</IsEligibleForSuperSaverShipping>
+                        <IsEligibleForPrime>1</IsEligibleForPrime>
+                    </OfferListing>
+                </Offer>
+            </Offers>
+        </Item>
+        <Item>
+            <ASIN>1408883732</ASIN>
+            <DetailPageURL>
+                https://www.amazon.in/Harry-Potter-Philosophers-Stone-Rowling/dp/1408883732?SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1408883732
+            </DetailPageURL>
+            <ItemLinks>
+                <ItemLink>
+                    <Description>Add To Wishlist</Description>
+                    <URL>https://www.amazon.in/gp/registry/wishlist/add-item.html?asin.0=1408883732&amp;SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1408883732</URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>Tell A Friend</Description>
+                    <URL>https://www.amazon.in/gp/pdp/taf/1408883732?SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1408883732</URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Customer Reviews</Description>
+                    <URL>https://www.amazon.in/review/product/1408883732?SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1408883732</URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Offers</Description>
+                    <URL>https://www.amazon.in/gp/offer-listing/1408883732?SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1408883732</URL>
+                </ItemLink>
+            </ItemLinks>
+            <SmallImage>
+                <URL>https://images-eu.ssl-images-amazon.com/images/I/41aksIqYEQL._SL75_.jpg</URL>
+                <Height Units="pixels">75</Height>
+                <Width Units="pixels">53</Width>
+            </SmallImage>
+            <MediumImage>
+                <URL>https://images-eu.ssl-images-amazon.com/images/I/41aksIqYEQL._SL160_.jpg</URL>
+                <Height Units="pixels">160</Height>
+                <Width Units="pixels">113</Width>
+            </MediumImage>
+            <LargeImage>
+                <URL>https://images-eu.ssl-images-amazon.com/images/I/41aksIqYEQL.jpg</URL>
+                <Height Units="pixels">500</Height>
+                <Width Units="pixels">352</Width>
+            </LargeImage>
+            <ImageSets>
+                <ImageSet Category="swatch">
+                    <SwatchImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/41aksIqYEQL._SL30_.jpg</URL>
+                        <Height Units="pixels">30</Height>
+                        <Width Units="pixels">21</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/41aksIqYEQL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">53</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/41aksIqYEQL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">53</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/41aksIqYEQL._SL110_.jpg</URL>
+                        <Height Units="pixels">110</Height>
+                        <Width Units="pixels">77</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/41aksIqYEQL._SL160_.jpg</URL>
+                        <Height Units="pixels">160</Height>
+                        <Width Units="pixels">113</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/41aksIqYEQL.jpg</URL>
+                        <Height Units="pixels">500</Height>
+                        <Width Units="pixels">352</Width>
+                    </LargeImage>
+                </ImageSet>
+                <ImageSet Category="variant">
+                    <SwatchImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/41u6jgaxGvL._SL30_.jpg</URL>
+                        <Height Units="pixels">30</Height>
+                        <Width Units="pixels">19</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/41u6jgaxGvL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">48</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/41u6jgaxGvL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">48</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/41u6jgaxGvL._SL110_.jpg</URL>
+                        <Height Units="pixels">110</Height>
+                        <Width Units="pixels">71</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/41u6jgaxGvL._SL160_.jpg</URL>
+                        <Height Units="pixels">160</Height>
+                        <Width Units="pixels">103</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/41u6jgaxGvL.jpg</URL>
+                        <Height Units="pixels">500</Height>
+                        <Width Units="pixels">323</Width>
+                    </LargeImage>
+                </ImageSet>
+                <ImageSet Category="primary">
+                    <SwatchImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/41aksIqYEQL._SL30_.jpg</URL>
+                        <Height Units="pixels">30</Height>
+                        <Width Units="pixels">21</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/41aksIqYEQL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">53</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/41aksIqYEQL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">53</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/41aksIqYEQL._SL110_.jpg</URL>
+                        <Height Units="pixels">110</Height>
+                        <Width Units="pixels">77</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/41aksIqYEQL._SL160_.jpg</URL>
+                        <Height Units="pixels">160</Height>
+                        <Width Units="pixels">113</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>https://images-eu.ssl-images-amazon.com/images/I/41aksIqYEQL.jpg</URL>
+                        <Height Units="pixels">500</Height>
+                        <Width Units="pixels">352</Width>
+                    </LargeImage>
+                </ImageSet>
+            </ImageSets>
+            <ItemAttributes>
+                <Author>J.K. Rowling</Author>
+                <Binding>Paperback</Binding>
+                <EAN>9781408883730</EAN>
+                <EANList>
+                    <EANListElement>9781408883730</EANListElement>
+                </EANList>
+                <Edition>Gryffindor</Edition>
+                <IsAdultProduct>0</IsAdultProduct>
+                <ISBN>1408883732</ISBN>
+                <ItemDimensions>
+                    <Height Units="hundredths-inches">780</Height>
+                    <Length Units="hundredths-inches">504</Length>
+                    <Weight Units="hundredths-pounds">66</Weight>
+                    <Width Units="hundredths-inches">87</Width>
+                </ItemDimensions>
+                <Label>Bloomsbury Childrens</Label>
+                <Languages>
+                    <Language>
+                        <Name>English</Name>
+                        <Type>Published</Type>
+                    </Language>
+                    <Language>
+                        <Name>English</Name>
+                        <Type>Original Language</Type>
+                    </Language>
+                    <Language>
+                        <Name>French</Name>
+                        <Type>Unknown</Type>
+                    </Language>
+                </Languages>
+                <ListPrice>
+                    <Amount>49900</Amount>
+                    <CurrencyCode>INR</CurrencyCode>
+                    <FormattedPrice>INR 499.00</FormattedPrice>
+                </ListPrice>
+                <Manufacturer>Bloomsbury Childrens</Manufacturer>
+                <MPN>25737035</MPN>
+                <NumberOfPages>368</NumberOfPages>
+                <PackageDimensions>
+                    <Height Units="hundredths-inches">150</Height>
+                    <Length Units="hundredths-inches">839</Length>
+                    <Weight Units="hundredths-pounds">66</Weight>
+                    <Width Units="hundredths-inches">591</Width>
+                </PackageDimensions>
+                <PartNumber>25737035</PartNumber>
+                <ProductGroup>Book</ProductGroup>
+                <ProductTypeName>ABIS_BOOK</ProductTypeName>
+                <PublicationDate>2017-06-29</PublicationDate>
+                <Publisher>Bloomsbury Childrens</Publisher>
+                <ReleaseDate>2017-06-29</ReleaseDate>
+                <Studio>Bloomsbury Childrens</Studio>
+                <Title>Harry Potter and the Philosopher's Stone</Title>
+            </ItemAttributes>
+            <OfferSummary>
+                <LowestNewPrice>
+                    <Amount>26900</Amount>
+                    <CurrencyCode>INR</CurrencyCode>
+                    <FormattedPrice>INR 269.00</FormattedPrice>
+                </LowestNewPrice>
+                <TotalNew>71</TotalNew>
+                <TotalUsed>0</TotalUsed>
+                <TotalCollectible>0</TotalCollectible>
+                <TotalRefurbished>0</TotalRefurbished>
+            </OfferSummary>
+            <Offers>
+                <TotalOffers>1</TotalOffers>
+                <TotalOfferPages>1</TotalOfferPages>
+                <MoreOffersUrl>https://www.amazon.in/gp/offer-listing/1408883732?SubscriptionId=AKIAJU3XGZ3JCC5XJ4XQ&amp;tag=viraltea-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1408883732</MoreOffersUrl>
+                <Offer>
+                    <OfferAttributes>
+                        <Condition>New</Condition>
+                    </OfferAttributes>
+                    <OfferListing>
+                        <OfferListingId>
+                            wOAM3KYsndO8pJUcXOQSqcx2fewUi%2Ft39jTezi2aRRD2oeEqO9wRi9k8sxve%2BpNyYOPM3zm%2BLbwRWgTDK3fBAF3ywzLRb%2FmXPM3lEnyTcUDuHPlYdGYKu09dA%2FsgcshS9KZWTWjTfejZrcROCacY%2BDBJ%2FGeN4eUO
+                        </OfferListingId>
+                        <Price>
+                            <Amount>26900</Amount>
+                            <CurrencyCode>INR</CurrencyCode>
+                            <FormattedPrice>INR 269.00</FormattedPrice>
+                        </Price>
+                        <AmountSaved>
+                            <Amount>23000</Amount>
+                            <CurrencyCode>INR</CurrencyCode>
+                            <FormattedPrice>INR 230.00</FormattedPrice>
+                        </AmountSaved>
+                        <PercentageSaved>46</PercentageSaved>
+                        <Availability>Usually dispatched within 24 hours</Availability>
+                        <AvailabilityAttributes>
+                            <AvailabilityType>now</AvailabilityType>
+                            <MinimumHours>0</MinimumHours>
+                            <MaximumHours>0</MaximumHours>
+                        </AvailabilityAttributes>
+                        <IsEligibleForSuperSaverShipping>1</IsEligibleForSuperSaverShipping>
+                        <IsEligibleForPrime>1</IsEligibleForPrime>
+                    </OfferListing>
+                </Offer>
+            </Offers>
+        </Item>
+    </Items>
+</ItemSearchResponse>
