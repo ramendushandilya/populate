@@ -5,9 +5,11 @@ import com.shandilya.populate.flipkart.external.api.ProductUrlAggregatorService;
 import com.shandilya.populate.flipkart.external.domains.urlcommons.ProductsExt;
 import com.shandilya.populate.flipkart.persistence.Repository.AcRepository;
 import com.shandilya.populate.flipkart.persistence.Repository.AudioPlayerRepository;
+import com.shandilya.populate.flipkart.persistence.Repository.AutomotiveRepository;
 import com.shandilya.populate.flipkart.persistence.services.CategoryPersistenceService;
 import com.shandilya.populate.flipkart.products.airconditioner.model.AcProducts;
 import com.shandilya.populate.flipkart.products.audioplayers.model.AudioPlayerProducts;
+import com.shandilya.populate.flipkart.products.automotive.model.AutomotiveProducts;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -20,13 +22,16 @@ public class CategoryPersistenceServiceImpl implements CategoryPersistenceServic
     private PopulateConversionService conversionService;
 
     @Autowired
+    private ProductUrlAggregatorService aggregatorService;
+
+    @Autowired
     private AcRepository acRepository;
 
     @Autowired
     private AudioPlayerRepository audioPlayerRepository;
 
     @Autowired
-    private ProductUrlAggregatorService aggregatorService;
+    private AutomotiveRepository automotiveRepository;
 
     @Override
     public void saveAcs() {
@@ -49,8 +54,15 @@ public class CategoryPersistenceServiceImpl implements CategoryPersistenceServic
 
     @Override
     public void saveAutomotive() {
-
+        Long start = System.nanoTime();
+        System.out.println("Entering....#####");
         List<ProductsExt> extProds = aggregatorService.getAllProducts("Automotive");
+        System.out.println("Exit complete....#####");
+        Long end = System.nanoTime();
+        System.out.println("Fetched Automotive prods in time seconds = "+(end-start)/1000000000);
+        List<AutomotiveProducts> prods = conversionService.convert(extProds, AutomotiveProducts.class);
+        automotiveRepository.saveAll(prods);
+        System.out.println("Confirmation call.......######");
     }
 
     @Override

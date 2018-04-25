@@ -13,6 +13,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+import javax.swing.plaf.synth.SynthTextAreaUI;
 import java.util.*;
 
 @Service
@@ -40,7 +41,9 @@ public class ProductUrlAggregatorServiceImpl implements ProductUrlAggregatorServ
         List<String> nextUrls = new ArrayList<>();
         nextUrls.add(seed);
         //call helper to fetch all next urls excluding the seed
-        helper(seed, nextUrls);
+        System.out.println("Entering helper#####");
+        helper(seed, nextUrls, 0);
+        System.out.println("Helper exited #########");
         return nextUrls;
     }
 
@@ -51,9 +54,11 @@ public class ProductUrlAggregatorServiceImpl implements ProductUrlAggregatorServ
      * @param seedUrl
      * @param urls
      */
-    public void helper(String seedUrl, List<String> urls) {
+    public void helper(String seedUrl, List<String> urls, int count) {
 
-        if (seedUrl != null) {
+        if (seedUrl != null || count < 3) {
+            System.out.println("Helper at iteration #### "+count);
+            count++;
             ResponseEntity<MasterExt> response = null;
             RestTemplate restTemplate = new RestTemplate();
             try {
@@ -70,7 +75,7 @@ public class ProductUrlAggregatorServiceImpl implements ProductUrlAggregatorServ
                 if (nextUrl != null) {
                     urls.add(nextUrl);
                 }
-                helper(nextUrl, urls);
+                helper(nextUrl, urls, count);
             }
         } else {
             return;
@@ -87,7 +92,10 @@ public class ProductUrlAggregatorServiceImpl implements ProductUrlAggregatorServ
     @Override
     public List<ProductsExt> getAllProducts(String categoryType) {
         String seed = null;
+        Long start = System.nanoTime();
         Map<String, String> seedMap = categoryService.getProductCategoryUrls();
+        Long end = System.nanoTime();
+        System.out.println("Fetched urls in time seconds = "+(end-start)/1000000000);
         List<ProductsExt> allProducts = new LinkedList<>();
 
         //If the category type exists, extract seed url from the map

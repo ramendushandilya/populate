@@ -3,28 +3,33 @@ package com.shandilya.populate.flipkart.products.automotive.model;
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
 import javax.persistence.Embedded;
-import java.util.Arrays;
 
+/**
+ * @author rams0516
+ *         Date: 4/25/2018
+ *         Time: 3:44 PM
+ */
 @Embeddable
-public class AcProductBaseInfo {
+public class AutomotiveProductBaseInfo {
 
-    public AcProductBaseInfo() {
+    public AutomotiveProductBaseInfo() {
     }
 
     private String productId;
     private String title;
     @Embedded
-    private AcImageUrls imageUrls;
+    private AutomotiveUrls imageUrls;
     private String price;
+
+    @Column(length = 3000)
     private String productUrl;
     private String brand;
     private String inStock;
     @Column(length=1000)
     private String[] offers;
 
-    public AcProductBaseInfo(String productId, String title, AcImageUrls imageUrls,
-                             String price, String productUrl, String brand, String inStock,
-                             String[] offers) {
+    public AutomotiveProductBaseInfo(String productId, String title, AutomotiveUrls imageUrls, String price,
+                                     String productUrl, String brand, String inStock, String[] offers) {
         this.productId = productId;
         this.title = title;
         this.imageUrls = imageUrls;
@@ -51,11 +56,11 @@ public class AcProductBaseInfo {
         this.title = title;
     }
 
-    public AcImageUrls getImageUrls() {
+    public AutomotiveUrls getImageUrls() {
         return imageUrls;
     }
 
-    public void setImageUrls(AcImageUrls imageUrls) {
+    public void setImageUrls(AutomotiveUrls imageUrls) {
         this.imageUrls = imageUrls;
     }
 
@@ -97,19 +102,5 @@ public class AcProductBaseInfo {
 
     public void setOffers(String[] offers) {
         this.offers = offers;
-    }
-
-    @Override
-    public String toString() {
-        return "AcProductBaseInfo{" +
-                "productId='" + productId + '\'' +
-                ", title='" + title + '\'' +
-                ", imageUrls=" + imageUrls +
-                ", price=" + price +
-                ", productUrl='" + productUrl + '\'' +
-                ", brand='" + brand + '\'' +
-                ", inStock='" + inStock + '\'' +
-                ", offers=" + Arrays.toString(offers) +
-                '}';
     }
 }

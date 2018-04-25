@@ -2,18 +2,22 @@ package com.shandilya.populate.flipkart.products.automotive.model;
 
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
-import java.util.Arrays;
 
+/**
+ * @author rams0516
+ *         Date: 4/25/2018
+ *         Time: 3:42 PM
+ */
 @Embeddable
-public class AcCategorySpecificInfo {
+public class AutomotiveCategorySpecificInfo {
 
-    public AcCategorySpecificInfo() {
+    public AutomotiveCategorySpecificInfo() {
     }
 
     @Column(length=1000)
     private String[] detailedSpecs;
 
-    public AcCategorySpecificInfo(String[] detailedSpecs) {
+    public AutomotiveCategorySpecificInfo(String[] detailedSpecs) {
         this.detailedSpecs = detailedSpecs;
     }
 
@@ -23,12 +27,5 @@ public class AcCategorySpecificInfo {
 
     public void setDetailedSpecs(String[] detailedSpecs) {
         this.detailedSpecs = detailedSpecs;
-    }
-
-    @Override
-    public String toString() {
-        return "AcCategorySpecificInfo{" +
-                "detailedSpecs=" + Arrays.toString(detailedSpecs) +
-                '}';
     }
 }
