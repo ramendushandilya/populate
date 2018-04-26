@@ -47,22 +47,15 @@ public class CategoryPersistenceServiceImpl implements CategoryPersistenceServic
     public void saveAudioPlayers() {
 
         List<ProductsExt> extProds = aggregatorService.getAllProducts("AudioPlayers");
-        System.out.println("total audio player #########"+extProds.size() );
         List<AudioPlayerProducts> prods = conversionService.convert(extProds, AudioPlayerProducts.class);
         audioPlayerRepository.saveAll(prods);
     }
 
     @Override
     public void saveAutomotive() {
-        Long start = System.nanoTime();
-        System.out.println("Entering....#####");
         List<ProductsExt> extProds = aggregatorService.getAllProducts("Automotive");
-        System.out.println("Exit complete....#####");
-        Long end = System.nanoTime();
-        System.out.println("Fetched Automotive prods in time seconds = "+(end-start)/1000000000);
         List<AutomotiveProducts> prods = conversionService.convert(extProds, AutomotiveProducts.class);
         automotiveRepository.saveAll(prods);
-        System.out.println("Confirmation call.......######");
     }
 
     @Override
@@ -90,6 +83,7 @@ public class CategoryPersistenceServiceImpl implements CategoryPersistenceServic
     public void saveCameras() {
 
         List<ProductsExt> extProds = aggregatorService.getAllProducts("Cameras");
+
 
     }
 
