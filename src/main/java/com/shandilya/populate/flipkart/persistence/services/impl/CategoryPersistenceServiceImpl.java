@@ -10,6 +10,7 @@ import com.shandilya.populate.flipkart.products.audioplayers.model.AudioPlayerPr
 import com.shandilya.populate.flipkart.products.automotive.model.AutomotiveProducts;
 import com.shandilya.populate.flipkart.products.camera.model.CameraProducts;
 import com.shandilya.populate.flipkart.products.cameraAccessories.model.CameraAccessories;
+import com.shandilya.populate.flipkart.products.desktops.models.DesktopProducts;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -38,6 +39,9 @@ public class CategoryPersistenceServiceImpl implements CategoryPersistenceServic
 
     @Autowired
     private CameraAccessoriesRepository cameraAccessoriesRepository;
+
+    @Autowired
+    private DesktopRepository desktopRepository;
 
     @Override
     public void saveAcs() {
@@ -127,7 +131,8 @@ public class CategoryPersistenceServiceImpl implements CategoryPersistenceServic
     public void saveDesktops() {
 
         List<ProductsExt> extProds = aggregatorService.getAllProducts("Desktops");
-
+        List<DesktopProducts> products = conversionService.convert(extProds, DesktopProducts.class);
+        desktopRepository.saveAll(products);
     }
 
     @Override

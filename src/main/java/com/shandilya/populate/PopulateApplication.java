@@ -33,6 +33,7 @@ public class PopulateApplication implements CommandLineRunner{
 		//persistenceService.saveAcs();
 
 		persistenceService.saveCameras();
+		persistenceService.saveDesktops();
 		//persistenceService.saveCameraAccessories();
 	}
 }
