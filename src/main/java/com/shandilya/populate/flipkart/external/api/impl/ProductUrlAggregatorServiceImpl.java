@@ -12,9 +12,10 @@ import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
-
-import javax.swing.plaf.synth.SynthTextAreaUI;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
 
 @Service
 public class ProductUrlAggregatorServiceImpl implements ProductUrlAggregatorService {
@@ -41,9 +42,7 @@ public class ProductUrlAggregatorServiceImpl implements ProductUrlAggregatorServ
         List<String> nextUrls = new ArrayList<>();
         nextUrls.add(seed);
         //call helper to fetch all next urls excluding the seed
-        System.out.println("Entering helper#####");
-        helper(seed, nextUrls, 0);
-        System.out.println("Helper exited #########");
+        helper(seed, nextUrls);
         return nextUrls;
     }
 
@@ -54,11 +53,9 @@ public class ProductUrlAggregatorServiceImpl implements ProductUrlAggregatorServ
      * @param seedUrl
      * @param urls
      */
-    public void helper(String seedUrl, List<String> urls, int count) {
+    public void helper(String seedUrl, List<String> urls) {
 
-        if (seedUrl != null || count < 3) {
-            System.out.println("Helper at iteration #### "+count);
-            count++;
+        if (seedUrl != null) {
             ResponseEntity<MasterExt> response = null;
             RestTemplate restTemplate = new RestTemplate();
             try {
@@ -75,7 +72,7 @@ public class ProductUrlAggregatorServiceImpl implements ProductUrlAggregatorServ
                 if (nextUrl != null) {
                     urls.add(nextUrl);
                 }
-                helper(nextUrl, urls, count);
+                helper(nextUrl, urls);
             }
         } else {
             return;
@@ -92,10 +89,7 @@ public class ProductUrlAggregatorServiceImpl implements ProductUrlAggregatorServ
     @Override
     public List<ProductsExt> getAllProducts(String categoryType) {
         String seed = null;
-        Long start = System.nanoTime();
         Map<String, String> seedMap = categoryService.getProductCategoryUrls();
-        Long end = System.nanoTime();
-        System.out.println("Fetched urls in time seconds = "+(end-start)/1000000000);
         List<ProductsExt> allProducts = new LinkedList<>();
 
         //If the category type exists, extract seed url from the map

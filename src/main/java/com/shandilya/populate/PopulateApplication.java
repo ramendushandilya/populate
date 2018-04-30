@@ -30,15 +30,9 @@ public class PopulateApplication implements CommandLineRunner{
 	@Override
 	public void run(String... args) throws Exception {
 
-		long startTime = System.nanoTime();
+		//persistenceService.saveAcs();
 
-		persistenceService.saveAcs();
-		//persistenceService.saveAudioPlayers();
-		//persistenceService.saveAutomotive();
-
-		long endTime = System.nanoTime();
-		long elapsed = (endTime - startTime)/1000000;
-		System.out.println("Time taken for the persistence flow = "+elapsed/1000);
-		System.out.println("Rest of the functionality executed");
+		persistenceService.saveCameras();
+		//persistenceService.saveCameraAccessories();
 	}
 }

@@ -1,7 +1,7 @@
 package com.shandilya.populate.flipkart.products.common.pojo;
 
+import javax.persistence.Column;
 import javax.persistence.Embeddable;
-import java.util.Arrays;
 
 /**
  * @author rams0516
@@ -18,16 +18,17 @@ public class BaseInfo {
     private String ProductTitle;
     private ImageUrls imageUrls;
     private String flipkartSellingPrice;
+    @Column(length = 1000000)
     private String productUrl;
     private String brand;
     private String inStock;
     private String codAvailable;
-    private String[] offers;
+    private String offers;
     private String categoryPath;
     private Attributes attributes;
 
     public BaseInfo(String productId, String productTitle, ImageUrls imageUrls, String flipkartSellingPrice,
-                    String productUrl, String brand, String inStock, String codAvailable, String[] offers,
+                    String productUrl, String brand, String inStock, String codAvailable, String offers,
                     String categoryPath, Attributes attributes) {
         this.productId = productId;
         ProductTitle = productTitle;
@@ -114,11 +115,11 @@ public class BaseInfo {
         return this;
     }
 
-    public String[] getOffers() {
+    public String getOffers() {
         return offers;
     }
 
-    public BaseInfo setOffers(String[] offers) {
+    public BaseInfo setOffers(String offers) {
         this.offers = offers;
         return this;
     }
@@ -150,9 +151,9 @@ public class BaseInfo {
                 ", flipkartSellingPrice='" + flipkartSellingPrice + '\'' +
                 ", productUrl='" + productUrl + '\'' +
                 ", brand='" + brand + '\'' +
-                ", inStock=" + inStock +
-                ", codAvailable=" + codAvailable +
-                ", offers=" + Arrays.toString(offers) +
+                ", inStock='" + inStock + '\'' +
+                ", codAvailable='" + codAvailable + '\'' +
+                ", offers='" + offers + '\'' +
                 ", categoryPath='" + categoryPath + '\'' +
                 ", attributes=" + attributes +
                 '}';

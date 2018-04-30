@@ -10,7 +10,7 @@ public class AcProducts {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
+    private Long id;
 
     @Embedded
     private AcProductBaseInfo baseInfo;
@@ -23,26 +23,38 @@ public class AcProducts {
         this.categorySpecificInfo = categorySpecificInfo;
     }
 
+    public Long getId() {
+        return id;
+    }
+
+    public AcProducts setId(Long id) {
+        this.id = id;
+        return this;
+    }
+
     public AcProductBaseInfo getBaseInfo() {
         return baseInfo;
     }
 
-    public void setBaseInfo(AcProductBaseInfo baseInfo) {
+    public AcProducts setBaseInfo(AcProductBaseInfo baseInfo) {
         this.baseInfo = baseInfo;
+        return this;
     }
 
     public AcCategorySpecificInfo getCategorySpecificInfo() {
         return categorySpecificInfo;
     }
 
-    public void setCategorySpecificInfo(AcCategorySpecificInfo categorySpecificInfo) {
+    public AcProducts setCategorySpecificInfo(AcCategorySpecificInfo categorySpecificInfo) {
         this.categorySpecificInfo = categorySpecificInfo;
+        return this;
     }
 
     @Override
     public String toString() {
         return "AcProducts{" +
-                "baseInfo=" + baseInfo +
+                "id=" + id +
+                ", baseInfo=" + baseInfo +
                 ", categorySpecificInfo=" + categorySpecificInfo +
                 '}';
     }

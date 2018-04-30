@@ -1,4 +1,4 @@
-package com.shandilya.populate.flipkart.products.camera.model;
+package com.shandilya.populate.flipkart.products.cameraAccessories.model;
 
 import com.shandilya.populate.flipkart.products.common.pojo.BaseInfo;
 
@@ -6,14 +6,11 @@ import javax.persistence.*;
 
 /**
  * @author rams0516
- *         Date: 4/26/2018
- *         Time: 3:08 PM
+ *         Date: 4/30/2018
+ *         Time: 12:37 PM
  */
 @Entity
-public class CameraProducts {
-
-    public CameraProducts() {
-    }
+public class CameraAccessories {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
@@ -25,7 +22,7 @@ public class CameraProducts {
     //private CategorySpecificInfo categorySpecificInfo;
 
 
-    public CameraProducts(BaseInfo baseInfo) {
+    public CameraAccessories(BaseInfo baseInfo) {
         this.baseInfo = baseInfo;
     }
 
@@ -33,7 +30,7 @@ public class CameraProducts {
         return id;
     }
 
-    public CameraProducts setId(Long id) {
+    public CameraAccessories setId(Long id) {
         this.id = id;
         return this;
     }
@@ -42,14 +39,14 @@ public class CameraProducts {
         return baseInfo;
     }
 
-    public CameraProducts setBaseInfo(BaseInfo baseInfo) {
+    public CameraAccessories setBaseInfo(BaseInfo baseInfo) {
         this.baseInfo = baseInfo;
         return this;
     }
 
     @Override
     public String toString() {
-        return "CameraProducts{" +
+        return "CameraAccessories{" +
                 "id=" + id +
                 ", baseInfo=" + baseInfo +
                 '}';

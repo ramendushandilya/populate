@@ -1,7 +1,5 @@
 package com.shandilya.populate.flipkart.products.common.pojo;
 
-import lombok.Builder;
-
 import javax.persistence.Embeddable;
 import java.util.Arrays;
 

@@ -1,26 +1,26 @@
-package com.shandilya.populate.flipkart.products.camera.converter;
+package com.shandilya.populate.flipkart.products.cameraAccessories.converter;
 
 import com.shandilya.populate.flipkart.conversioncommon.ListConverter;
 import com.shandilya.populate.flipkart.external.domains.urlcommons.ProductsExt;
-import com.shandilya.populate.flipkart.products.camera.model.CameraProducts;
+import com.shandilya.populate.flipkart.products.cameraAccessories.model.CameraAccessories;
 import com.shandilya.populate.flipkart.products.common.pojo.ConverterHelper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
  * @author rams0516
- *         Date: 4/26/2018
- *         Time: 3:55 PM
+ *         Date: 4/30/2018
+ *         Time: 12:39 PM
  */
 @Service
-public class CameraConverter extends ListConverter<ProductsExt, CameraProducts> {
+public class CamAccConverter extends ListConverter<ProductsExt, CameraAccessories>{
 
     @Autowired
     private ConverterHelper converterHelper;
 
     @Override
-    public CameraProducts convert(ProductsExt productsExt) {
+    public CameraAccessories convert(ProductsExt productsExt) {
 
-        return new CameraProducts(converterHelper.baseInfoHelper(productsExt));
+        return new CameraAccessories(converterHelper.baseInfoHelper(productsExt));
     }
 }
