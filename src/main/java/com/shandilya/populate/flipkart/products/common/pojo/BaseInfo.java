@@ -23,12 +23,11 @@ public class BaseInfo {
     private String brand;
     private String inStock;
     private String codAvailable;
-    private String offers;
     private String categoryPath;
     private Attributes attributes;
 
     public BaseInfo(String productId, String productTitle, ImageUrls imageUrls, String flipkartSellingPrice,
-                    String productUrl, String brand, String inStock, String codAvailable, String offers,
+                    String productUrl, String brand, String inStock, String codAvailable,
                     String categoryPath, Attributes attributes) {
         this.productId = productId;
         ProductTitle = productTitle;
@@ -38,7 +37,6 @@ public class BaseInfo {
         this.brand = brand;
         this.inStock = inStock;
         this.codAvailable = codAvailable;
-        this.offers = offers;
         this.categoryPath = categoryPath;
         this.attributes = attributes;
     }
@@ -115,15 +113,6 @@ public class BaseInfo {
         return this;
     }
 
-    public String getOffers() {
-        return offers;
-    }
-
-    public BaseInfo setOffers(String offers) {
-        this.offers = offers;
-        return this;
-    }
-
     public String getCategoryPath() {
         return categoryPath;
     }
@@ -153,7 +142,6 @@ public class BaseInfo {
                 ", brand='" + brand + '\'' +
                 ", inStock='" + inStock + '\'' +
                 ", codAvailable='" + codAvailable + '\'' +
-                ", offers='" + offers + '\'' +
                 ", categoryPath='" + categoryPath + '\'' +
                 ", attributes=" + attributes +
                 '}';

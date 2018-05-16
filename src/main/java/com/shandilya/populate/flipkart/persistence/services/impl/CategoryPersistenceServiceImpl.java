@@ -96,6 +96,7 @@ public class CategoryPersistenceServiceImpl implements CategoryPersistenceServic
     @Override
     public void saveCameras() {
 
+        int savedCount = 0;
         List<ProductsExt> extProds = aggregatorService.getAllProducts("Cameras");
         System.out.println("Total products fetched from API = "+extProds.size());
         List<CameraProducts> cameras = conversionService.convert(extProds, CameraProducts.class);
@@ -103,7 +104,9 @@ public class CategoryPersistenceServiceImpl implements CategoryPersistenceServic
         //cameraRepository.saveAll(cameras);
         for(CameraProducts cp : cameras) {
             cameraRepository.save(cp);
+            savedCount++;
         }
+        System.out.println("#########$$$$$$ Total products saved = "+savedCount);
     }
 
     @Override

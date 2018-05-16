@@ -36,11 +36,6 @@ public class ConverterHelperImpl implements ConverterHelper{
         ImageUrls imageUrls = new ImageUrls(imageUrlsExt.getSmall(), imageUrlsExt.getMedium(), imageUrlsExt.getLarge());
         FlipkartSellingPriceExt fsp = productsExt.getBaseInfoExt().getFsp();
 
-        String[] offers = baseInfoExt.getOffers();
-        StringBuilder allOffers = new StringBuilder();
-        for(String off : offers) {
-            allOffers.append(off).append("#");
-        }
         AttributesExt attributesExt = baseInfoExt.getAttributes();
         Attributes attributes = new Attributes(attributesExt.getSize(), attributesExt.getColor(),
                                 attributesExt.getStorage(), attributesExt.getSizeUnit(),
@@ -49,7 +44,7 @@ public class ConverterHelperImpl implements ConverterHelper{
         // 1. Construct Base Info
         return new BaseInfo(baseInfoExt.getProductId(), baseInfoExt.getTitle(), imageUrls, fsp.getAmount(),
                    baseInfoExt.getProductUrl(), baseInfoExt.getBrand(), baseInfoExt.getInStock(),
-                   baseInfoExt.getCodAvailable(), allOffers.toString(), baseInfoExt.getCategoryPath(), attributes);
+                   baseInfoExt.getCodAvailable(), baseInfoExt.getCategoryPath(), attributes);
     }
 
     public ShippingInfo shippingInfoHelper(ProductsExt productsExt) {
