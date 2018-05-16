@@ -10,6 +10,7 @@ import javax.persistence.*;
  *         Time: 3:08 PM
  */
 @Entity
+@Table(name = "camera")
 public class CameraProducts {
 
     public CameraProducts() { }

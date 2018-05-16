@@ -1,49 +1,46 @@
 package com.shandilya.populate.flipkart.products.audioplayers.model;
 
+import com.shandilya.populate.flipkart.products.common.pojo.BaseInfo;
+
 import javax.persistence.*;
 
+/**
+ * @author rams0516
+ *         Date: 5/16/2018
+ *         Time: 2:20 PM
+ */
 @Entity
 public class AudioPlayerProducts {
 
     public AudioPlayerProducts() {
     }
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
-
-    @Embedded
-    private AudioPlayerProductBaseInfo baseInfo;
-
-    @Embedded
-    private AudioPlayerCategorySpecificInfo categorySpecificInfo;
-
-    public AudioPlayerProducts(AudioPlayerProductBaseInfo baseInfo, AudioPlayerCategorySpecificInfo categorySpecificInfo) {
+    public AudioPlayerProducts(BaseInfo baseInfo) {
         this.baseInfo = baseInfo;
-        this.categorySpecificInfo = categorySpecificInfo;
     }
 
-    public AudioPlayerProductBaseInfo getBaseInfo() {
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    private Long id;
+
+    @Embedded
+    private BaseInfo baseInfo;
+
+    public Long getId() {
+        return id;
+    }
+
+    public AudioPlayerProducts setId(Long id) {
+        this.id = id;
+        return this;
+    }
+
+    public BaseInfo getBaseInfo() {
         return baseInfo;
     }
 
-    public void setBaseInfo(AudioPlayerProductBaseInfo baseInfo) {
+    public AudioPlayerProducts setBaseInfo(BaseInfo baseInfo) {
         this.baseInfo = baseInfo;
-    }
-
-    public AudioPlayerCategorySpecificInfo getCategorySpecificInfo() {
-        return categorySpecificInfo;
-    }
-
-    public void setCategorySpecificInfo(AudioPlayerCategorySpecificInfo categorySpecificInfo) {
-        this.categorySpecificInfo = categorySpecificInfo;
-    }
-
-    @Override
-    public String toString() {
-        return "AudioPlayerProducts{" +
-                "baseInfo=" + baseInfo +
-                ", categorySpecificInfo=" + categorySpecificInfo +
-                '}';
+        return this;
     }
 }

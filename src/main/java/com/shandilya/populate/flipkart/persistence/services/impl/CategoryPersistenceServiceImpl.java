@@ -5,6 +5,9 @@ import com.shandilya.populate.flipkart.external.api.ProductUrlAggregatorService;
 import com.shandilya.populate.flipkart.external.domains.urlcommons.ProductsExt;
 import com.shandilya.populate.flipkart.persistence.Repository.*;
 import com.shandilya.populate.flipkart.persistence.services.CategoryPersistenceService;
+import com.shandilya.populate.flipkart.products.airconditioners.model.AirconditionerProducts;
+import com.shandilya.populate.flipkart.products.aircoolers.model.AircoolerProducts;
+import com.shandilya.populate.flipkart.products.audioplayers.model.AudioPlayerProducts;
 import com.shandilya.populate.flipkart.products.camera.model.CameraProducts;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -20,17 +23,41 @@ public class CategoryPersistenceServiceImpl implements CategoryPersistenceServic
     private ProductUrlAggregatorService aggregatorService;
 
     @Autowired
+    private AcRepository acRepository;
+
+    @Autowired
+    private AircoolerRepository aircoolerRepository;
+
+    @Autowired
+    private AudioPlayerRepository audioPlayerRepository;
+
+    @Autowired
     private CameraRepository cameraRepository;
 
     @Override
     public void saveAcs() {
 
+        List<ProductsExt> apiProducts = aggregatorService.getAllProducts("AirConditioners");
+        List<AirconditionerProducts> airconditionerProducts = conversionService.convert(apiProducts,
+                AirconditionerProducts.class);
+        acRepository.saveAll(airconditionerProducts);
+    }
+
+    @Override
+    public void saveAircoolers() {
+
+        List<ProductsExt> apiProducts = aggregatorService.getAllProducts("AirCoolers");
+        List<AircoolerProducts> aircoolerProducts = conversionService.convert(apiProducts, AircoolerProducts.class);
+        aircoolerRepository.saveAll(aircoolerProducts);
     }
 
     @Override
     public void saveAudioPlayers() {
 
-        List<ProductsExt> extProds = aggregatorService.getAllProducts("AudioPlayers");
+        List<ProductsExt> apiProducts = aggregatorService.getAllProducts("AudioPlayers");
+        List<AudioPlayerProducts> audioPlayerProducts = conversionService.convert(apiProducts,
+                AudioPlayerProducts.class);
+        audioPlayerRepository.saveAll(audioPlayerProducts);
     }
 
     @Override

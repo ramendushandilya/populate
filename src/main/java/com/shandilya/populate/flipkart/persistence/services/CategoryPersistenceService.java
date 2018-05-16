@@ -4,6 +4,8 @@ public interface CategoryPersistenceService {
 
     public void saveAcs();
 
+    public void saveAircoolers();
+
     public void saveAudioPlayers();
 
     public void saveAutomotive();

@@ -29,6 +29,9 @@ public class PopulateApplication implements CommandLineRunner{
 
 	@Override
 	public void run(String... args) throws Exception {
-		persistenceService.saveCameras();
+		persistenceService.saveAcs();
+		persistenceService.saveAircoolers();
+		persistenceService.saveAudioPlayers();
+		//persistenceService.saveCameras();
 	}
 }

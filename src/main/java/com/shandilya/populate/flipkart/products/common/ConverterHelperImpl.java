@@ -31,6 +31,8 @@ public class ConverterHelperImpl implements ConverterHelper{
      */
     public BaseInfo baseInfoHelper(ProductsExt productsExt) {
 
+        //TODO Fix check for null fields while converting
+
         BaseInfoExt baseInfoExt = productsExt.getBaseInfoExt();
         ImageUrlsExt imageUrlsExt = baseInfoExt.getImageUrlsExt();
         ImageUrls imageUrls = new ImageUrls(imageUrlsExt.getSmall(), imageUrlsExt.getMedium(), imageUrlsExt.getLarge());

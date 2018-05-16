@@ -1,4 +1,4 @@
-package com.shandilya.populate.flipkart.products.airconditioners.model;
+package com.shandilya.populate.flipkart.products.aircoolers.model;
 
 import com.shandilya.populate.flipkart.products.common.pojo.BaseInfo;
 
@@ -7,16 +7,16 @@ import javax.persistence.*;
 /**
  * @author rams0516
  *         Date: 5/16/2018
- *         Time: 1:45 PM
+ *         Time: 2:02 PM
  */
 @Entity
-@Table(name = "airconditioner")
-public class AirconditionerProducts {
+@Table(name = "aircoolers")
+public class AircoolerProducts {
 
-    public AirconditionerProducts() {
+    public AircoolerProducts() {
     }
 
-    public AirconditionerProducts(BaseInfo baseInfo) {
+    public AircoolerProducts(BaseInfo baseInfo) {
         this.baseInfo = baseInfo;
     }
 
@@ -31,7 +31,7 @@ public class AirconditionerProducts {
         return id;
     }
 
-    public AirconditionerProducts setId(Long id) {
+    public AircoolerProducts setId(Long id) {
         this.id = id;
         return this;
     }
@@ -40,7 +40,7 @@ public class AirconditionerProducts {
         return baseInfo;
     }
 
-    public AirconditionerProducts setBaseInfo(BaseInfo baseInfo) {
+    public AircoolerProducts setBaseInfo(BaseInfo baseInfo) {
         this.baseInfo = baseInfo;
         return this;
     }
