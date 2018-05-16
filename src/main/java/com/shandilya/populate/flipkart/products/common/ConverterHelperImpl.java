@@ -31,12 +31,14 @@ public class ConverterHelperImpl implements ConverterHelper{
      */
     public BaseInfo baseInfoHelper(ProductsExt productsExt) {
 
-        //TODO Fix check for null fields while converting
-
         BaseInfoExt baseInfoExt = productsExt.getBaseInfoExt();
         ImageUrlsExt imageUrlsExt = baseInfoExt.getImageUrlsExt();
-        ImageUrls imageUrls = new ImageUrls(imageUrlsExt.getSmall(), imageUrlsExt.getMedium(), imageUrlsExt.getLarge());
-        FlipkartSellingPriceExt fsp = productsExt.getBaseInfoExt().getFsp();
+        String small = imageUrlsExt.getSmall() == null ? "null" : imageUrlsExt.getSmall();
+        String medium = imageUrlsExt.getMedium() == null ? "null" : imageUrlsExt.getMedium();
+        String large = imageUrlsExt.getLarge() == null ? "null" : imageUrlsExt.getLarge();
+        ImageUrls imageUrls = new ImageUrls(small, medium, large);
+        FlipkartSellingPriceExt fsp = productsExt.getBaseInfoExt().getFsp() == null ? null : productsExt.getBaseInfoExt().getFsp();
+        String amount = fsp.getAmount() == null ? "null" : fsp.getAmount();
 
         AttributesExt attributesExt = baseInfoExt.getAttributes();
         Attributes attributes = new Attributes(attributesExt.getSize(), attributesExt.getColor(),
@@ -44,7 +46,7 @@ public class ConverterHelperImpl implements ConverterHelper{
                                 attributesExt.getDisplaySize());
 
         // 1. Construct Base Info
-        return new BaseInfo(baseInfoExt.getProductId(), baseInfoExt.getTitle(), imageUrls, fsp.getAmount(),
+        return new BaseInfo(baseInfoExt.getProductId(), baseInfoExt.getTitle(), imageUrls, amount,
                    baseInfoExt.getProductUrl(), baseInfoExt.getBrand(), baseInfoExt.getInStock(),
                    baseInfoExt.getCodAvailable(), baseInfoExt.getCategoryPath(), attributes);
     }

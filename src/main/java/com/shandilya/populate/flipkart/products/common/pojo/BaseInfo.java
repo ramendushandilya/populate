@@ -18,7 +18,6 @@ public class BaseInfo {
     private String ProductTitle;
     private ImageUrls imageUrls;
     private String flipkartSellingPrice;
-    @Column(length = 1000000)
     private String productUrl;
     private String brand;
     private String inStock;
