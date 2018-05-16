@@ -12,8 +12,7 @@ import javax.persistence.*;
 @Entity
 public class CameraProducts {
 
-    public CameraProducts() {
-    }
+    public CameraProducts() { }
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
@@ -23,7 +22,6 @@ public class CameraProducts {
     private BaseInfo baseInfo;
     //private ShippingInfo shippingInfo;
     //private CategorySpecificInfo categorySpecificInfo;
-
 
     public CameraProducts(BaseInfo baseInfo) {
         this.baseInfo = baseInfo;
@@ -45,13 +43,5 @@ public class CameraProducts {
     public CameraProducts setBaseInfo(BaseInfo baseInfo) {
         this.baseInfo = baseInfo;
         return this;
-    }
-
-    @Override
-    public String toString() {
-        return "CameraProducts{" +
-                "id=" + id +
-                ", baseInfo=" + baseInfo +
-                '}';
     }
 }
