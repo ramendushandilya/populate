@@ -1,6 +1,5 @@
 package com.shandilya.populate.flipkart.products.common.pojo;
 
-import javax.persistence.Column;
 import javax.persistence.Embeddable;
 
 /**
