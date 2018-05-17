@@ -1,7 +1,7 @@
 package com.shandilya.populate.flipkart.products.common.pojo;
 
-import javax.persistence.Column;
 import javax.persistence.Embeddable;
+import javax.persistence.Lob;
 
 /**
  * @author rams0516
@@ -14,19 +14,16 @@ public class BaseInfo {
     public BaseInfo() {
     }
 
-    @Column(length = 1000000000)
     private String productId;
-    @Column(length = 1000000000)
+    @Lob
     private String ProductTitle;
     private ImageUrls imageUrls;
     private String flipkartSellingPrice;
-    @Column(length = 1000000000)
+    @Lob
     private String productUrl;
-    @Column(length = 1000000000)
     private String brand;
     private String inStock;
     private String codAvailable;
-    @Column(length = 1000000000)
     private String categoryPath;
     private Attributes attributes;
 

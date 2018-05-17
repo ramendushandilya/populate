@@ -1,7 +1,7 @@
 package com.shandilya.populate.flipkart.products.common.pojo;
 
-import javax.persistence.Column;
 import javax.persistence.Embeddable;
+import javax.persistence.Lob;
 
 /**
  * @author rams0516
@@ -14,11 +14,11 @@ public class ImageUrls {
     public ImageUrls() {
     }
 
-    @Column(length = 1000000000)
+    @Lob
     private String small;
-    @Column(length = 1000000000)
+    @Lob
     private String medium;
-    @Column(length = 1000000000)
+    @Lob
     private String large;
 
     public ImageUrls(String small, String medium, String large) {
