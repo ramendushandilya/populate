@@ -1,17 +1,16 @@
-package com.shandilya.populate.flipkart.products.cameraAccessories.model;
+package com.shandilya.populate.flipkart.products.computerperipherals.model;
 
 import com.shandilya.populate.flipkart.products.common.pojo.BaseInfo;
 
 import javax.persistence.*;
 
 /**
- * @author rams0516
- *         Date: 4/30/2018
- *         Time: 12:37 PM
+ * @author failedOptimus
  */
+
 @Entity
-@Table(name = "cameraaccessories")
-public class CameraAccessories {
+@Table(name = "computerperipheralproducts")
+public class ComputerPeripheralsProducts {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
@@ -20,10 +19,10 @@ public class CameraAccessories {
     @Embedded
     private BaseInfo baseInfo;
 
-    public CameraAccessories() {
+    public ComputerPeripheralsProducts() {
     }
 
-    public CameraAccessories(BaseInfo baseInfo) {
+    public ComputerPeripheralsProducts(BaseInfo baseInfo) {
         this.baseInfo = baseInfo;
     }
 

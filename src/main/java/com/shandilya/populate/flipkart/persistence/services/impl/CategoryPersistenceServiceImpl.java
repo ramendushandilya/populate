@@ -1,7 +1,9 @@
 package com.shandilya.populate.flipkart.persistence.services.impl;
 
+import com.shandilya.populate.flipkart.conversioncommon.ListConverter;
 import com.shandilya.populate.flipkart.conversioncommon.PopulateConversionService;
 import com.shandilya.populate.flipkart.external.api.ProductUrlAggregatorService;
+import com.shandilya.populate.flipkart.external.domains.categories.ComputerPeripherals;
 import com.shandilya.populate.flipkart.external.domains.urlcommons.ProductsExt;
 import com.shandilya.populate.flipkart.persistence.Repository.*;
 import com.shandilya.populate.flipkart.persistence.services.CategoryPersistenceService;
@@ -12,8 +14,13 @@ import com.shandilya.populate.flipkart.products.automotive.model.AutomotiveProdu
 import com.shandilya.populate.flipkart.products.babycare.model.BabycareProducts;
 import com.shandilya.populate.flipkart.products.bagswalletsbelts.model.BagsWalletsBelts;
 import com.shandilya.populate.flipkart.products.camera.model.CameraProducts;
+import com.shandilya.populate.flipkart.products.cameraAccessories.model.CameraAccessories;
+import com.shandilya.populate.flipkart.products.computercomponents.model.ComputerComponentsProducts;
+import com.shandilya.populate.flipkart.products.computerperipherals.model.ComputerPeripheralsProducts;
+import com.shandilya.populate.flipkart.products.computerstorage.model.ComputerStorageProducts;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 import java.util.List;
 
 @Service
@@ -45,6 +52,18 @@ public class CategoryPersistenceServiceImpl implements CategoryPersistenceServic
 
     @Autowired
     private CameraRepository cameraRepository;
+
+    @Autowired
+    private CameraAccessoriesRepository cameraAccessoriesRepository;
+
+    @Autowired
+    private ComputerComponentsRepository computerComponentsRepository;
+
+    @Autowired
+    private ComputerPeripheralsRepository computerPeripheralsRepository;
+
+    @Autowired
+    private ComputerStorageRepository computerStorageRepository;
 
     @Override
     public void saveAcs() {
@@ -98,6 +117,9 @@ public class CategoryPersistenceServiceImpl implements CategoryPersistenceServic
     @Override
     public void saveCameraAccessories() {
 
+        List<ProductsExt> apiProducts = aggregatorService.getAllProducts("CameraAccessories");
+        List<CameraAccessories> cameraAccessories = conversionService.convert(apiProducts, CameraAccessories.class);
+        cameraAccessoriesRepository.saveAll(cameraAccessories);
     }
 
     @Override
@@ -111,28 +133,35 @@ public class CategoryPersistenceServiceImpl implements CategoryPersistenceServic
     @Override
     public void saveComputerComponents() {
 
-        List<ProductsExt> extProds = aggregatorService.getAllProducts("ComputerComponents");
-
+        List<ProductsExt> apiProducts = aggregatorService.getAllProducts("ComputerComponents");
+        List<ComputerComponentsProducts> computerComponentsProducts = conversionService.convert(apiProducts,
+                ComputerComponentsProducts.class);
+        computerComponentsRepository.saveAll(computerComponentsProducts);
     }
 
     @Override
     public void saveComputerPeripherals() {
 
-        List<ProductsExt> extProds = aggregatorService.getAllProducts("ComputerPeripherals");
-
+        List<ProductsExt> apiProducts = aggregatorService.getAllProducts("ComputerPeripherals");
+        List<ComputerPeripheralsProducts> computerPeripheralsProducts = conversionService.convert(apiProducts,
+                ComputerPeripheralsProducts.class);
+        computerPeripheralsRepository.saveAll(computerPeripheralsProducts);
     }
 
     @Override
     public void saveComputerStorage() {
 
-        List<ProductsExt> extProds = aggregatorService.getAllProducts("ComputerStorage");
-
+        List<ProductsExt> apiProducts = aggregatorService.getAllProducts("ComputerStorage");
+        List<ComputerStorageProducts> computerStorageProducts = conversionService.convert(apiProducts,
+                ComputerStorageProducts.class);
+        computerStorageRepository.saveAll(computerStorageProducts);
     }
 
     @Override
     public void saveDesktops() {
 
         List<ProductsExt> extProds = aggregatorService.getAllProducts("Desktops");
+
     }
 
     @Override
