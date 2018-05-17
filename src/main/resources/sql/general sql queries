@@ -1,0 +1,3 @@
+//Checks the top N products by their character length
+
+select * from audio_player_products order by char_length(product_title) desc limit 10;
