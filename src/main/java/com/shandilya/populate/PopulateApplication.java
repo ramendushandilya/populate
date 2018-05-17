@@ -32,5 +32,6 @@ public class PopulateApplication implements CommandLineRunner{
 		persistenceService.saveAcs();
 		persistenceService.saveAircoolers();
 		persistenceService.saveAudioPlayers();
+		persistenceService.saveAutomotive();
 	}
 }

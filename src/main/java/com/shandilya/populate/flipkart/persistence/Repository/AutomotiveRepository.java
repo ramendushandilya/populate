@@ -4,11 +4,8 @@ import com.shandilya.populate.flipkart.products.automotive.model.AutomotiveProdu
 import org.springframework.data.repository.CrudRepository;
 
 /**
- * @author rams0516
- *         Date: 4/25/2018
- *         Time: 3:55 PM
+ * @author failedOptimus
  */
 
 public interface AutomotiveRepository extends CrudRepository<AutomotiveProducts, Long> {
-
 }

@@ -16,6 +16,9 @@ import org.springframework.web.client.RestTemplate;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+/**
+ * @author failedOptimus
+ */
 @Service
 public class CategoryServiceImpl implements CategoryService{
 

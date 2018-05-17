@@ -8,6 +8,9 @@ import com.shandilya.populate.flipkart.persistence.services.CategoryPersistenceS
 import com.shandilya.populate.flipkart.products.airconditioners.model.AirconditionerProducts;
 import com.shandilya.populate.flipkart.products.aircoolers.model.AircoolerProducts;
 import com.shandilya.populate.flipkart.products.audioplayers.model.AudioPlayerProducts;
+import com.shandilya.populate.flipkart.products.automotive.model.AutomotiveProducts;
+import com.shandilya.populate.flipkart.products.babycare.model.BabycareProducts;
+import com.shandilya.populate.flipkart.products.bagswalletsbelts.model.BagsWalletsBelts;
 import com.shandilya.populate.flipkart.products.camera.model.CameraProducts;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -30,6 +33,15 @@ public class CategoryPersistenceServiceImpl implements CategoryPersistenceServic
 
     @Autowired
     private AudioPlayerRepository audioPlayerRepository;
+
+    @Autowired
+    private AutomotiveRepository automotiveRepository;
+
+    @Autowired
+    private BabycareRepository babycareRepository;
+
+    @Autowired
+    private BagsWalletRepository bagsWalletRepository;
 
     @Autowired
     private CameraRepository cameraRepository;
@@ -62,19 +74,25 @@ public class CategoryPersistenceServiceImpl implements CategoryPersistenceServic
 
     @Override
     public void saveAutomotive() {
-        List<ProductsExt> extProds = aggregatorService.getAllProducts("Automotive");
+        List<ProductsExt> apiProducts = aggregatorService.getAllProducts("Automotive");
+        List<AutomotiveProducts> automotiveProducts = conversionService.convert(apiProducts, AutomotiveProducts.class);
+        automotiveRepository.saveAll(automotiveProducts);
     }
 
     @Override
     public void saveBabyCare() {
 
-        List<ProductsExt> extProds = aggregatorService.getAllProducts("BabyCare");
+        List<ProductsExt> apiProducts = aggregatorService.getAllProducts("BabyCare");
+        List<BabycareProducts> babycareProducts = conversionService.convert(apiProducts, BabycareProducts.class);
+        babycareRepository.saveAll(babycareProducts);
     }
 
     @Override
     public void saveBagsWalletsBelts() {
 
-        List<ProductsExt> extProds = aggregatorService.getAllProducts("BagsWalletsBelts");
+        List<ProductsExt> apiProducts = aggregatorService.getAllProducts("BagsWalletsBelts");
+        List<BagsWalletsBelts> bagsWalletsBelts = conversionService.convert(apiProducts, BagsWalletsBelts.class);
+        bagsWalletRepository.saveAll(bagsWalletsBelts);
     }
 
     @Override

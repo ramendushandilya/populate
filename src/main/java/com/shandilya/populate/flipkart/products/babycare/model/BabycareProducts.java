@@ -1,15 +1,17 @@
-package com.shandilya.populate.flipkart.products.automotive.model;
+package com.shandilya.populate.flipkart.products.babycare.model;
 
+import com.fasterxml.jackson.databind.ser.Serializers;
 import com.shandilya.populate.flipkart.products.common.pojo.BaseInfo;
 
 import javax.persistence.*;
 
 /**
- * failedOptimus
+ * @author failedOptimus
  */
+
 @Entity
-@Table(name = "automotive")
-public class AutomotiveProducts {
+@Table(name = "babycare")
+public class BabycareProducts {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
@@ -18,10 +20,10 @@ public class AutomotiveProducts {
     @Embedded
     private BaseInfo baseInfo;
 
-    public AutomotiveProducts() {
+    public BabycareProducts() {
     }
 
-    public AutomotiveProducts(BaseInfo baseInfo) {
+    public BabycareProducts(BaseInfo baseInfo) {
         this.baseInfo = baseInfo;
     }
 
