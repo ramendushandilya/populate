@@ -23,6 +23,7 @@ import com.shandilya.populate.flipkart.products.foodnutrition.models.FoodNutriti
 import com.shandilya.populate.flipkart.products.fragrances.models.FragranceProducts;
 import com.shandilya.populate.flipkart.products.furniture.models.FurnitureProducts;
 import com.shandilya.populate.flipkart.products.gaming.models.GamingProducts;
+import com.shandilya.populate.flipkart.products.groomingbeautywellness.models.BeautyProducts;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -92,6 +93,9 @@ public class CategoryPersistenceServiceImpl implements CategoryPersistenceServic
 
     @Autowired
     private GamingRepository gamingRepository;
+
+    @Autowired
+    private BeautyProductsRepository beautyProductsRepository;
 
     @Override
     public void saveAcs() {
@@ -244,6 +248,9 @@ public class CategoryPersistenceServiceImpl implements CategoryPersistenceServic
     @Override
     public void saveGroomingWellness() {
 
+        List<ProductsExt> apiProducts = aggregatorService.getAllProducts("GroomingBeautyWellness", PAGE_LIMIT);
+        List<BeautyProducts> beautyProducts = conversionService.convert(apiProducts, BeautyProducts.class);
+        beautyProductsRepository.saveAll(beautyProducts);
     }
 
     @Override
