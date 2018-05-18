@@ -30,6 +30,7 @@ import com.shandilya.populate.flipkart.products.homedecorandfestiveneeds.models.
 import com.shandilya.populate.flipkart.products.homeentertainment.models.HomeEntertainmentProducts;
 import com.shandilya.populate.flipkart.products.homefurnishing.models.HomeFurnishingProducts;
 import com.shandilya.populate.flipkart.products.homeimprovementtools.models.HomeImprovementProducts;
+import com.shandilya.populate.flipkart.products.homekitchenneeds.models.HomeKitchenProducts;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -117,6 +118,9 @@ public class CategoryPersistenceServiceImpl implements CategoryPersistenceServic
 
     @Autowired
     private HomeImprovementToolsRepository homeImprovementToolsRepository;
+
+    @Autowired
+    private HomeKitchenNeedsRepository homeKitchenNeedsRepository;
 
     @Override
     public void saveAcs() {
@@ -321,10 +325,15 @@ public class CategoryPersistenceServiceImpl implements CategoryPersistenceServic
     @Override
     public void saveHomeKitchenNeeds() {
 
+        List<ProductsExt> apiProducts = aggregatorService.getAllProducts("HomeAndKitchenNeeds", PAGE_LIMIT);
+        List<HomeKitchenProducts> homeKitchenProducts = conversionService.convert(apiProducts,
+                HomeKitchenProducts.class);
+        homeKitchenNeedsRepository.saveAll(homeKitchenProducts);
     }
 
     @Override
     public void saveHouseHoldSupplies() {
+
 
     }
 
