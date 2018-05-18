@@ -2,6 +2,7 @@ package com.shandilya.populate.flipkart.persistence.services.impl;
 
 import com.shandilya.populate.flipkart.conversioncommon.PopulateConversionService;
 import com.shandilya.populate.flipkart.external.api.ProductUrlAggregatorService;
+import com.shandilya.populate.flipkart.external.domains.categories.HomeEntertainment;
 import com.shandilya.populate.flipkart.external.domains.urlcommons.ProductsExt;
 import com.shandilya.populate.flipkart.persistence.Repository.*;
 import com.shandilya.populate.flipkart.persistence.services.CategoryPersistenceService;
@@ -26,6 +27,7 @@ import com.shandilya.populate.flipkart.products.gaming.models.GamingProducts;
 import com.shandilya.populate.flipkart.products.groomingbeautywellness.models.BeautyProducts;
 import com.shandilya.populate.flipkart.products.homeappliances.models.HomeApplianceProducts;
 import com.shandilya.populate.flipkart.products.homedecorandfestiveneeds.models.HomeDecorProducts;
+import com.shandilya.populate.flipkart.products.homeentertainment.models.HomeEntertainmentProducts;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -104,6 +106,9 @@ public class CategoryPersistenceServiceImpl implements CategoryPersistenceServic
 
     @Autowired
     private HomeDecorRepository homeDecorRepository;
+
+    @Autowired
+    private HomeEntertainmentRepository homeEntertainmentRepository;
 
     @Override
     public void saveAcs() {
@@ -280,6 +285,10 @@ public class CategoryPersistenceServiceImpl implements CategoryPersistenceServic
     @Override
     public void saveHomeEntertainment() {
 
+        List<ProductsExt> apiProducts = aggregatorService.getAllProducts("HomeEntertainment", PAGE_LIMIT);
+        List<HomeEntertainmentProducts> homeEntertainmentProducts = conversionService.convert(apiProducts,
+                HomeEntertainmentProducts.class);
+        homeEntertainmentRepository.saveAll(homeEntertainmentProducts);
     }
 
     @Override
