@@ -6,5 +6,5 @@ import java.util.List;
 
 public interface ProductUrlAggregatorService {
 
-    public List<ProductsExt> getAllProducts(String categoryType);
+    public List<ProductsExt> getAllProducts(String categoryType, int pageLimit);
 }

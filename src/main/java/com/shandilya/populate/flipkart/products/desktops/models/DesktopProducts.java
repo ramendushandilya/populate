@@ -10,10 +10,8 @@ import javax.persistence.*;
  *         Time: 5:11 PM
  */
 @Entity
+@Table(name = "desktopproducts")
 public class DesktopProducts {
-
-    public DesktopProducts() {
-    }
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
@@ -21,6 +19,9 @@ public class DesktopProducts {
 
     @Embedded
     private BaseInfo baseInfo;
+
+    public DesktopProducts() {
+    }
 
     public DesktopProducts(BaseInfo baseInfo) {
         this.baseInfo = baseInfo;
@@ -42,13 +43,5 @@ public class DesktopProducts {
     public DesktopProducts setBaseInfo(BaseInfo baseInfo) {
         this.baseInfo = baseInfo;
         return this;
-    }
-
-    @Override
-    public String toString() {
-        return "DesktopProducts{" +
-                "id=" + id +
-                ", baseInfo=" + baseInfo +
-                '}';
     }
 }

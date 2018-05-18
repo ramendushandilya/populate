@@ -38,11 +38,11 @@ public class ProductUrlAggregatorServiceImpl implements ProductUrlAggregatorServ
      * @param seed
      * @return
      */
-    public List<String> getItemSetUrls(String seed) {
+    public List<String> getItemSetUrls(String seed, int pageLimit) {
         List<String> nextUrls = new ArrayList<>();
         nextUrls.add(seed);
         //call helper to fetch all next urls excluding the seed
-        helper(seed, nextUrls);
+        helper(seed, nextUrls, pageLimit);
         return nextUrls;
     }
 
@@ -53,9 +53,9 @@ public class ProductUrlAggregatorServiceImpl implements ProductUrlAggregatorServ
      * @param seedUrl
      * @param urls
      */
-    public void helper(String seedUrl, List<String> urls) {
+    public void helper(String seedUrl, List<String> urls, int pageLimit) {
 
-        if (seedUrl != null) {
+        if (seedUrl != null && pageLimit > 0) {
             ResponseEntity<MasterExt> response = null;
             RestTemplate restTemplate = new RestTemplate();
             try {
@@ -72,7 +72,8 @@ public class ProductUrlAggregatorServiceImpl implements ProductUrlAggregatorServ
                 if (nextUrl != null) {
                     urls.add(nextUrl);
                 }
-                helper(nextUrl, urls);
+                pageLimit--;
+                helper(nextUrl, urls, pageLimit);
             }
         } else {
             return;
@@ -87,7 +88,8 @@ public class ProductUrlAggregatorServiceImpl implements ProductUrlAggregatorServ
      * @return
      */
     @Override
-    public List<ProductsExt> getAllProducts(String categoryType) {
+    public List<ProductsExt> getAllProducts(String categoryType, int pageLimit) {
+
         String seed = null;
         Map<String, String> seedMap = categoryService.getProductCategoryUrls();
         List<ProductsExt> allProducts = new LinkedList<>();
@@ -96,7 +98,7 @@ public class ProductUrlAggregatorServiceImpl implements ProductUrlAggregatorServ
         if (seedMap.containsKey(categoryType)) {
             seed = seedMap.get(categoryType);
         }
-        List<String> urls = getItemSetUrls(seed.toString());
+        List<String> urls = getItemSetUrls(seed.toString(), pageLimit);
         RestTemplate template = new RestTemplate();
         ResponseEntity<MasterExt> masterResponseEntity;
 

@@ -29,13 +29,19 @@ public class PopulateApplication implements CommandLineRunner{
 
 	@Override
 	public void run(String... args) throws Exception {
-		persistenceService.saveAcs();
+
+		/*persistenceService.saveAcs();
 		persistenceService.saveAircoolers();
 		persistenceService.saveAudioPlayers();
 		persistenceService.saveAutomotive();
 		persistenceService.saveBabyCare();
 		persistenceService.saveBagsWalletsBelts();
+		persistenceService.saveCameraAccessories();
 		persistenceService.saveCameras();
 		persistenceService.saveComputerComponents();
+		persistenceService.saveComputerPeripherals();
+		persistenceService.saveComputerStorage();
+		persistenceService.saveDesktops();*/
+		persistenceService.saveAutomotive();
 	}
 }
