@@ -21,6 +21,8 @@ import com.shandilya.populate.flipkart.products.elearning.models.ElearningProduc
 import com.shandilya.populate.flipkart.products.eyewear.models.EyewearProducts;
 import com.shandilya.populate.flipkart.products.foodnutrition.models.FoodNutritionProducts;
 import com.shandilya.populate.flipkart.products.fragrances.models.FragranceProducts;
+import com.shandilya.populate.flipkart.products.furniture.models.FurnitureProducts;
+import com.shandilya.populate.flipkart.products.gaming.models.GamingProducts;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -84,6 +86,12 @@ public class CategoryPersistenceServiceImpl implements CategoryPersistenceServic
 
     @Autowired
     private FragranceRepository fragranceRepository;
+
+    @Autowired
+    private FurnitureRespository furnitureRespository;
+
+    @Autowired
+    private GamingRepository gamingRepository;
 
     @Override
     public void saveAcs() {
@@ -220,12 +228,17 @@ public class CategoryPersistenceServiceImpl implements CategoryPersistenceServic
 
     @Override
     public void saveFurniture() {
-
+        List<ProductsExt> apiProducts = aggregatorService.getAllProducts("Furniture", PAGE_LIMIT);
+        List<FurnitureProducts> furnitureProducts = conversionService.convert(apiProducts, FurnitureProducts.class);
+        furnitureRespository.saveAll(furnitureProducts);
     }
 
     @Override
     public void saveGaming() {
 
+        List<ProductsExt> apiProducts = aggregatorService.getAllProducts("Gaming", PAGE_LIMIT);
+        List<GamingProducts> gamingProducts = conversionService.convert(apiProducts, GamingProducts.class);
+        gamingRepository.saveAll(gamingProducts);
     }
 
     @Override
