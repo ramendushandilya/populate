@@ -57,7 +57,7 @@ public class PopulateApplication implements CommandLineRunner{
 		persistenceService.saveHomeImprovementTools();
 		persistenceService.saveHomeKitchenNeeds();
 		persistenceService.saveHouseHoldSupplies();
-
+		persistenceService.saveJewellery();
 
 		long end = System.currentTimeMillis();
 
