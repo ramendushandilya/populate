@@ -19,7 +19,7 @@ public class Televisions {
 
     @Override
     public String toString() {
-        return "FoodNutrition{" +
+        return "FoodNutritionProducts{" +
                 "variants=" + variants +
                 '}';
     }

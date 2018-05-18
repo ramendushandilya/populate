@@ -17,6 +17,10 @@ import com.shandilya.populate.flipkart.products.computercomponents.model.Compute
 import com.shandilya.populate.flipkart.products.computerperipherals.model.ComputerPeripheralsProducts;
 import com.shandilya.populate.flipkart.products.computerstorage.model.ComputerStorageProducts;
 import com.shandilya.populate.flipkart.products.desktops.models.DesktopProducts;
+import com.shandilya.populate.flipkart.products.elearning.models.ElearningProducts;
+import com.shandilya.populate.flipkart.products.eyewear.models.EyewearProducts;
+import com.shandilya.populate.flipkart.products.foodnutrition.models.FoodNutritionProducts;
+import com.shandilya.populate.flipkart.products.fragrances.models.FragranceProducts;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -68,6 +72,18 @@ public class CategoryPersistenceServiceImpl implements CategoryPersistenceServic
 
     @Autowired
     private DesktopRepository desktopRepository;
+
+    @Autowired
+    private ElearningRepository elearningRepository;
+
+    @Autowired
+    private EyewearRepository eyewearRepository;
+
+    @Autowired
+    private FoodNutritionRepository foodNutritionRepository;
+
+    @Autowired
+    private FragranceRepository fragranceRepository;
 
     @Override
     public void saveAcs() {
@@ -172,11 +188,88 @@ public class CategoryPersistenceServiceImpl implements CategoryPersistenceServic
 
     @Override
     public void saveELearning() {
-
+        List<ProductsExt> apiProducts = aggregatorService.getAllProducts("Elearning", PAGE_LIMIT);
+        List<ElearningProducts> elearningProducts = conversionService.convert(apiProducts, ElearningProducts.class);
+        elearningRepository.saveAll(elearningProducts);
     }
 
     @Override
     public void saveEyewear() {
+
+        List<ProductsExt> apiProducts = aggregatorService.getAllProducts("Eyewear", PAGE_LIMIT);
+        List<EyewearProducts> eyewearProducts = conversionService.convert(apiProducts, EyewearProducts.class);
+        eyewearRepository.saveAll(eyewearProducts);
+    }
+
+    @Override
+    public void saveFoodNutrition() {
+
+        List<ProductsExt> apiProducts = aggregatorService.getAllProducts("FoodNutritionProducts", PAGE_LIMIT);
+        List<FoodNutritionProducts> foodNutritionProducts = conversionService.convert(apiProducts,
+                FoodNutritionProducts.class);
+        foodNutritionRepository.saveAll(foodNutritionProducts);
+    }
+
+    @Override
+    public void saveFragrances() {
+
+        List<ProductsExt> apiProducts = aggregatorService.getAllProducts("Fragrances", PAGE_LIMIT);
+        List<FragranceProducts> fragranceProducts = conversionService.convert(apiProducts, FragranceProducts.class);
+        fragranceRepository.saveAll(fragranceProducts);
+    }
+
+    @Override
+    public void saveFurniture() {
+
+    }
+
+    @Override
+    public void saveGaming() {
+
+    }
+
+    @Override
+    public void saveGroomingWellness() {
+
+    }
+
+    @Override
+    public void saveHomeAppliances() {
+
+    }
+
+    @Override
+    public void saveHomeFestiveNeeds() {
+
+    }
+
+    @Override
+    public void saveHomeEntertainment() {
+
+    }
+
+    @Override
+    public void savehomeFurnishing() {
+
+    }
+
+    @Override
+    public void saveHomeImprovementTools() {
+
+    }
+
+    @Override
+    public void saveHomeKitchenNeeds() {
+
+    }
+
+    @Override
+    public void saveHouseHoldSupplies() {
+
+    }
+
+    @Override
+    public void saveJewellery() {
 
     }
 }

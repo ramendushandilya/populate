@@ -19,7 +19,7 @@ public class LuggageTravel {
 
     @Override
     public String toString() {
-        return "FoodNutrition{" +
+        return "FoodNutritionProducts{" +
                 "variants=" + variants +
                 '}';
     }

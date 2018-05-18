@@ -2,32 +2,58 @@ package com.shandilya.populate.flipkart.persistence.services;
 
 public interface CategoryPersistenceService {
 
-    public void saveAcs();
+    void saveAcs();
 
-    public void saveAircoolers();
+    void saveAircoolers();
 
-    public void saveAudioPlayers();
+    void saveAudioPlayers();
 
-    public void saveAutomotive();
+    void saveAutomotive();
 
-    public void saveBabyCare();
+    void saveBabyCare();
 
-    public void saveBagsWalletsBelts();
+    void saveBagsWalletsBelts();
 
-    public void saveCameraAccessories();
+    void saveCameraAccessories();
 
-    public void saveCameras();
+    void saveCameras();
 
-    public void saveComputerComponents();
+    void saveComputerComponents();
 
-    public void saveComputerPeripherals();
+    void saveComputerPeripherals();
 
-    public void saveComputerStorage();
+    void saveComputerStorage();
 
-    public void saveDesktops();
+    void saveDesktops();
 
-    public void saveELearning();
+    void saveELearning();
 
-    public void saveEyewear();
+    void saveEyewear();
+
+    void saveFoodNutrition();
+
+    void saveFragrances();
+
+    void saveFurniture();
+
+    void saveGaming();
+
+    void saveGroomingWellness();
+
+    void saveHomeAppliances();
+
+    void saveHomeFestiveNeeds();
+
+    void saveHomeEntertainment();
+
+    void savehomeFurnishing();
+
+    void saveHomeImprovementTools();
+
+    void saveHomeKitchenNeeds();
+
+    void saveHouseHoldSupplies();
+
+    void saveJewellery();
 
 }

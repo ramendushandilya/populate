@@ -54,7 +54,7 @@ public class CategoryServiceImpl implements CategoryService{
             productCategories.put("Desktops", listings.getDesktops().getVariants().getCore().getGet());
             productCategories.put("ELearning", listings.geteLearning().getVariants().getCore().getGet());
             productCategories.put("Eyewear", listings.getEyewear().getVariants().getCore().getGet());
-            productCategories.put("FoodNutrition", listings.getFoodNutrition().getVariants().getCore().getGet());
+            productCategories.put("FoodNutritionProducts", listings.getFoodNutrition().getVariants().getCore().getGet());
             productCategories.put("Fragrances", listings.getFragrances().getVariants().getCore().getGet());
             productCategories.put("Furniture", listings.getFurniture().getVariants().getCore().getGet());
             productCategories.put("Gaming", listings.getGaming().getVariants().getCore().getGet());

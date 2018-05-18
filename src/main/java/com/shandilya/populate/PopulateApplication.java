@@ -44,6 +44,11 @@ public class PopulateApplication implements CommandLineRunner{
 		persistenceService.saveComputerPeripherals();
 		persistenceService.saveComputerStorage();
 		persistenceService.saveDesktops();
+		persistenceService.saveELearning();
+		persistenceService.saveEyewear();
+		persistenceService.saveFoodNutrition();
+		persistenceService.saveFragrances();
+
 
 		long end = System.currentTimeMillis();
 
