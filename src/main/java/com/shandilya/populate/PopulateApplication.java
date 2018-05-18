@@ -30,7 +30,9 @@ public class PopulateApplication implements CommandLineRunner{
 	@Override
 	public void run(String... args) throws Exception {
 
-		/*persistenceService.saveAcs();
+		long start = System.currentTimeMillis();
+
+		persistenceService.saveAcs();
 		persistenceService.saveAircoolers();
 		persistenceService.saveAudioPlayers();
 		persistenceService.saveAutomotive();
@@ -41,7 +43,10 @@ public class PopulateApplication implements CommandLineRunner{
 		persistenceService.saveComputerComponents();
 		persistenceService.saveComputerPeripherals();
 		persistenceService.saveComputerStorage();
-		persistenceService.saveDesktops();*/
-		persistenceService.saveAutomotive();
+		persistenceService.saveDesktops();
+
+		long end = System.currentTimeMillis();
+
+		System.out.println("##########Total time elapsed#########"+(end-start)/60000);
 	}
 }

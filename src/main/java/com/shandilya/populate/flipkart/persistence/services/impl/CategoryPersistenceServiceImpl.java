@@ -25,7 +25,7 @@ import java.util.List;
 @Service
 public class CategoryPersistenceServiceImpl implements CategoryPersistenceService {
 
-    private static final int PAGE_LIMIT = 2;
+    private static final int PAGE_LIMIT = 50;
 
     @Autowired
     private PopulateConversionService conversionService;
