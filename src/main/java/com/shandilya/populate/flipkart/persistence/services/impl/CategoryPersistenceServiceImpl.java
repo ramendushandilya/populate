@@ -36,6 +36,7 @@ import com.shandilya.populate.flipkart.products.householdsupplies.models.HouseHo
 import com.shandilya.populate.flipkart.products.jewellery.models.JewelleryProducts;
 import com.shandilya.populate.flipkart.products.kidsclothing.models.KidsClothingProducts;
 import com.shandilya.populate.flipkart.products.kidsfootwear.models.KidsFootwearProducts;
+import com.shandilya.populate.flipkart.products.kitchenappliances.models.KitchenApplianceProducts;
 import com.sun.scenario.effect.impl.prism.PrDrawable;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -139,6 +140,9 @@ public class CategoryPersistenceServiceImpl implements CategoryPersistenceServic
 
     @Autowired
     private KidsFootwearRepository kidsFootwearRepository;
+
+    @Autowired
+    private KitchenAppliancesRepository kitchenAppliancesRepository;
 
     @Override
     public void saveAcs() {
@@ -387,6 +391,11 @@ public class CategoryPersistenceServiceImpl implements CategoryPersistenceServic
     @Override
     public void saveKitchenAppliances() {
 
+        List<ProductsExt> apiProducts = aggregatorService.getAllProducts("KitchenAppliances",
+                PAGE_LIMIT);
+        List<KitchenApplianceProducts> kitchenApplianceProducts = conversionService.convert(apiProducts,
+                KitchenApplianceProducts.class);
+        kitchenAppliancesRepository.saveAll(kitchenApplianceProducts);
     }
 
     @Override
