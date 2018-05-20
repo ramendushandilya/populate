@@ -56,4 +56,65 @@ public interface CategoryPersistenceService {
 
     void saveJewellery();
 
+    void saveKidsClothing();
+
+    void saveKidsFootwear();
+
+    void saveKitchenAppliances();
+
+    void saveLandLinePhones();
+
+    void saveLaptopAccessories();
+
+    void saveLaptops();
+
+    void saveLuggageTravel();
+
+    void saveMensClothing();
+
+    void saveMensFootwear();
+
+    void saveMicrowaveOvens();
+
+    void saveMobileAccessories();
+
+    void saveMobiles();
+
+    void savMusicMoviePosters();
+
+    void saveNetworkComponents();
+
+    void savePetSupplies();
+
+    void saveRefrigerator();
+
+    void saveSoftware();
+
+    void saveSportsFitness();
+
+    void saveStationeryOfficeSupplies();
+
+    void saveSunglasses();
+
+    void saveTabletAccessories();
+
+    void saveTablets();
+
+    void saveTelevisions();
+
+    void saveToys();
+
+    void saveTvVideoAccessories();
+
+    void saveVideoPlayers();
+
+    void saveWashingMahines();
+
+    void saveWatches();
+
+    void saveWearableSmartDevices();
+
+    void saveWomenFootwear();
+
+    void saveWomenClothing();
 }

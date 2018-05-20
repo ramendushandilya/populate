@@ -1,5 +1,6 @@
 package com.shandilya.populate.flipkart.persistence.services.impl;
 
+import com.shandilya.populate.flipkart.conversioncommon.ListConverter;
 import com.shandilya.populate.flipkart.conversioncommon.PopulateConversionService;
 import com.shandilya.populate.flipkart.external.api.ProductUrlAggregatorService;
 import com.shandilya.populate.flipkart.external.domains.categories.HomeEntertainment;
@@ -33,6 +34,7 @@ import com.shandilya.populate.flipkart.products.homeimprovementtools.models.Home
 import com.shandilya.populate.flipkart.products.homekitchenneeds.models.HomeKitchenProducts;
 import com.shandilya.populate.flipkart.products.householdsupplies.models.HouseHoldSuppliesProducts;
 import com.shandilya.populate.flipkart.products.jewellery.models.JewelleryProducts;
+import com.shandilya.populate.flipkart.products.kidsclothing.models.KidsClothingProducts;
 import com.sun.scenario.effect.impl.prism.PrDrawable;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -130,6 +132,9 @@ public class CategoryPersistenceServiceImpl implements CategoryPersistenceServic
 
     @Autowired
     private JewelleryRepository jewelleryRepository;
+
+    @Autowired
+    private KidsClothingRepository kidsClothingRepository;
 
     @Override
     public void saveAcs() {
@@ -355,5 +360,164 @@ public class CategoryPersistenceServiceImpl implements CategoryPersistenceServic
         List<ProductsExt> apiProducts = aggregatorService.getAllProducts("Jewellery", PAGE_LIMIT);
         List<JewelleryProducts> jewelleryProducts = conversionService.convert(apiProducts, JewelleryProducts.class);
         jewelleryRepository.saveAll(jewelleryProducts);
+    }
+
+    @Override
+    public void saveKidsClothing() {
+
+        List<ProductsExt> apiProducts = aggregatorService.getAllProducts("KidsClothing", PAGE_LIMIT);
+        List<KidsClothingProducts> kidsClothingProducts = conversionService.convert(apiProducts,
+                KidsClothingProducts.class);
+        kidsClothingRepository.saveAll(kidsClothingProducts);
+    }
+
+    @Override
+    public void saveKidsFootwear() {
+
+    }
+
+    @Override
+    public void saveKitchenAppliances() {
+
+    }
+
+    @Override
+    public void saveLandLinePhones() {
+
+    }
+
+    @Override
+    public void saveLaptopAccessories() {
+
+    }
+
+    @Override
+    public void saveLaptops() {
+
+    }
+
+    @Override
+    public void saveLuggageTravel() {
+
+    }
+
+    @Override
+    public void saveMensClothing() {
+
+    }
+
+    @Override
+    public void saveMensFootwear() {
+
+    }
+
+    @Override
+    public void saveMicrowaveOvens() {
+
+    }
+
+    @Override
+    public void saveMobileAccessories() {
+
+    }
+
+    @Override
+    public void saveMobiles() {
+
+    }
+
+    @Override
+    public void savMusicMoviePosters() {
+
+    }
+
+    @Override
+    public void saveNetworkComponents() {
+
+    }
+
+    @Override
+    public void savePetSupplies() {
+
+    }
+
+    @Override
+    public void saveRefrigerator() {
+
+    }
+
+    @Override
+    public void saveSoftware() {
+
+    }
+
+    @Override
+    public void saveSportsFitness() {
+
+    }
+
+    @Override
+    public void saveStationeryOfficeSupplies() {
+
+    }
+
+    @Override
+    public void saveSunglasses() {
+
+    }
+
+    @Override
+    public void saveTabletAccessories() {
+
+    }
+
+    @Override
+    public void saveTablets() {
+
+    }
+
+    @Override
+    public void saveTelevisions() {
+
+    }
+
+    @Override
+    public void saveToys() {
+
+    }
+
+    @Override
+    public void saveTvVideoAccessories() {
+
+    }
+
+    @Override
+    public void saveVideoPlayers() {
+
+    }
+
+    @Override
+    public void saveWashingMahines() {
+
+    }
+
+    @Override
+    public void saveWatches() {
+
+    }
+
+    @Override
+    public void saveWearableSmartDevices() {
+
+    }
+
+    @Override
+    public void saveWomenFootwear() {
+
+    }
+
+    @Override
+    public void saveWomenClothing() {
+
     }
 }
