@@ -37,6 +37,7 @@ import com.shandilya.populate.flipkart.products.jewellery.models.JewelleryProduc
 import com.shandilya.populate.flipkart.products.kidsclothing.models.KidsClothingProducts;
 import com.shandilya.populate.flipkart.products.kidsfootwear.models.KidsFootwearProducts;
 import com.shandilya.populate.flipkart.products.kitchenappliances.models.KitchenApplianceProducts;
+import com.shandilya.populate.flipkart.products.landlinephones.models.LandLinePhoneProducts;
 import com.sun.scenario.effect.impl.prism.PrDrawable;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -143,6 +144,9 @@ public class CategoryPersistenceServiceImpl implements CategoryPersistenceServic
 
     @Autowired
     private KitchenAppliancesRepository kitchenAppliancesRepository;
+
+    @Autowired
+    private LandLinePhoneRepository landLinePhoneRepository;
 
     @Override
     public void saveAcs() {
@@ -401,6 +405,10 @@ public class CategoryPersistenceServiceImpl implements CategoryPersistenceServic
     @Override
     public void saveLandLinePhones() {
 
+        List<ProductsExt> apiProducts = aggregatorService.getAllProducts("LandlinePhones", PAGE_LIMIT);
+        List<LandLinePhoneProducts> landLinePhoneProducts = conversionService.convert(apiProducts,
+                LandLinePhoneProducts.class);
+        landLinePhoneRepository.saveAll(landLinePhoneProducts);
     }
 
     @Override
