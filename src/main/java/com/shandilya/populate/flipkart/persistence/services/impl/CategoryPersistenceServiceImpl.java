@@ -43,6 +43,11 @@ import com.shandilya.populate.flipkart.products.luggagetravel.models.LuggageTrav
 import com.shandilya.populate.flipkart.products.mensclothing.models.MensClothingProducts;
 import com.shandilya.populate.flipkart.products.mensfootwear.models.MensFootwearProducts;
 import com.shandilya.populate.flipkart.products.microwaveovens.models.MicrowaveOvenProducts;
+import com.shandilya.populate.flipkart.products.mobileaccessories.model.MobileAccessoriesProducts;
+import com.shandilya.populate.flipkart.products.mobiles.models.MobileProducts;
+import com.shandilya.populate.flipkart.products.musicmoviesposters.models.MusicMoviesPostersProducts;
+import com.shandilya.populate.flipkart.products.networkcomponents.models.NetworkComponentProducts;
+import com.shandilya.populate.flipkart.products.petsupplies.models.PetSuppliesProducts;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -173,6 +178,21 @@ public class CategoryPersistenceServiceImpl implements CategoryPersistenceServic
 
     @Autowired
     private MicrowaveOvenRepository microwaveOvenRepository;
+
+    @Autowired
+    private MobileAccessoriesRepository mobileAccessoriesRepository;
+
+    @Autowired
+    private MobilesRepository mobilesRepository;
+
+    @Autowired
+    private MusicMoviesPostersRepository musicMoviesPostersRepository;
+
+    @Autowired
+    private NetworkComponentRepository networkComponentRepository;
+
+    @Autowired
+    private PetSuppliesRepository petSuppliesRepository;
 
     @Override
     public void saveAcs() {
@@ -569,26 +589,55 @@ public class CategoryPersistenceServiceImpl implements CategoryPersistenceServic
     @Override
     public void saveMobileAccessories() {
 
+        apiProducts = aggregatorService.getAllProducts("MobileAccessories", PAGE_LIMIT);
+        List<MobileAccessoriesProducts> mobileAccessoriesProducts = conversionService.convert(apiProducts,
+                MobileAccessoriesProducts.class);
+        mobileAccessoriesRepository.saveAll(mobileAccessoriesProducts);
+        totalProductsFetched += apiProducts.size();
+        apiProducts.clear();
     }
 
     @Override
     public void saveMobiles() {
 
+        apiProducts = aggregatorService.getAllProducts("Mobiles", PAGE_LIMIT);
+        List<MobileProducts> mobileProducts = conversionService.convert(apiProducts, MobileProducts.class);
+        mobilesRepository.saveAll(mobileProducts);
+        totalProductsFetched += apiProducts.size();
+        apiProducts.clear();
     }
 
     @Override
-    public void savMusicMoviePosters() {
+    public void saveMusicMoviePosters() {
 
+        apiProducts = aggregatorService.getAllProducts("MusicMoviesPosters", PAGE_LIMIT);
+        List<MusicMoviesPostersProducts> musicMoviesPostersProducts = conversionService.convert(apiProducts,
+                MusicMoviesPostersProducts.class);
+        musicMoviesPostersRepository.saveAll(musicMoviesPostersProducts);
+        totalProductsFetched += apiProducts.size();
+        apiProducts.clear();
     }
 
     @Override
     public void saveNetworkComponents() {
 
+        apiProducts = aggregatorService.getAllProducts("NetworkComponents", PAGE_LIMIT);
+        List<NetworkComponentProducts> networkComponentProducts = conversionService.convert(apiProducts,
+                NetworkComponentProducts.class);
+        networkComponentRepository.saveAll(networkComponentProducts);
+        totalProductsFetched += apiProducts.size();
+        apiProducts.clear();
     }
 
     @Override
     public void savePetSupplies() {
 
+        apiProducts = aggregatorService.getAllProducts("PetSupplies", PAGE_LIMIT);
+        List<PetSuppliesProducts> petSuppliesProducts = conversionService.convert(apiProducts,
+                PetSuppliesProducts.class);
+        petSuppliesRepository.saveAll(petSuppliesProducts);
+        totalProductsFetched += apiProducts.size();
+        apiProducts.clear();
     }
 
     @Override

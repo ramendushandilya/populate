@@ -80,7 +80,7 @@ public interface CategoryPersistenceService {
 
     void saveMobiles();
 
-    void savMusicMoviePosters();
+    void saveMusicMoviePosters();
 
     void saveNetworkComponents();
 

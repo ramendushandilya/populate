@@ -4,6 +4,7 @@ import com.shandilya.populate.flipkart.conversioncommon.ListConverter;
 import com.shandilya.populate.flipkart.external.domains.urlcommons.ProductsExt;
 import com.shandilya.populate.flipkart.products.common.pojo.ConverterHelper;
 import com.shandilya.populate.flipkart.products.mensclothing.models.MensClothingProducts;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.persistence.GeneratedValue;
@@ -17,8 +18,7 @@ import javax.persistence.Id;
 @Service
 public class MensClothingConverter extends ListConverter<ProductsExt, MensClothingProducts> {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @Autowired
     private ConverterHelper helper;
 
     @Override
