@@ -1,9 +1,7 @@
 package com.shandilya.populate.flipkart.persistence.services.impl;
 
-import com.shandilya.populate.flipkart.conversioncommon.ListConverter;
 import com.shandilya.populate.flipkart.conversioncommon.PopulateConversionService;
 import com.shandilya.populate.flipkart.external.api.ProductUrlAggregatorService;
-import com.shandilya.populate.flipkart.external.domains.categories.HomeEntertainment;
 import com.shandilya.populate.flipkart.external.domains.urlcommons.ProductsExt;
 import com.shandilya.populate.flipkart.persistence.Repository.*;
 import com.shandilya.populate.flipkart.persistence.services.CategoryPersistenceService;
@@ -38,7 +36,7 @@ import com.shandilya.populate.flipkart.products.kidsclothing.models.KidsClothing
 import com.shandilya.populate.flipkart.products.kidsfootwear.models.KidsFootwearProducts;
 import com.shandilya.populate.flipkart.products.kitchenappliances.models.KitchenApplianceProducts;
 import com.shandilya.populate.flipkart.products.landlinephones.models.LandLinePhoneProducts;
-import com.sun.scenario.effect.impl.prism.PrDrawable;
+import com.shandilya.populate.flipkart.products.laptopaccessories.models.LaptopAccessoriesProducts;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -147,6 +145,9 @@ public class CategoryPersistenceServiceImpl implements CategoryPersistenceServic
 
     @Autowired
     private LandLinePhoneRepository landLinePhoneRepository;
+
+    @Autowired
+    private LaptopAccessoriesRepository laptopAccessoriesRepository;
 
     @Override
     public void saveAcs() {
@@ -414,6 +415,10 @@ public class CategoryPersistenceServiceImpl implements CategoryPersistenceServic
     @Override
     public void saveLaptopAccessories() {
 
+        List<ProductsExt> apiProducts = aggregatorService.getAllProducts("LaptopAccessories", PAGE_LIMIT);
+        List<LaptopAccessoriesProducts> laptopAccessoriesProducts = conversionService.convert(apiProducts,
+                LaptopAccessoriesProducts.class);
+        laptopAccessoriesRepository.saveAll(laptopAccessoriesProducts);
     }
 
     @Override
