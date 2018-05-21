@@ -1,5 +1,6 @@
 package com.shandilya.populate.flipkart.persistence.services.impl;
 
+import com.shandilya.populate.flipkart.conversioncommon.ListConverter;
 import com.shandilya.populate.flipkart.conversioncommon.PopulateConversionService;
 import com.shandilya.populate.flipkart.external.api.ProductUrlAggregatorService;
 import com.shandilya.populate.flipkart.external.domains.urlcommons.ProductsExt;
@@ -39,6 +40,9 @@ import com.shandilya.populate.flipkart.products.landlinephones.models.LandLinePh
 import com.shandilya.populate.flipkart.products.laptopaccessories.models.LaptopAccessoriesProducts;
 import com.shandilya.populate.flipkart.products.laptops.models.LaptopsModels;
 import com.shandilya.populate.flipkart.products.luggagetravel.models.LuggageTravelProducts;
+import com.shandilya.populate.flipkart.products.mensclothing.models.MensClothingProducts;
+import com.shandilya.populate.flipkart.products.mensfootwear.models.MensFootwearProducts;
+import com.shandilya.populate.flipkart.products.microwaveovens.models.MicrowaveOvenProducts;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -160,6 +164,15 @@ public class CategoryPersistenceServiceImpl implements CategoryPersistenceServic
 
     @Autowired
     private LuggageTravelRepository luggageTravelRepository;
+
+    @Autowired
+    private MensClothingRespository mensClothingRespository;
+
+    @Autowired
+    private MensFootwearRepository mensFootwearRepository;
+
+    @Autowired
+    private MicrowaveOvenRepository microwaveOvenRepository;
 
     @Override
     public void saveAcs() {
@@ -523,16 +536,34 @@ public class CategoryPersistenceServiceImpl implements CategoryPersistenceServic
     @Override
     public void saveMensClothing() {
 
+        apiProducts = aggregatorService.getAllProducts("MensClothing", PAGE_LIMIT);
+        List<MensClothingProducts> mensClothingProducts = conversionService.convert(apiProducts,
+                MensClothingProducts.class);
+        mensClothingRespository.saveAll(mensClothingProducts);
+        totalProductsFetched += apiProducts.size();
+        apiProducts.clear();
     }
 
     @Override
     public void saveMensFootwear() {
 
+        apiProducts = aggregatorService.getAllProducts("MensFootwear", PAGE_LIMIT);
+        List<MensFootwearProducts> mensFootwearProducts = conversionService.convert(apiProducts,
+                MensFootwearProducts.class);
+        mensFootwearRepository.saveAll(mensFootwearProducts);
+        totalProductsFetched += apiProducts.size();
+        apiProducts.clear();
     }
 
     @Override
     public void saveMicrowaveOvens() {
 
+        apiProducts = aggregatorService.getAllProducts("MicrowaveOvens", PAGE_LIMIT);
+        List<MicrowaveOvenProducts> microwaveOvenProducts = conversionService.convert(apiProducts,
+                MicrowaveOvenProducts.class);
+        microwaveOvenRepository.saveAll(microwaveOvenProducts);
+        totalProductsFetched += apiProducts.size();
+        apiProducts.clear();
     }
 
     @Override
