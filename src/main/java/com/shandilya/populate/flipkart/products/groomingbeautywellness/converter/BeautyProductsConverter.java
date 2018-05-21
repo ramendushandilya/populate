@@ -3,7 +3,7 @@ package com.shandilya.populate.flipkart.products.groomingbeautywellness.converte
 import com.shandilya.populate.flipkart.conversioncommon.ListConverter;
 import com.shandilya.populate.flipkart.external.domains.urlcommons.ProductsExt;
 import com.shandilya.populate.flipkart.products.common.pojo.ConverterHelper;
-import com.shandilya.populate.flipkart.products.gaming.models.GamingProducts;
+import com.shandilya.populate.flipkart.products.groomingbeautywellness.models.BeautyProducts;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,13 +12,13 @@ import org.springframework.stereotype.Service;
  */
 
 @Service
-public class BeautyProductsConverter extends ListConverter<ProductsExt, GamingProducts> {
+public class BeautyProductsConverter extends ListConverter<ProductsExt, BeautyProducts> {
 
     @Autowired
     private ConverterHelper helper;
 
     @Override
-    public GamingProducts convert(ProductsExt productsExt) {
-        return new GamingProducts(helper.baseInfoHelper(productsExt));
+    public BeautyProducts convert(ProductsExt productsExt) {
+        return new BeautyProducts(helper.baseInfoHelper(productsExt));
     }
 }
