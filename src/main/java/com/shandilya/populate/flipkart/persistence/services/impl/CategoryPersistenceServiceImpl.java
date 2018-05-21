@@ -38,6 +38,7 @@ import com.shandilya.populate.flipkart.products.kitchenappliances.models.Kitchen
 import com.shandilya.populate.flipkart.products.landlinephones.models.LandLinePhoneProducts;
 import com.shandilya.populate.flipkart.products.laptopaccessories.models.LaptopAccessoriesProducts;
 import com.shandilya.populate.flipkart.products.laptops.models.LaptopsModels;
+import com.shandilya.populate.flipkart.products.luggagetravel.models.LuggageTravelProducts;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -156,6 +157,9 @@ public class CategoryPersistenceServiceImpl implements CategoryPersistenceServic
 
     @Autowired
     private LaptopRepository laptopRepository;
+
+    @Autowired
+    private LuggageTravelRepository luggageTravelRepository;
 
     @Override
     public void saveAcs() {
@@ -508,6 +512,12 @@ public class CategoryPersistenceServiceImpl implements CategoryPersistenceServic
     @Override
     public void saveLuggageTravel() {
 
+        apiProducts = aggregatorService.getAllProducts("LuggageTravel", PAGE_LIMIT);
+        List<LuggageTravelProducts> luggageTravelProducts = conversionService.convert(apiProducts,
+                LuggageTravelProducts.class);
+        luggageTravelRepository.saveAll(luggageTravelProducts);
+        totalProductsFetched += apiProducts.size();
+        apiProducts.clear();
     }
 
     @Override
