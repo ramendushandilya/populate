@@ -1,4 +1,4 @@
-package com.shandilya.populate.flipkart.products.furniture.models;
+package com.shandilya.populate.flipkart.products.laptops.models;
 
 import com.shandilya.populate.flipkart.products.common.pojo.BaseInfo;
 
@@ -9,8 +9,8 @@ import javax.persistence.*;
  */
 
 @Entity
-@Table(name = "furniture")
-public class FurnitureProducts {
+@Table(name = "laptops")
+public class LaptopsModels {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
@@ -19,10 +19,10 @@ public class FurnitureProducts {
     @Embedded
     private BaseInfo baseInfo;
 
-    public FurnitureProducts() {
+    public LaptopsModels() {
     }
 
-    public FurnitureProducts(BaseInfo baseInfo) {
+    public LaptopsModels(BaseInfo baseInfo) {
         this.baseInfo = baseInfo;
     }
 
@@ -30,17 +30,15 @@ public class FurnitureProducts {
         return id;
     }
 
-    public FurnitureProducts setId(Long id) {
+    public void setId(Long id) {
         this.id = id;
-        return this;
     }
 
     public BaseInfo getBaseInfo() {
         return baseInfo;
     }
 
-    public FurnitureProducts setBaseInfo(BaseInfo baseInfo) {
+    public void setBaseInfo(BaseInfo baseInfo) {
         this.baseInfo = baseInfo;
-        return this;
     }
 }

@@ -117,4 +117,6 @@ public interface CategoryPersistenceService {
     void saveWomenFootwear();
 
     void saveWomenClothing();
+
+    int getTotalProductsFetched();
 }

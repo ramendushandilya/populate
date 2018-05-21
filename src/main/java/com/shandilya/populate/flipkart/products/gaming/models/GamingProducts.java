@@ -2,10 +2,7 @@ package com.shandilya.populate.flipkart.products.gaming.models;
 
 import com.shandilya.populate.flipkart.products.common.pojo.BaseInfo;
 
-import javax.persistence.Embedded;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 /**
  * @author failedOptimus
@@ -16,6 +13,7 @@ import javax.persistence.Table;
 public class GamingProducts {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
 
     @Embedded

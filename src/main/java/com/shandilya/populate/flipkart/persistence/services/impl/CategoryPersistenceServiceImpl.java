@@ -37,6 +37,7 @@ import com.shandilya.populate.flipkart.products.kidsfootwear.models.KidsFootwear
 import com.shandilya.populate.flipkart.products.kitchenappliances.models.KitchenApplianceProducts;
 import com.shandilya.populate.flipkart.products.landlinephones.models.LandLinePhoneProducts;
 import com.shandilya.populate.flipkart.products.laptopaccessories.models.LaptopAccessoriesProducts;
+import com.shandilya.populate.flipkart.products.laptops.models.LaptopsModels;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -46,6 +47,10 @@ import java.util.List;
 public class CategoryPersistenceServiceImpl implements CategoryPersistenceService {
 
     private static final int PAGE_LIMIT = 50;
+
+    private int totalProductsFetched = 0;
+
+    List<ProductsExt> apiProducts;
 
     @Autowired
     private PopulateConversionService conversionService;
@@ -149,281 +154,355 @@ public class CategoryPersistenceServiceImpl implements CategoryPersistenceServic
     @Autowired
     private LaptopAccessoriesRepository laptopAccessoriesRepository;
 
+    @Autowired
+    private LaptopRepository laptopRepository;
+
     @Override
     public void saveAcs() {
 
-        List<ProductsExt> apiProducts = aggregatorService.getAllProducts("AirConditioners", PAGE_LIMIT);
+        apiProducts = aggregatorService.getAllProducts("AirConditioners", PAGE_LIMIT);
         List<AirconditionerProducts> airconditionerProducts = conversionService.convert(apiProducts,
                 AirconditionerProducts.class);
         acRepository.saveAll(airconditionerProducts);
+        totalProductsFetched += apiProducts.size();
+        System.out.printf("total ac= "+totalProductsFetched);
+        apiProducts.clear();
+
     }
 
     @Override
     public void saveAircoolers() {
 
-        List<ProductsExt> apiProducts = aggregatorService.getAllProducts("AirCoolers", PAGE_LIMIT);
+        apiProducts = aggregatorService.getAllProducts("AirCoolers", PAGE_LIMIT);
         List<AircoolerProducts> aircoolerProducts = conversionService.convert(apiProducts, AircoolerProducts.class);
         aircoolerRepository.saveAll(aircoolerProducts);
+        totalProductsFetched += apiProducts.size();
+        apiProducts.clear();
     }
 
     @Override
     public void saveAudioPlayers() {
 
-        List<ProductsExt> apiProducts = aggregatorService.getAllProducts("AudioPlayers", PAGE_LIMIT);
+        apiProducts = aggregatorService.getAllProducts("AudioPlayers", PAGE_LIMIT);
         List<AudioPlayerProducts> audioPlayerProducts = conversionService.convert(apiProducts,
                 AudioPlayerProducts.class);
         audioPlayerRepository.saveAll(audioPlayerProducts);
+        totalProductsFetched += apiProducts.size();
+        apiProducts.clear();
     }
 
     @Override
     public void saveAutomotive() {
 
-        List<ProductsExt> apiProducts = aggregatorService.getAllProducts("Automotive", PAGE_LIMIT);
+        apiProducts = aggregatorService.getAllProducts("Automotive", PAGE_LIMIT);
         List<AutomotiveProducts> automotiveProducts = conversionService.convert(apiProducts, AutomotiveProducts.class);
         automotiveRepository.saveAll(automotiveProducts);
+        totalProductsFetched += apiProducts.size();
+        apiProducts.clear();
     }
 
     @Override
     public void saveBabyCare() {
 
-        List<ProductsExt> apiProducts = aggregatorService.getAllProducts("BabyCare", PAGE_LIMIT);
+        apiProducts = aggregatorService.getAllProducts("BabyCare", PAGE_LIMIT);
         List<BabycareProducts> babycareProducts = conversionService.convert(apiProducts, BabycareProducts.class);
         babycareRepository.saveAll(babycareProducts);
+        totalProductsFetched += apiProducts.size();
+        apiProducts.clear();
     }
 
     @Override
     public void saveBagsWalletsBelts() {
 
-        List<ProductsExt> apiProducts = aggregatorService.getAllProducts("BagsWalletsBelts", PAGE_LIMIT);
+        apiProducts = aggregatorService.getAllProducts("BagsWalletsBelts", PAGE_LIMIT);
         List<BagsWalletsBelts> bagsWalletsBelts = conversionService.convert(apiProducts, BagsWalletsBelts.class);
         bagsWalletRepository.saveAll(bagsWalletsBelts);
+        totalProductsFetched += apiProducts.size();
+        apiProducts.clear();
     }
 
     @Override
     public void saveCameraAccessories() {
 
-        List<ProductsExt> apiProducts = aggregatorService.getAllProducts("CameraAccessories", PAGE_LIMIT);
+        apiProducts = aggregatorService.getAllProducts("CameraAccessories", PAGE_LIMIT);
         List<CameraAccessories> cameraAccessories = conversionService.convert(apiProducts, CameraAccessories.class);
         cameraAccessoriesRepository.saveAll(cameraAccessories);
+        totalProductsFetched += apiProducts.size();
+        apiProducts.clear();
     }
 
     @Override
     public void saveCameras() {
 
-        List<ProductsExt> extProds = aggregatorService.getAllProducts("Cameras", PAGE_LIMIT);
-        List<CameraProducts> cameras = conversionService.convert(extProds, CameraProducts.class);
+        apiProducts = aggregatorService.getAllProducts("Cameras", PAGE_LIMIT);
+        List<CameraProducts> cameras = conversionService.convert(apiProducts, CameraProducts.class);
         cameraRepository.saveAll(cameras);
+        totalProductsFetched += apiProducts.size();
+        apiProducts.clear();
     }
 
     @Override
     public void saveComputerComponents() {
 
-        List<ProductsExt> apiProducts = aggregatorService.getAllProducts("ComputerComponents", PAGE_LIMIT);
+        apiProducts = aggregatorService.getAllProducts("ComputerComponents", PAGE_LIMIT);
         List<ComputerComponentsProducts> computerComponentsProducts = conversionService.convert(apiProducts,
                 ComputerComponentsProducts.class);
         computerComponentsRepository.saveAll(computerComponentsProducts);
+        totalProductsFetched += apiProducts.size();
+        apiProducts.clear();
     }
 
     @Override
     public void saveComputerPeripherals() {
 
-        List<ProductsExt> apiProducts = aggregatorService.getAllProducts("ComputerPeripherals", PAGE_LIMIT);
+        apiProducts = aggregatorService.getAllProducts("ComputerPeripherals", PAGE_LIMIT);
         List<ComputerPeripheralsProducts> computerPeripheralsProducts = conversionService.convert(apiProducts,
                 ComputerPeripheralsProducts.class);
         computerPeripheralsRepository.saveAll(computerPeripheralsProducts);
+        totalProductsFetched += apiProducts.size();
+        apiProducts.clear();
     }
 
     @Override
     public void saveComputerStorage() {
 
-        List<ProductsExt> apiProducts = aggregatorService.getAllProducts("ComputerStorage", PAGE_LIMIT);
+        apiProducts = aggregatorService.getAllProducts("ComputerStorage", PAGE_LIMIT);
         List<ComputerStorageProducts> computerStorageProducts = conversionService.convert(apiProducts,
                 ComputerStorageProducts.class);
         computerStorageRepository.saveAll(computerStorageProducts);
+        totalProductsFetched += apiProducts.size();
+        apiProducts.clear();
     }
 
     @Override
     public void saveDesktops() {
 
-        List<ProductsExt> apiProducts = aggregatorService.getAllProducts("Desktops", PAGE_LIMIT);
+        apiProducts = aggregatorService.getAllProducts("Desktops", PAGE_LIMIT);
         List<DesktopProducts> desktopProducts = conversionService.convert(apiProducts, DesktopProducts.class);
         desktopRepository.saveAll(desktopProducts);
+        totalProductsFetched += apiProducts.size();
+        apiProducts.clear();
     }
 
     @Override
     public void saveELearning() {
-        List<ProductsExt> apiProducts = aggregatorService.getAllProducts("Elearning", PAGE_LIMIT);
+        apiProducts = aggregatorService.getAllProducts("ELearning", PAGE_LIMIT);
         List<ElearningProducts> elearningProducts = conversionService.convert(apiProducts, ElearningProducts.class);
         elearningRepository.saveAll(elearningProducts);
+        totalProductsFetched += apiProducts.size();
+        apiProducts.clear();
     }
 
     @Override
     public void saveEyewear() {
 
-        List<ProductsExt> apiProducts = aggregatorService.getAllProducts("Eyewear", PAGE_LIMIT);
+        apiProducts = aggregatorService.getAllProducts("Eyewear", PAGE_LIMIT);
         List<EyewearProducts> eyewearProducts = conversionService.convert(apiProducts, EyewearProducts.class);
         eyewearRepository.saveAll(eyewearProducts);
+        totalProductsFetched += apiProducts.size();
+        apiProducts.clear();
     }
 
     @Override
     public void saveFoodNutrition() {
 
-        List<ProductsExt> apiProducts = aggregatorService.getAllProducts("FoodNutritionProducts", PAGE_LIMIT);
+        apiProducts = aggregatorService.getAllProducts("FoodNutritionProducts", PAGE_LIMIT);
         List<FoodNutritionProducts> foodNutritionProducts = conversionService.convert(apiProducts,
                 FoodNutritionProducts.class);
         foodNutritionRepository.saveAll(foodNutritionProducts);
+        totalProductsFetched += apiProducts.size();
+        apiProducts.clear();
     }
 
     @Override
     public void saveFragrances() {
 
-        List<ProductsExt> apiProducts = aggregatorService.getAllProducts("Fragrances", PAGE_LIMIT);
+        apiProducts = aggregatorService.getAllProducts("Fragrances", PAGE_LIMIT);
         List<FragranceProducts> fragranceProducts = conversionService.convert(apiProducts, FragranceProducts.class);
         fragranceRepository.saveAll(fragranceProducts);
+        totalProductsFetched += apiProducts.size();
+        apiProducts.clear();
     }
 
     @Override
     public void saveFurniture() {
-        List<ProductsExt> apiProducts = aggregatorService.getAllProducts("Furniture", PAGE_LIMIT);
+        apiProducts = aggregatorService.getAllProducts("Furniture", PAGE_LIMIT);
         List<FurnitureProducts> furnitureProducts = conversionService.convert(apiProducts, FurnitureProducts.class);
         furnitureRespository.saveAll(furnitureProducts);
+        totalProductsFetched += apiProducts.size();
+        apiProducts.clear();
     }
 
     @Override
     public void saveGaming() {
 
-        List<ProductsExt> apiProducts = aggregatorService.getAllProducts("Gaming", PAGE_LIMIT);
+        apiProducts = aggregatorService.getAllProducts("Gaming", PAGE_LIMIT);
         List<GamingProducts> gamingProducts = conversionService.convert(apiProducts, GamingProducts.class);
         gamingRepository.saveAll(gamingProducts);
+        totalProductsFetched += apiProducts.size();
+        apiProducts.clear();
     }
 
     @Override
     public void saveGroomingWellness() {
 
-        List<ProductsExt> apiProducts = aggregatorService.getAllProducts("GroomingBeautyWellness", PAGE_LIMIT);
+        apiProducts = aggregatorService.getAllProducts("GroomingBeautyWellness", PAGE_LIMIT);
         List<BeautyProducts> beautyProducts = conversionService.convert(apiProducts, BeautyProducts.class);
         beautyProductsRepository.saveAll(beautyProducts);
+        totalProductsFetched += apiProducts.size();
+        apiProducts.clear();
     }
 
     @Override
     public void saveHomeAppliances() {
-        List<ProductsExt> apiProducts = aggregatorService.getAllProducts("HomeAppliances", PAGE_LIMIT);
+        apiProducts = aggregatorService.getAllProducts("HomeAppliances", PAGE_LIMIT);
         List<HomeApplianceProducts> homeApplianceProducts = conversionService.convert(apiProducts,
                 HomeApplianceProducts.class);
         homeApplianceRepository.saveAll(homeApplianceProducts);
+        totalProductsFetched += apiProducts.size();
+        apiProducts.clear();
     }
 
     @Override
     public void saveHomeFestiveNeeds() {
 
-        List<ProductsExt> apiProducts = aggregatorService.getAllProducts("HomeDecorAndFestiveNeeds", PAGE_LIMIT);
+        apiProducts = aggregatorService.getAllProducts("HomeDecorAndFestiveNeeds", PAGE_LIMIT);
         List<HomeDecorProducts> homeDecorProducts = conversionService.convert(apiProducts, HomeDecorProducts.class);
         homeDecorRepository.saveAll(homeDecorProducts);
+        totalProductsFetched += apiProducts.size();
+        apiProducts.clear();
     }
 
     @Override
     public void saveHomeEntertainment() {
 
-        List<ProductsExt> apiProducts = aggregatorService.getAllProducts("HomeEntertainment", PAGE_LIMIT);
+        apiProducts = aggregatorService.getAllProducts("HomeEntertainment", PAGE_LIMIT);
         List<HomeEntertainmentProducts> homeEntertainmentProducts = conversionService.convert(apiProducts,
                 HomeEntertainmentProducts.class);
         homeEntertainmentRepository.saveAll(homeEntertainmentProducts);
+        totalProductsFetched += apiProducts.size();
+        apiProducts.clear();
     }
 
     @Override
     public void savehomeFurnishing() {
 
-        List<ProductsExt> apiProducts = aggregatorService.getAllProducts("HomeFurnishing", PAGE_LIMIT);
+        apiProducts = aggregatorService.getAllProducts("HomeFurnishing", PAGE_LIMIT);
         List<HomeFurnishingProducts> homeFurnishingProducts = conversionService.convert(apiProducts,
                 HomeFurnishingProducts.class);
         homeFurnishingRepository.saveAll(homeFurnishingProducts);
+        totalProductsFetched += apiProducts.size();
+        apiProducts.clear();
     }
 
     @Override
     public void saveHomeImprovementTools() {
 
-        List<ProductsExt> apiProducts = aggregatorService.getAllProducts("HomeImprovementTools", PAGE_LIMIT);
+        apiProducts = aggregatorService.getAllProducts("HomeImprovementTools", PAGE_LIMIT);
         List<HomeImprovementProducts> homeImprovementProducts = conversionService.convert(apiProducts,
                 HomeImprovementProducts.class);
         homeImprovementToolsRepository.saveAll(homeImprovementProducts);
+        totalProductsFetched += apiProducts.size();
+        apiProducts.clear();
 
     }
 
     @Override
     public void saveHomeKitchenNeeds() {
 
-        List<ProductsExt> apiProducts = aggregatorService.getAllProducts("HomeAndKitchenNeeds", PAGE_LIMIT);
+        apiProducts = aggregatorService.getAllProducts("HomeAndKitchenNeeds", PAGE_LIMIT);
         List<HomeKitchenProducts> homeKitchenProducts = conversionService.convert(apiProducts,
                 HomeKitchenProducts.class);
         homeKitchenNeedsRepository.saveAll(homeKitchenProducts);
+        totalProductsFetched += apiProducts.size();
+        apiProducts.clear();
     }
 
     @Override
     public void saveHouseHoldSupplies() {
 
-        List<ProductsExt> apiProducts = aggregatorService.getAllProducts("HouseholdSupplies", PAGE_LIMIT);
+        apiProducts = aggregatorService.getAllProducts("HouseholdSupplies", PAGE_LIMIT);
         List<HouseHoldSuppliesProducts> houseHoldSuppliesProducts = conversionService.convert(apiProducts,
                 HouseHoldSuppliesProducts.class);
         houseHoldSuppliesRepository.saveAll(houseHoldSuppliesProducts);
+        totalProductsFetched += apiProducts.size();
+        apiProducts.clear();
     }
 
     @Override
     public void saveJewellery() {
 
-        List<ProductsExt> apiProducts = aggregatorService.getAllProducts("Jewellery", PAGE_LIMIT);
+        apiProducts = aggregatorService.getAllProducts("Jewellery", PAGE_LIMIT);
         List<JewelleryProducts> jewelleryProducts = conversionService.convert(apiProducts, JewelleryProducts.class);
         jewelleryRepository.saveAll(jewelleryProducts);
+        totalProductsFetched += apiProducts.size();
+        apiProducts.clear();
     }
 
     @Override
     public void saveKidsClothing() {
 
-        List<ProductsExt> apiProducts = aggregatorService.getAllProducts("KidsClothing", PAGE_LIMIT);
+        apiProducts = aggregatorService.getAllProducts("KidsClothing", PAGE_LIMIT);
         List<KidsClothingProducts> kidsClothingProducts = conversionService.convert(apiProducts,
                 KidsClothingProducts.class);
         kidsClothingRepository.saveAll(kidsClothingProducts);
+        totalProductsFetched += apiProducts.size();
+        apiProducts.clear();
     }
 
     @Override
     public void saveKidsFootwear() {
 
-        List<ProductsExt> apiProducts = aggregatorService.getAllProducts("KidsFootwear", PAGE_LIMIT);
+        apiProducts = aggregatorService.getAllProducts("KidsFootwear", PAGE_LIMIT);
         List<KidsFootwearProducts> kidsFootwearProducts = conversionService.convert(apiProducts,
                 KidsFootwearProducts.class);
         kidsFootwearRepository.saveAll(kidsFootwearProducts);
+        totalProductsFetched += apiProducts.size();
+        apiProducts.clear();
     }
 
     @Override
     public void saveKitchenAppliances() {
 
-        List<ProductsExt> apiProducts = aggregatorService.getAllProducts("KitchenAppliances",
+        apiProducts = aggregatorService.getAllProducts("KitchenAppliances",
                 PAGE_LIMIT);
         List<KitchenApplianceProducts> kitchenApplianceProducts = conversionService.convert(apiProducts,
                 KitchenApplianceProducts.class);
         kitchenAppliancesRepository.saveAll(kitchenApplianceProducts);
+        totalProductsFetched += apiProducts.size();
+        apiProducts.clear();
     }
 
     @Override
     public void saveLandLinePhones() {
 
-        List<ProductsExt> apiProducts = aggregatorService.getAllProducts("LandlinePhones", PAGE_LIMIT);
+        apiProducts = aggregatorService.getAllProducts("LandlinePhones", PAGE_LIMIT);
         List<LandLinePhoneProducts> landLinePhoneProducts = conversionService.convert(apiProducts,
                 LandLinePhoneProducts.class);
         landLinePhoneRepository.saveAll(landLinePhoneProducts);
+        totalProductsFetched += apiProducts.size();
+        apiProducts.clear();
     }
 
     @Override
     public void saveLaptopAccessories() {
 
-        List<ProductsExt> apiProducts = aggregatorService.getAllProducts("LaptopAccessories", PAGE_LIMIT);
+        apiProducts = aggregatorService.getAllProducts("LaptopAccessories", PAGE_LIMIT);
         List<LaptopAccessoriesProducts> laptopAccessoriesProducts = conversionService.convert(apiProducts,
                 LaptopAccessoriesProducts.class);
         laptopAccessoriesRepository.saveAll(laptopAccessoriesProducts);
+        totalProductsFetched += apiProducts.size();
+        apiProducts.clear();
     }
 
     @Override
     public void saveLaptops() {
 
+        apiProducts = aggregatorService.getAllProducts("Laptops", PAGE_LIMIT);
+        List<LaptopsModels> laptopsModels = conversionService.convert(apiProducts, LaptopsModels.class);
+        laptopRepository.saveAll(laptopsModels);
+        totalProductsFetched += apiProducts.size();
+        apiProducts.clear();
     }
 
     @Override
@@ -549,5 +628,10 @@ public class CategoryPersistenceServiceImpl implements CategoryPersistenceServic
     @Override
     public void saveWomenClothing() {
 
+    }
+
+    @Override
+    public int getTotalProductsFetched() {
+        return totalProductsFetched;
     }
 }

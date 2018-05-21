@@ -4,6 +4,7 @@ import com.shandilya.populate.flipkart.external.api.CategoryService;
 import com.shandilya.populate.flipkart.external.api.ProductUrlAggregatorService;
 import com.shandilya.populate.flipkart.external.domains.urlcommons.ProductsExt;
 import com.shandilya.populate.flipkart.persistence.services.CategoryPersistenceService;
+import com.shandilya.populate.flipkart.persistence.services.impl.CategoryPersistenceServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -64,10 +65,11 @@ public class PopulateApplication implements CommandLineRunner{
 		persistenceService.saveKitchenAppliances();
 		persistenceService.saveLandLinePhones();
 		persistenceService.saveLaptopAccessories();
-
+		persistenceService.saveLaptops();
 
 		long end = System.currentTimeMillis();
 
 		System.out.println("##########Total time elapsed#########"+(end-start)/60000);
+		System.out.printf("Total products fetched = "+ persistenceService.getTotalProductsFetched());
 	}
 }
