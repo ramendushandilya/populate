@@ -108,7 +108,7 @@ public interface CategoryPersistenceService {
 
     void saveVideoPlayers();
 
-    void saveWashingMahines();
+    void saveWashingMachines();
 
     void saveWatches();
 
