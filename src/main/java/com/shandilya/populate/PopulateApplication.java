@@ -91,7 +91,7 @@ public class PopulateApplication implements CommandLineRunner{
 		persistenceService.saveWearableSmartDevices();
 		*/
 
-
+		persistenceService.saveWomenClothing();
 
 		long end = System.currentTimeMillis();
 

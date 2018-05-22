@@ -62,6 +62,7 @@ import com.shandilya.populate.flipkart.products.videoplayers.models.VideoPlayers
 import com.shandilya.populate.flipkart.products.washingmachine.models.WashingMachineProducts;
 import com.shandilya.populate.flipkart.products.watches.models.WatchesProducts;
 import com.shandilya.populate.flipkart.products.wearablesmartdevices.models.WearableSmartDevicesProducts;
+import com.shandilya.populate.flipkart.products.womensclothing.models.WomensClothingProducts;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -249,6 +250,9 @@ public class CategoryPersistenceServiceImpl implements CategoryPersistenceServic
 
     @Autowired
     private WearableSmartDevicesRepository wearableSmartDevicesRepository;
+
+    @Autowired
+    private WomensClothingRepository womensClothingRepository;
 
     @Override
     public void saveAcs() {
@@ -842,11 +846,18 @@ public class CategoryPersistenceServiceImpl implements CategoryPersistenceServic
     @Override
     public void saveWomenFootwear() {
 
+
     }
 
     @Override
     public void saveWomenClothing() {
 
+        apiProducts = aggregatorService.getAllProducts("WomensClothing", PAGE_LIMIT);
+        List<WomensClothingProducts> womensClothingProducts = conversionService.convert(apiProducts,
+                WomensClothingProducts.class);
+        womensClothingRepository.saveAll(womensClothingProducts);
+        totalProductsFetched += apiProducts.size();
+        apiProducts.clear();
     }
 
     @Override
