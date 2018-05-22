@@ -79,6 +79,7 @@ public class PopulateApplication implements CommandLineRunner{
 		persistenceService.saveSoftware();
 		persistenceService.saveSportsFitness();
 		persistenceService.saveStationeryOfficeSupplies();
+		persistenceService.saveSunglasses();
 		*/
 
 

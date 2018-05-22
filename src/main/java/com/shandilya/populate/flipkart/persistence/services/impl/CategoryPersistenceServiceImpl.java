@@ -52,6 +52,7 @@ import com.shandilya.populate.flipkart.products.refrigerator.models.Refrigerator
 import com.shandilya.populate.flipkart.products.software.models.SoftwareProducts;
 import com.shandilya.populate.flipkart.products.sportsfitness.models.SportFitnessProducts;
 import com.shandilya.populate.flipkart.products.stationaryofficesupplies.models.StationeryProducts;
+import com.shandilya.populate.flipkart.products.sunglasses.models.SunglassesProducts;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -209,6 +210,9 @@ public class CategoryPersistenceServiceImpl implements CategoryPersistenceServic
 
     @Autowired
     private StationeryRepository stationeryRepository;
+
+    @Autowired
+    private SunglassesRepository sunglassesRepository;
 
     @Override
     public void saveAcs() {
@@ -700,6 +704,11 @@ public class CategoryPersistenceServiceImpl implements CategoryPersistenceServic
     @Override
     public void saveSunglasses() {
 
+        apiProducts = aggregatorService.getAllProducts("Sunglasses", PAGE_LIMIT);
+        List<SunglassesProducts> sunglassesProducts = conversionService.convert(apiProducts, SunglassesProducts.class);
+        sunglassesRepository.saveAll(sunglassesProducts);
+        totalProductsFetched += apiProducts.size();
+        apiProducts.clear();
     }
 
     @Override
