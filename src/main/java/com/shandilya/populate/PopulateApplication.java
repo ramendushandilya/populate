@@ -85,6 +85,7 @@ public class PopulateApplication implements CommandLineRunner{
 		persistenceService.saveTelevisions();
 		persistenceService.saveToys();
 		persistenceService.saveTvVideoAccessories();
+		persistenceService.saveVideoPlayers();
 		*/
 
 
