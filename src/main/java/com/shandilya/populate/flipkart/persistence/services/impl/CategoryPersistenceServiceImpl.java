@@ -48,6 +48,8 @@ import com.shandilya.populate.flipkart.products.mobiles.models.MobileProducts;
 import com.shandilya.populate.flipkart.products.musicmoviesposters.models.MusicMoviesPostersProducts;
 import com.shandilya.populate.flipkart.products.networkcomponents.models.NetworkComponentProducts;
 import com.shandilya.populate.flipkart.products.petsupplies.models.PetSuppliesProducts;
+import com.shandilya.populate.flipkart.products.refrigerator.models.RefrigeratorProducts;
+import com.shandilya.populate.flipkart.products.software.models.SoftwareProducts;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -193,6 +195,12 @@ public class CategoryPersistenceServiceImpl implements CategoryPersistenceServic
 
     @Autowired
     private PetSuppliesRepository petSuppliesRepository;
+
+    @Autowired
+    private RefrigeratorRepository refrigeratorRepository;
+
+    @Autowired
+    private SoftwareRepository softwareRepository;
 
     @Override
     public void saveAcs() {
@@ -642,12 +650,22 @@ public class CategoryPersistenceServiceImpl implements CategoryPersistenceServic
 
     @Override
     public void saveRefrigerator() {
-
+        apiProducts = aggregatorService.getAllProducts("Refrigerator", PAGE_LIMIT);
+        List<RefrigeratorProducts> refrigeratorProducts = conversionService.convert(apiProducts,
+                RefrigeratorProducts.class);
+        refrigeratorRepository.saveAll(refrigeratorProducts);
+        totalProductsFetched += apiProducts.size();
+        apiProducts.clear();
     }
 
     @Override
     public void saveSoftware() {
 
+        apiProducts = aggregatorService.getAllProducts("Software", PAGE_LIMIT);
+        List<SoftwareProducts> softwareProducts = conversionService.convert(apiProducts, SoftwareProducts.class);
+        softwareRepository.saveAll(softwareProducts);
+        totalProductsFetched += apiProducts.size();
+        apiProducts.clear();
     }
 
     @Override
