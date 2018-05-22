@@ -51,6 +51,7 @@ import com.shandilya.populate.flipkart.products.petsupplies.models.PetSuppliesPr
 import com.shandilya.populate.flipkart.products.refrigerator.models.RefrigeratorProducts;
 import com.shandilya.populate.flipkart.products.software.models.SoftwareProducts;
 import com.shandilya.populate.flipkart.products.sportsfitness.models.SportFitnessProducts;
+import com.shandilya.populate.flipkart.products.stationaryofficesupplies.models.StationeryProducts;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -205,6 +206,9 @@ public class CategoryPersistenceServiceImpl implements CategoryPersistenceServic
 
     @Autowired
     private SportsFitnessRepository sportsFitnessRepository;
+
+    @Autowired
+    private StationeryRepository stationeryRepository;
 
     @Override
     public void saveAcs() {
@@ -686,6 +690,11 @@ public class CategoryPersistenceServiceImpl implements CategoryPersistenceServic
     @Override
     public void saveStationeryOfficeSupplies() {
 
+        apiProducts = aggregatorService.getAllProducts("StationeryOfficeSupplies", PAGE_LIMIT);
+        List<StationeryProducts> stationeryProducts = conversionService.convert(apiProducts, StationeryProducts.class);
+        stationeryRepository.saveAll(stationeryProducts);
+        totalProductsFetched += apiProducts.size();
+        apiProducts.clear();
     }
 
     @Override
