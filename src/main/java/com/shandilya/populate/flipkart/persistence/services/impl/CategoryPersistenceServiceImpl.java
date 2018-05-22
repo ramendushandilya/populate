@@ -57,6 +57,7 @@ import com.shandilya.populate.flipkart.products.tableaccessories.models.TabletAc
 import com.shandilya.populate.flipkart.products.tablets.models.TabletsProducts;
 import com.shandilya.populate.flipkart.products.televisions.models.TelevisionProducts;
 import com.shandilya.populate.flipkart.products.toys.models.ToysProducts;
+import com.shandilya.populate.flipkart.products.tvvideoaccessories.models.TvVideoAccessoriesProducts;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -229,6 +230,9 @@ public class CategoryPersistenceServiceImpl implements CategoryPersistenceServic
 
     @Autowired
     private ToyRepository toyRepository;
+
+    @Autowired
+    private TvVideoAccessoriesRepository tvVideoAccessoriesRepository;
 
     @Override
     public void saveAcs() {
@@ -769,6 +773,12 @@ public class CategoryPersistenceServiceImpl implements CategoryPersistenceServic
     @Override
     public void saveTvVideoAccessories() {
 
+        apiProducts = aggregatorService.getAllProducts("TvVideoAccessories", PAGE_LIMIT);
+        List<TvVideoAccessoriesProducts> tvVideoAccessoriesProducts = conversionService.convert(apiProducts,
+                TvVideoAccessoriesProducts.class);
+        tvVideoAccessoriesRepository.saveAll(tvVideoAccessoriesProducts);
+        totalProductsFetched += apiProducts.size();
+        apiProducts.clear();
     }
 
     @Override
