@@ -32,7 +32,7 @@ public class PopulateApplication implements CommandLineRunner{
 	public void run(String... args) throws Exception {
 
 		long start = System.currentTimeMillis();
-/*
+
 		persistenceService.saveAcs();
 		persistenceService.saveAircoolers();
 		persistenceService.saveAudioPlayers();
@@ -89,9 +89,8 @@ public class PopulateApplication implements CommandLineRunner{
 		persistenceService.saveWashingMachines();
 		persistenceService.saveWatches();
 		persistenceService.saveWearableSmartDevices();
-		*/
-
 		persistenceService.saveWomenClothing();
+		persistenceService.saveWomenFootwear();
 
 		long end = System.currentTimeMillis();
 
