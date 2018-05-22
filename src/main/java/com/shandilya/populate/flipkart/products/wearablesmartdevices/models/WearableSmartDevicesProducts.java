@@ -1,29 +1,46 @@
 package com.shandilya.populate.flipkart.products.wearablesmartdevices.models;
 
+import com.shandilya.populate.flipkart.products.common.pojo.BaseInfo;
+
+import javax.persistence.*;
+
 /**
  * @author failedOptimus
  */
 
+@Entity
+@Table(name = "WearableSmartDevices")
 public class WearableSmartDevicesProducts {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    private Long id;
+
+    @Embedded
+    private BaseInfo baseInfo;
+
+    public WearableSmartDevicesProducts() {
+    }
+
+    public WearableSmartDevicesProducts(BaseInfo baseInfo) {
+        this.baseInfo = baseInfo;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public WearableSmartDevicesProducts setId(Long id) {
+        this.id = id;
+        return this;
+    }
+
+    public BaseInfo getBaseInfo() {
+        return baseInfo;
+    }
+
+    public WearableSmartDevicesProducts setBaseInfo(BaseInfo baseInfo) {
+        this.baseInfo = baseInfo;
+        return this;
+    }
 }
-/*
- WITHOUT LIMITING THE FOREGOING, COPYING, REPRODUCTION, REDISTRIBUTION,
- REVERSE ENGINEERING, DISASSEMBLY, DECOMPILATION OR MODIFICATION
- OF THE SOFTWARE IS EXPRESSLY PROHIBITED, UNLESS SUCH COPYING,
- REPRODUCTION, REDISTRIBUTION, REVERSE ENGINEERING, DISASSEMBLY,
- DECOMPILATION OR MODIFICATION IS EXPRESSLY PERMITTED BY THE LICENSE
- AGREEMENT WITH NETCRACKER. 
- 
- THIS SOFTWARE IS WARRANTED, IF AT ALL, ONLY AS EXPRESSLY PROVIDED IN
- THE TERMS OF THE LICENSE AGREEMENT, EXCEPT AS WARRANTED IN THE
- LICENSE AGREEMENT, NETCRACKER HEREBY DISCLAIMS ALL WARRANTIES AND
- CONDITIONS WITH REGARD TO THE SOFTWARE, WHETHER EXPRESS, IMPLIED
- OR STATUTORY, INCLUDING WITHOUT LIMITATION ALL WARRANTIES AND
- CONDITIONS OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
- TITLE AND NON-INFRINGEMENT.
- 
- Copyright (c) 1995-2018 NetCracker Technology Corp.
- 
- All Rights Reserved.
-*/
